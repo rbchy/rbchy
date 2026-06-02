@@ -9,7 +9,7 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-Website-blueviolet?style=for-the-badge&logo=wix&logoColor=white)](https://rbc6543.wixsite.com/rbc-portfolio)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chyranajit@gmail.com)
 
-📍 Upper Darby, Pennsylvania, USA &nbsp;|&nbsp; 🌐 Open to Remote Opportunities
+📍 Plymouth Meeting, Pennsylvania, USA &nbsp;|&nbsp; 🌐 Open to Remote Opportunities
 
 </div>
 
@@ -72,7 +72,7 @@ With decades of experience in technology — from container terminal management 
 ### Databases
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white)
-
+![DataFlex RDBMS](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white)
 ---
 
 ## 📂 Automation Projects
@@ -184,7 +184,7 @@ Full-featured desktop payroll application with JDBC-connected MySQL database. Co
 | Degree | Field | Institution | Year |
 |--------|-------|-------------|------|
 | **Master's** | Public Administration | University of Chittagong | 1984–1985 |
-| **Bachelor's** | Arts | University of Chittagong | 1982–1983 |
+
 
 ---
 
@@ -195,7 +195,7 @@ Full-featured desktop payroll application with JDBC-connected MySQL database. Co
 | | |
 |---|---|
 | 📧 **Email** | chyranajit@gmail.com |
-| 📍 **Location** | Upper Darby, Pennsylvania 19082, USA |
+| 📍 **Location** | Plymouth Meeting, Pennsylvania 19462, USA |
 | 📞 **Phone** | +1 (267) 342-5565 |
 | 🌐 **Portfolio** | [rbc6543.wixsite.com/rbc-portfolio](https://rbc6543.wixsite.com/rbc-portfolio) |
 | 💼 **LinkedIn** | [linkedin.com/in/ranajitchowdhury](https://linkedin.com/in/ranajitchowdhury) |
