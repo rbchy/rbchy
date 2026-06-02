@@ -77,7 +77,7 @@ With decades of experience in technology — from container terminal management 
 ### Databases
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white)
-
+![DataFlex](https://img.shields.io/badge/DataFlex-000000?style=flat-square&logo=oracle&logoColor=white)
 ---
 
 ## 📂 Automation Projects
@@ -200,7 +200,6 @@ Full-featured desktop payroll application with JDBC-connected MySQL database. Co
 | Degree | Field | Institution | Year |
 |--------|-------|-------------|------|
 | **Master's** | Public Administration | University of Chittagong | 1984–1985 |
-| **Bachelor's** | Arts | University of Chittagong | 1982–1983 |
 
 ---
 
