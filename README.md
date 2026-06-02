@@ -72,7 +72,7 @@ With decades of experience in technology — from container terminal management 
 ### Databases
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white)
-![DataFlex RDBMS](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white)
+![DataFlex RDBMS](https://img.shields.io/badge/DataFlex-000000?style=flat-square&logo=Dataflex&logoColor=white)
 ---
 
 ## 📂 Automation Projects
