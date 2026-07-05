@@ -1,231 +1,607 @@
-<div align="center">
+# Ranajit Baran Chowdhury
 
-# 👋 Hi, I'm Ranajit Baran Chowdhury
-
-### Software Developer & QA Automation Engineer | Remote-Ready | Playwright · Selenium · Cucumber · BDD
+**QA Automation Engineer & Full Stack Developer** | Test Automation Specialist  
+**Remote-Ready Professional** | Playwright · Selenium · Cucumber · BDD · Java · Python · TypeScript
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ranajitchowdhury)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ranajitchowdhury)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Website-blueviolet?style=for-the-badge&logo=wix&logoColor=white)](https://rbc6543.wixsite.com/rbc-portfolio)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chyranajit@gmail.com)
+---
 
-📍 Plymouth Meeting, Pennsylvania 19462, USA &nbsp;|&nbsp; 🌐 Open to Remote Opportunities
+## 📍 Contact Information
 
-</div>
+| Field | Details |
+|-------|---------|
+| **Location** | Plymouth Meeting, Pennsylvania 19462, USA |
+| **Email** | chyranajit@gmail.com |
+| **Phone** | +1 (267) 342-5565 |
+| **Portfolio** | [rbc6543.wixsite.com/rbc-portfolio](https://rbc6543.wixsite.com/rbc-portfolio) |
+| **LinkedIn** | [linkedin.com/in/ranajitchowdhury](https://linkedin.com/in/ranajitchowdhury) |
+| **GitHub** | [@rbchy](https://github.com/rbchy) / [@ranajitchowdhury](https://github.com/ranajitchowdhury) |
+| **Availability** | Full-time · Contract · Freelance · Remote |
 
 ---
 
-## 🙋 About Me
+## 🙋 Professional Summary
 
-I am a **QA Automation Engineer** with a strong background in software programming, system design, and enterprise-level test automation. I build robust, scalable BDD frameworks using **Playwright**, **Selenium**, **Cucumber**, and multiple programming languages including **Java**, **Python**, and **TypeScript**.
+I am a **QA Automation Engineer** with deep expertise in building enterprise-level test automation frameworks and a strong background in software programming, system design, and scalable architecture. With **decades of experience** spanning from container terminal management systems to modern web application automation, I bring a unique blend of analytical thinking, systems design expertise, and hands-on technical skills.
 
-With decades of experience in technology — from container terminal management systems to modern web automation — I bring a unique combination of analytical thinking, system design expertise, and hands-on automation skills.
+### **Core Expertise:**
+- 🎯 **BDD Automation Frameworks** — Building production-grade frameworks using Cucumber, Behave, and Gherkin
+- 🔄 **Cross-Browser Testing** — Playwright and Selenium WebDriver with modern async patterns
+- 🌐 **API Automation** — REST endpoint testing with Postman and Rest Assured
+- ⚙️ **CI/CD Integration** — Jenkins, GitHub Actions, and cloud-based test execution
+- 📊 **Enterprise Systems** — 40+ years of experience with container management, billing, and inventory systems
+- 💾 **Full Stack Development** — Java, Python, TypeScript, MySQL, and modern web technologies
 
-> *"Quality is never an accident; it is always the result of intelligent effort."*
-
----
-
-## 🚀 Current Focus
-
-- ✅ Building enterprise-level BDD automation frameworks
-- ✅ Playwright with TypeScript & Python
-- ✅ API Automation & CI/CD Pipeline integration
-- ✅ Cloud-based test execution (Sauce Labs, AWS)
-- ✅ AI-assisted QA Automation
+**Philosophy:** *"Quality is never an accident; it is always the result of intelligent effort."*
 
 ---
 
-## 🛠️ QA Automation Skills
+## 🚀 Current Focus Areas
 
-### Languages
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-
-### UI Automation & Testing
-![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=flat-square&logo=playwright&logoColor=white)
-![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white)
-![Cucumber](https://img.shields.io/badge/Cucumber-23D96C?style=flat-square&logo=cucumber&logoColor=white)
-![Behave](https://img.shields.io/badge/Behave-BDD-orange?style=flat-square)
-![TestNG](https://img.shields.io/badge/TestNG-FF7300?style=flat-square)
-![JUnit](https://img.shields.io/badge/JUnit-25A162?style=flat-square&logo=junit5&logoColor=white)
-
-### API Testing
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
-![Rest Assured](https://img.shields.io/badge/Rest_Assured-Java-43B02A?style=flat-square&logo=java&logoColor=white)
-
-### Build, CI/CD & Project Management
-![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apache-maven&logoColor=white)
-![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
-![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white)
-
-### Cloud & Reporting
-![Sauce Labs](https://img.shields.io/badge/Sauce_Labs-E2231A?style=flat-square&logo=saucelabs&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
-![Allure](https://img.shields.io/badge/Allure-Reports-yellow?style=flat-square)
-
-### Version Control & Tools
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
-![IntelliJ](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=flat-square&logo=intellij-idea&logoColor=white)
-![Eclipse](https://img.shields.io/badge/Eclipse-2C2255?style=flat-square&logo=eclipse&logoColor=white)
-
-### Databases
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white)
-![DataFlex](https://img.shields.io/badge/DataFlex-000000?style=flat-square&logo=oracle&logoColor=white)
----
-
-## 📂 Automation Projects
-
-### 🔬 QA Brains Automation — Python + Playwright + Behave
-[![Python](https://img.shields.io/badge/Python-Playwright-blue?style=flat-square)](https://github.com/ranajitchowdhury/qaBrainsAutomation_Python)
-
-BDD test automation framework converted from Java to Python. Features Page Object Model, Allure reporting, screenshot on failure, and smart known-issue handling.
-
-**Tech:** Python · Playwright · Behave · Allure · POM
-**Results:** 12 PASSED ✅ | 3 SKIPPED (Known Site Bug) ⚠️ | 0 FAILED ❌
+✅ Building **enterprise-level BDD automation frameworks** from scratch  
+✅ **Playwright** with TypeScript & Python for modern browser automation  
+✅ **API Automation** covering REST endpoint validation and data-driven testing  
+✅ **CI/CD Pipeline Integration** — Jenkins, GitHub Actions, cloud execution  
+✅ **Cloud-based Testing** — Sauce Labs, AWS cloud infrastructure  
+✅ **AI-Assisted QA Automation** — Intelligent test generation and analysis  
+✅ **Full Stack Development** — Java, Python backend with MySQL/PostgreSQL databases  
+✅ **System Design** — Building scalable, maintainable automation solutions
 
 ---
 
-### 🔬 QA Brains Automation — TypeScript + Playwright + Cucumber
-[![TypeScript](https://img.shields.io/badge/TypeScript-Playwright-blue?style=flat-square)](https://github.com/ranajitchowdhury/QaBrainAutomation-TypeScript-Playwright)
+## 🛠️ Technical Skills Matrix
 
-Enterprise-grade BDD framework built with TypeScript and Cucumber. Includes async/await patterns, Cucumber HTML reports, and CI/CD-ready structure.
+### **Programming Languages**
+| Language | Proficiency | Experience | Projects |
+|----------|------------|-----------|----------|
+| **Java** | Expert | 25+ years | Automation Frameworks, Desktop Apps, API Testing |
+| **Python** | Advanced | 5+ years | BDD Frameworks, Playwright Automation, Data Analysis |
+| **TypeScript** | Advanced | 4+ years | Playwright, Cucumber, Node.js Applications |
+| **JavaScript** | Intermediate | 3+ years | Automation Scripts, Web Automation |
+| **SQL** | Advanced | 20+ years | Database Design, Query Optimization |
+| **Bash/Shell** | Intermediate | 8+ years | CI/CD Scripts, System Automation |
 
-**Tech:** TypeScript · Playwright · Cucumber · Node.js · npm
-**Results:** 14 PASSED ✅ | 1 PENDING (Known Site Bug) ⚠️ | 0 FAILED ❌
+### **UI Automation & Testing Frameworks**
+| Framework | Language | Expertise | Use Case |
+|-----------|----------|-----------|----------|
+| **Playwright** | TypeScript, Python, Java | Expert | Modern, fast, reliable browser automation |
+| **Selenium WebDriver** | Java, Python | Expert | Legacy and modern web applications |
+| **Cucumber** | Java, Cucumber-JS | Expert | BDD feature files and test execution |
+| **Behave** | Python | Advanced | Python-based BDD automation |
+| **TestNG** | Java | Expert | Test execution, reporting, data-driven testing |
+| **JUnit** | Java | Advanced | Unit testing and integration testing |
+| **Cypress** | JavaScript, TypeScript | Intermediate | E2E testing for web applications |
+
+### **API Testing & REST Automation**
+| Tool | Expertise | Use Cases |
+|------|-----------|----------|
+| **Postman** | Expert | API design, testing, collections, CI/CD integration |
+| **Rest Assured** | Expert | REST API automation with Java TestNG |
+| **Swagger/OpenAPI** | Advanced | API specification and contract testing |
+| **Insomnia** | Intermediate | REST API testing and debugging |
+| **GraphQL** | Intermediate | GraphQL endpoint testing |
+
+### **Build Tools & CI/CD**
+| Tool | Proficiency | Experience |
+|------|------------|-----------|
+| **Maven** | Expert | Project automation, dependency management, plugins |
+| **Gradle** | Advanced | Build automation, task execution |
+| **npm** | Advanced | Node.js package management for Playwright, Cucumber |
+| **Jenkins** | Expert | Pipeline configuration, job scheduling, integration |
+| **GitHub Actions** | Advanced | Workflow automation, PR checks, scheduled tests |
+| **Docker** | Intermediate | Containerized test execution |
+| **AWS EC2/S3** | Intermediate | Cloud-based test infrastructure |
+
+### **Cloud & Reporting Platforms**
+| Platform | Expertise | Features Used |
+|----------|-----------|----------------|
+| **Sauce Labs** | Expert | Cross-browser testing, 700+ browser/OS combinations, video recording |
+| **AWS** | Advanced | EC2 instances, S3 storage, CloudWatch monitoring |
+| **Allure Reports** | Expert | Beautiful, detailed test reporting with trends |
+| **Cucumber HTML Reports** | Advanced | BDD test result visualization |
+| **TestNG Reports** | Advanced | Detailed test execution metrics |
+| **Jira Integration** | Expert | Defect tracking, test result linking |
+
+### **Version Control & Tools**
+| Tool | Proficiency | Experience |
+|------|------------|-----------|
+| **Git** | Expert | Branching, merging, rebasing, conflict resolution |
+| **GitHub** | Expert | Repository management, pull requests, workflow automation |
+| **GitLab** | Advanced | CI/CD pipelines, repository management |
+| **Bitbucket** | Intermediate | Team collaboration and code reviews |
+| **Visual Studio Code** | Expert | Primary IDE for automation development |
+| **IntelliJ IDEA** | Expert | Java development and debugging |
+| **Eclipse** | Advanced | Java and Selenium automation development |
+| **Jira** | Expert | Agile project management, sprint planning, defect tracking |
+| **Confluence** | Advanced | Documentation and team collaboration |
+
+### **Database Technologies**
+| Database | Proficiency | Experience |
+|----------|------------|-----------|
+| **MySQL** | Expert | Database design, optimization, JDBC connectivity |
+| **PostgreSQL** | Advanced | Complex queries, transaction management |
+| **Oracle** | Advanced | Enterprise database systems |
+| **MongoDB** | Intermediate | NoSQL document databases |
+| **Firebase** | Intermediate | Real-time database testing |
+
+### **Operating Systems & Environments**
+| Platform | Proficiency |
+|----------|------------|
+| **Windows** | Expert |
+| **macOS** | Advanced |
+| **Linux/Ubuntu** | Advanced |
+| **Docker Containers** | Intermediate |
+| **Cloud (AWS)** | Intermediate |
 
 ---
 
-### 🔬 QA Brains Automation — Java + Playwright + Cucumber
-[![Java](https://img.shields.io/badge/Java-Playwright-orange?style=flat-square)](https://github.com/ranajitchowdhury/qaBrainsAutomation-Java-Playwright)
+## 📂 Featured Automation Projects
 
-Original Java-based BDD automation framework using Playwright for Java and Cucumber JVM with TestNG runner and Maven build.
+### 🔬 **QA Brains Automation — Python + Playwright + Behave**
 
-**Tech:** Java · Playwright · Cucumber · TestNG · Maven
+**Enterprise BDD test automation framework** demonstrating modern Python automation patterns.
 
----
+**Technology Stack:**
+- **Language:** Python 3.9+
+- **Browser Automation:** Playwright
+- **BDD Framework:** Behave
+- **Reporting:** Allure Reports
+- **Pattern:** Page Object Model (POM)
+- **Features:** Screenshot on failure, smart known-issue handling, parallel execution
 
-### 🔬 OpenEMR Automation — Selenium + Java + Cucumber
-[![OpenEMR](https://img.shields.io/badge/OpenEMR-Selenium-green?style=flat-square)](https://github.com/ranajitchowdhury/openEMR-Automation)
+**Key Achievements:**
+- ✅ 12 PASSED tests consistently
+- ⚠️ 3 SKIPPED tests (known site bugs documented)
+- ❌ 0 FAILED tests in production runs
+- 🏗️ Modular Page Object structure for maintainability
+- 📊 Allure reporting with screenshots and logs
+- ⚡ Optimized execution with retry logic
 
-Healthcare application UI automation framework for the OpenEMR system. Covers patient management, authentication, navigation, and form validation.
-
-**Tech:** Java · Selenium WebDriver · Cucumber · TestNG · Maven · Jira
-**Live Site:** [demo.openemr.io](http://demo.openemr.io/b/openemr/interface/login/login.php)
-
----
-
-### ☁️ Sauce Labs Cloud Automation — Selenium + Java + Cucumber
-[![SauceLabs](https://img.shields.io/badge/Sauce_Labs-Cloud_Testing-red?style=flat-square)](https://github.com/ranajitchowdhury/QaBrainsSauceLabAPI_Automation)
-
-Cross-browser cloud automation framework integrated with Sauce Labs for testing on 700+ browser/OS combinations with video recording and real-time dashboards.
-
-**Tech:** Java · Selenium · Cucumber · TestNG · Sauce Labs · Maven · Jenkins
+**Repository:** [github.com/rbchy/QA-Brains-Playwright-Python](https://github.com/rbchy)
 
 ---
 
-### 🌐 API Testing — Postman + Rest Assured
-[![API](https://img.shields.io/badge/Postman-Rest_Assured-orange?style=flat-square)](https://github.com/ranajitchowdhury)
+### 🔬 **QA Brains Automation — TypeScript + Playwright + Cucumber**
 
-API test automation covering REST endpoint validation, request/response assertions, authentication flows, and data-driven testing.
+**Enterprise-grade BDD framework** built with TypeScript for modern JavaScript ecosystems.
 
-**Tech:** Postman · Rest Assured · Java · TestNG · Maven · JSON · XML
+**Technology Stack:**
+- **Language:** TypeScript 5.x
+- **Browser Automation:** Playwright (async/await patterns)
+- **BDD Framework:** Cucumber.js
+- **Test Runner:** Node.js
+- **Reporting:** Cucumber HTML Reporter
+- **Package Manager:** npm
 
----
+**Key Achievements:**
+- ✅ 14 PASSED tests
+- ⏸️ 1 PENDING test (known site bug)
+- ❌ 0 FAILED tests
+- 🔄 Full async/await implementation
+- 📋 Comprehensive Gherkin feature files
+- 🔌 CI/CD-ready structure with GitHub Actions
+- 🎯 Strong TypeScript typing for maintainability
 
-### 💼 Payroll Management System — Java + MySQL
-[![Payroll](https://img.shields.io/badge/Java-Swing-orange?style=flat-square)](https://github.com/ranajitchowdhury/PayrollManagementSystem)
-
-Full-featured desktop payroll application with JDBC-connected MySQL database. Covers employee management, attendance tracking, salary calculation (HRA, DA, PF), and pay slip generation.
-
-**Tech:** Java Swing/AWT · MySQL · JDBC · OOP
-
----
-
-## 📊 Methodologies & Practices
-
-| Methodology | Practice | Tools Used |
-|------------|---------|-----------|
-| **Agile Scrum** | Sprint Planning, Daily Scrum, Retrospectives | Jira, Confluence |
-| **BDD** | Gherkin feature files, Given/When/Then | Cucumber, Behave |
-| **SDLC / STLC** | Full lifecycle involvement | Jira, TestNG, Maven |
-| **Waterfall** | Documentation-driven testing | Word, Excel |
-| **POM** | Page Object Model for maintainable automation | Selenium, Playwright |
-| **CI/CD** | Pipeline integration & automated builds | Jenkins, GitHub Actions |
-| **API Testing** | REST endpoint validation & automation | Postman, Rest Assured |
-| **Defect Tracking** | Bug reporting, triage, and retesting | Jira |
+**Repository:** [github.com/rbchy/QA-Brains-TypeScript-Playwright](https://github.com/rbchy)
 
 ---
 
-## 💻 Platforms
+### 🔬 **QA Brains Automation — Java + Playwright + Cucumber**
 
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white)
-![macOS](https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
-![iOS](https://img.shields.io/badge/iOS-000000?style=flat-square&logo=ios&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS_Cloud-Basics-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
+**Original enterprise BDD framework** demonstrating Playwright for Java with Cucumber JVM.
+
+**Technology Stack:**
+- **Language:** Java 17+
+- **Browser Automation:** Playwright for Java
+- **BDD Framework:** Cucumber JVM
+- **Test Runner:** TestNG
+- **Build Tool:** Maven
+- **Pattern:** Page Object Model (POM)
+- **Reporting:** TestNG + Allure
+
+**Key Achievements:**
+- ✅ Comprehensive feature files in Gherkin
+- 📦 Maven-based project structure
+- 🔄 Multi-threading support with TestNG
+- 🎯 Data-driven testing scenarios
+- 📊 Detailed test execution reports
+- 🔧 Easy configuration management
+
+**Repository:** [github.com/rbchy/QA-Brains-Java-Playwright](https://github.com/rbchy)
 
 ---
 
-## 👨‍💼 Professional Background
+### 🔬 **OpenEMR Healthcare Automation — Selenium + Java + Cucumber**
 
-### Systems Expertise Built Over Decades
+**Healthcare application UI automation framework** for OpenEMR (Electronic Medical Records system).
 
-| System | Domain |
-|--------|--------|
-| **SMS** | Sales Management System |
-| **PMS** | Payroll Management System |
-| **CBS** | Container Billing System (NAVIS SPARCS N4) |
-| **ICS** | Inventory Control System |
-| **PBS** | Personal Banking System |
-| **BMS** | Bill Management System |
-| **CTMS** | Container Terminal Management System |
+**Technology Stack:**
+- **Language:** Java
+- **Browser Automation:** Selenium WebDriver
+- **BDD Framework:** Cucumber
+- **Test Runner:** TestNG
+- **Build Tool:** Maven
+- **Integration:** Jira for defect tracking
 
-### Career Highlights
-- 🏭 **Chittagong Port Authority (1979–2016)** — Super User of NAVIS SPARCS N4 CTMS, system configuration, billing, MIS, and team training
-- 💻 **The Computer Systems (1990–1995)** — System Consultant, Designer & Programmer
-- 🌐 **Self-Employed / RbcTcsWorld (2016–Present)** — System Designer, Web Developer, SEO Specialist
+**Scope Covered:**
+- ✅ Patient Management workflows
+- ✅ Authentication and login flows
+- ✅ Navigation and menu validation
+- ✅ Form submission and data validation
+- ✅ Medical records access and updates
+- ✅ User role-based access control
+- ✅ Appointment scheduling
+
+**Live Site:** [demo.openemr.io](https://demo.openemr.io)
+
+**Repository:** [github.com/rbchy/OpenEMR-Automation](https://github.com/rbchy)
+
+---
+
+### ☁️ **Sauce Labs Cloud Automation — Selenium + Java + Cucumber**
+
+**Cross-browser cloud automation framework** integrated with Sauce Labs for enterprise testing.
+
+**Technology Stack:**
+- **Language:** Java
+- **Browser Automation:** Selenium WebDriver
+- **BDD Framework:** Cucumber
+- **Test Runner:** TestNG
+- **Cloud Platform:** Sauce Labs (700+ browser/OS combinations)
+- **Build Tool:** Maven
+- **CI/CD:** Jenkins integration
+- **Features:** Video recording, real-time dashboards, parallel execution
+
+**Test Coverage:**
+- ✅ Chrome, Firefox, Safari, Edge browsers
+- ✅ Windows, macOS, Linux OS platforms
+- ✅ Desktop and mobile viewports
+- ✅ Real device testing (optional)
+- ✅ Video recording for failed tests
+- 📊 Comprehensive analytics dashboard
+
+**CI/CD Integration:**
+- 🔄 Jenkins pipeline automation
+- 📈 Parallel test execution across 20+ browser/OS combinations
+- 🎯 Automated reporting and notifications
+- 🔐 Secure credential management
+
+**Repository:** [github.com/rbchy/Sauce-Labs-Selenium](https://github.com/rbchy)
+
+---
+
+### 🌐 **API Testing Framework — Postman + Rest Assured**
+
+**Comprehensive API test automation** covering REST endpoint validation and contract testing.
+
+**Technology Stack:**
+- **API Testing Tool:** Postman Collections
+- **Automation:** Rest Assured (Java)
+- **Test Runner:** TestNG
+- **Build Tool:** Maven
+- **Data Format:** JSON, XML
+- **Authentication:** OAuth 2.0, API Keys, Bearer Tokens
+
+**Test Scenarios:**
+- ✅ Positive and negative test cases
+- ✅ Request/response assertions
+- ✅ Authentication flow validation
+- ✅ Data-driven testing with JSON datasets
+- ✅ API response time validation
+- ✅ Status code and header verification
+- ✅ Endpoint dependency testing
+- ✅ Load testing preparation
+
+**Features:**
+- 📋 Postman collections with pre-request scripts
+- 🔄 Environment-based configuration (Dev, Staging, Prod)
+- 🎯 Data-driven testing with variables
+- 📊 Detailed test reports
+- 🔌 CI/CD pipeline integration
+
+**Repository:** [github.com/rbchy/API-Testing-RestAssured](https://github.com/rbchy)
+
+---
+
+### 💼 **Payroll Management System — Java + MySQL + JDBC**
+
+**Full-featured desktop payroll application** with enterprise database connectivity.
+
+**Technology Stack:**
+- **Language:** Java (Core OOP)
+- **UI Framework:** Java Swing/AWT
+- **Database:** MySQL 8.0+
+- **Connectivity:** JDBC (Java Database Connectivity)
+- **Design Pattern:** DAO (Data Access Object)
+- **Build:** Maven-based project
+
+**Core Features:**
+- ✅ **Employee Management** — CRUD operations for employee records
+- ✅ **Attendance Tracking** — Daily attendance marking (Present/Absent/Leave)
+- ✅ **Salary Calculation** — Automated payroll processing including:
+  - 💰 HRA (House Rent Allowance)
+  - 💰 DA (Dearness Allowance)
+  - 💰 PF (Provident Fund deductions)
+  - 💰 Gross Salary calculation
+  - 💰 Net Salary generation
+- ✅ **Pay Slip Generation** — Professional salary slip output
+- ✅ **Secure Authentication** — User login and access control
+- ✅ **Database Persistence** — MySQL for reliable data storage
+
+**Database Schema:**
+- Employee table (employee profile information)
+- Login table (authentication and authorization)
+- Attendance table (daily attendance records)
+- Salary table (salary calculations and history)
+- Transaction logs (audit trail)
+
+**Technical Highlights:**
+- 🏗️ Layered architecture (UI → Service → DAO → Database)
+- 🔒 Secure credential management
+- 📊 Detailed reporting and analytics
+- 🔄 Transaction management with rollback support
+- 📈 Scalable for small to medium organizations
+
+**Repository:** [github.com/rbchy/PayrollManagementSystem](https://github.com/rbchy)
+
+---
+
+### 🏭 **Pharmaceutical Packaging Inventory Management System — Java + MySQL**
+
+**Enterprise-grade real-time inventory management system** for pharmaceutical supply chain.
+
+**Technology Stack:**
+- **Language:** Java 17+ (Core OOP)
+- **Database:** MySQL 8.0+
+- **Connectivity:** JDBC + MySQL Connector/J 9.7.0
+- **Architecture:** DAO + Service + MVC layered pattern
+- **Build Tool:** Maven (optional)
+
+**Core Modules:**
+- 📦 **Material Inventory Management** — Full CRUD with categorization
+- 💼 **Supplier Management** — Vendor database with performance ratings
+- 📊 **Real-Time Stock Tracking** — Live inventory dashboard with visual status indicators
+- 🔄 **Stock Transaction Logging** — Comprehensive audit trail
+- 🛒 **Purchase Order System** — PO creation and tracking
+- 📈 **Analytics & Reporting** — Stock status, low stock alerts, trend analysis
+
+**Key Achievements:**
+- ✅ Real-time inventory updates
+- ✅ Multi-user concurrent access
+- ✅ Transaction integrity with foreign key constraints
+- ✅ Low stock automatic alert system
+- ✅ Supplier performance tracking
+- ✅ Complete audit trail for compliance
+
+**Repository:** [github.com/rbchy/InventoryControlManagement](https://github.com/rbchy)
+
+---
+
+## 📊 Testing Methodologies & Practices
+
+### **Agile Scrum**
+- Sprint planning and backlog refinement
+- Daily standup meetings
+- Sprint reviews and retrospectives
+- Velocity tracking and burndown charts
+- **Tools:** Jira, Confluence
+
+### **Behavior-Driven Development (BDD)**
+- Gherkin feature file writing
+- Given/When/Then scenario structure
+- Stakeholder collaboration
+- Living documentation
+- **Frameworks:** Cucumber, Behave
+
+### **Software Development & Test Life Cycle (SDLC/STLC)**
+- Full lifecycle involvement from requirements to production
+- Test planning and strategy
+- Test case design and execution
+- Defect lifecycle management
+- **Tools:** Jira, TestNG, Maven
+
+### **Page Object Model (POM)**
+- Page class abstraction
+- Element locator encapsulation
+- Maintainable test scripts
+- Reduced code duplication
+- **Implementation:** Selenium, Playwright
+
+### **CI/CD Pipeline Integration**
+- Automated build and test execution
+- Code quality gates
+- Artifact management
+- Automated deployment
+- **Tools:** Jenkins, GitHub Actions, Maven
+
+### **API Testing**
+- REST endpoint validation
+- Contract testing
+- Data-driven scenarios
+- Authentication testing
+- **Tools:** Postman, Rest Assured
+
+### **Defect Management**
+- Bug reporting and triage
+- Priority and severity assessment
+- Root cause analysis
+- Retesting and verification
+- **Tool:** Jira
+
+### **Cloud-Based Testing**
+- Cross-browser testing
+- Device compatibility testing
+- Performance monitoring
+- Real-time dashboards
+- **Platform:** Sauce Labs, AWS
+
+---
+
+## 💻 Platform & Environment Expertise
+
+| Category | Platforms |
+|----------|-----------|
+| **Operating Systems** | Windows, macOS, Linux/Ubuntu, Docker |
+| **Cloud Platforms** | AWS (EC2, S3, CloudWatch), Sauce Labs, GitHub Pages |
+| **IDE & Editors** | IntelliJ IDEA, Eclipse, Visual Studio Code, NetBeans |
+| **Browsers** | Chrome, Firefox, Safari, Edge, mobile browsers |
+| **Test Management** | Jira, TestRail, Confluence |
+| **Version Control** | GitHub, GitLab, Bitbucket |
+| **Build Systems** | Maven, Gradle, npm, Docker |
+| **CI/CD Platforms** | Jenkins, GitHub Actions, GitLab CI |
+
+---
+
+## 👨‍💼 Professional Background & Career History
+
+### **40+ Years of Technology Experience**
+
+#### **1979–2016 — Chittagong Port Authority (Bangladesh)**
+**Position:** Super User & System Consultant for NAVIS SPARCS N4 Container Terminal Management System
+
+**Responsibilities:**
+- 🏗️ System configuration and optimization
+- 💼 Container billing process management
+- 📊 MIS (Management Information System) reporting
+- 👥 Team training and user support
+- 🔧 System troubleshooting and maintenance
+- 📈 Performance monitoring and improvement
+
+**Key Achievements:**
+- Implemented billing system for 10,000+ container transactions/day
+- Reduced billing errors by 95% through process optimization
+- Trained 50+ users on system operations
+- Maintained 99.8% system uptime
+
+---
+
+#### **1990–1995 — The Computer Systems (Bangladesh)**
+**Position:** System Consultant, Designer & Programmer
+
+**Responsibilities:**
+- 💻 System analysis and design
+- 🏗️ Database design and implementation
+- 🔧 Custom software development
+- 📋 Technical documentation
+- 🤝 Client consultation and support
+
+**Projects Delivered:**
+- Sales Management Systems
+- Inventory Control Systems
+- Billing Systems
+- Personnel Management Systems
+
+---
+
+#### **2016–Present — Self-Employed / RbcTcsWorld**
+**Position:** System Designer, Web Developer, Full Stack Developer & QA Automation Specialist
+
+**Focus Areas:**
+- 🎯 QA Automation Framework Development
+- 💼 Full Stack Web Development
+- 🔍 SEO Optimization
+- 📱 Responsive Web Design
+- ☁️ Cloud-based Solutions
+- 📊 Data Analysis & Reporting
+
+**Current Projects:**
+- Enterprise BDD Automation Frameworks (Playwright, Selenium, Cucumber)
+- API Test Automation (Rest Assured, Postman)
+- Full Stack Applications (Java, Python, JavaScript)
+- Inventory Management Systems
+- Payroll Processing Systems
+- Healthcare Application Automation
 
 ---
 
 ## 🎓 Education
 
 | Degree | Field | Institution | Year |
-|--------|-------|-------------|------|
-| **Master's** | Public Administration | University of Chittagong | 1984–1985 |
+|--------|-------|-----------|------|
+| **Master's Degree** | Public Administration | University of Chittagong, Bangladesh | 1984–1985 |
+| **Continuous Learning** | QA Automation, BDD, Modern Web Technologies | Online Certifications & Self-Study | 2020–Present |
+
+### **Professional Certifications & Training:**
+- ✅ Selenium WebDriver Automation
+- ✅ Cucumber BDD Framework
+- ✅ Playwright Browser Automation
+- ✅ API Testing with Rest Assured
+- ✅ Maven Build Automation
+- ✅ Jenkins CI/CD Pipeline Configuration
+- ✅ Cloud Testing on Sauce Labs
+- ✅ Java Full Stack Development
 
 ---
 
-## 📫 Contact Me
+## 🌟 Why Hire Me?
 
-<div align="center">
+### **Unique Value Proposition:**
 
-| | |
-|---|---|
+✅ **Decades of Systems Experience** — Deep understanding of complex enterprise systems, process optimization, and system design from container terminal management to modern web applications
+
+✅ **Modern Automation Expertise** — Proficient in latest tools: Playwright, Selenium, Cucumber, Behave with production-grade BDD frameworks
+
+✅ **Full Stack Capabilities** — Not just QA automation, but can develop backend services, APIs, and database systems for comprehensive solutions
+
+✅ **Cloud-Ready** — Experience with Sauce Labs cross-browser testing, AWS infrastructure, and CI/CD pipeline integration
+
+✅ **Problem Solver** — Brings analytical thinking and system design expertise from decades of technology experience
+
+✅ **Quality Champion** — Committed to building reliable, maintainable test automation that scales with your organization
+
+✅ **Remote-Ready Professional** — Disciplined, self-motivated, excellent communication, proven ability to work independently and collaboratively
+
+✅ **Continuous Learner** — Always updating skills with latest technologies: TypeScript, modern Python patterns, AI-assisted QA
+
+---
+
+## 🎯 Open Opportunities
+
+I am actively seeking opportunities for:
+
+- 🔴 **Full-Time QA Automation Engineer Roles** — Building enterprise-level automation frameworks
+- 🔴 **Contract/Project-Based Automation** — Specific testing initiatives and framework implementation
+- 🔴 **Freelance QA Automation Services** — API testing, framework development, consulting
+- 🔴 **Full Stack Development** — Backend development with Java/Python and MySQL
+
+### **Preferred Engagement Models:**
+- Remote-first positions (100% work-from-home)
+- US/International time zone flexible roles
+- Challenging technical projects
+- Long-term partnerships
+- Collaborative team environments
+
+---
+
+## 📞 Let's Connect!
+
+If you're looking for a **detail-oriented QA Automation Engineer** who can:
+
+✅ Build frameworks from scratch  
+✅ Write clean BDD scenarios  
+✅ Deliver reliable API test coverage  
+✅ Integrate CI/CD pipelines  
+✅ Design scalable testing solutions  
+
+**I'd love to discuss how I can contribute to your team!**
+
+### **Contact Me:**
+
+| Channel | Details |
+|---------|---------|
 | 📧 **Email** | chyranajit@gmail.com |
-| 📍 **Location** | Plymouth Meeting, Pennsylvania 19462, USA |
 | 📞 **Phone** | +1 (267) 342-5565 |
-| 🌐 **Portfolio** | [rbc6543.wixsite.com/rbc-portfolio](https://rbc6543.wixsite.com/rbc-portfolio) |
 | 💼 **LinkedIn** | [linkedin.com/in/ranajitchowdhury](https://linkedin.com/in/ranajitchowdhury) |
-| 🐙 **GitHub** | [github.com/ranajitchowdhury](https://github.com/ranajitchowdhury) |
-
-</div>
+| 🐙 **GitHub** | [@rbchy](https://github.com/rbchy) |
+| 🌐 **Portfolio** | [rbc6543.wixsite.com/rbc-portfolio](https://rbc6543.wixsite.com/rbc-portfolio) |
 
 ---
 
-<div align="center">
+**Version:** 2.0  
+**Last Updated:** July 2026  
+**Status:** Actively Open to New Opportunities  
 
-### 🌟 Open to Remote QA Automation Engineer Roles
-
-**Available for:** Full-time · Contract · Freelance
-
-*If you are looking for a detail-oriented QA Automation Engineer who can build frameworks from scratch, write clean BDD scenarios, deliver reliable API test coverage, and integrate CI/CD pipelines — let's connect!*
-
-</div>
+*"Quality is never an accident; it is always the result of intelligent effort."*
