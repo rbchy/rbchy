@@ -122,8 +122,9 @@ I am a **QA Automation Engineer** with deep expertise in building enterprise-lev
 | Database | Proficiency | Experience |
 |----------|------------|-----------|
 | **MySQL** | Expert | Database design, optimization, JDBC connectivity |
-| **PostgreSQL** | Advanced | Complex queries, transaction management |
+| **DataFlex** | Advanced | Enterprise database systems |
 | **Oracle** | Advanced | Enterprise database systems |
+| **PostgreSQL** | Advanced | Complex queries, transaction management |
 | **MongoDB** | Intermediate | NoSQL document databases |
 | **Firebase** | Intermediate | Real-time database testing |
 
@@ -460,7 +461,7 @@ I am a **QA Automation Engineer** with deep expertise in building enterprise-lev
 ### **40+ Years of Technology Experience**
 
 #### **1979–2016 — Chittagong Port Authority (Bangladesh)**
-**Position:** Super User & System Consultant for NAVIS SPARCS N4 Container Terminal Management System
+**Position:** Traffic Inspector, Super User & System Consultant for NAVIS SPARCS N4 Container Terminal Management System
 
 **Responsibilities:**
 - 🏗️ System configuration and optimization
@@ -488,12 +489,13 @@ I am a **QA Automation Engineer** with deep expertise in building enterprise-lev
 - 📋 Technical documentation
 - 🤝 Client consultation and support
 
-**Projects Delivered:**
+**Projects Delivered (Customized Desktop Based):**
 - Sales Management Systems
 - Inventory Control Systems
 - Billing Systems
 - Personnel Management Systems
-
+- Personnel Banking Systems
+- Payroll Management Systems
 ---
 
 #### **2016–Present — Self-Employed / RbcTcsWorld**
