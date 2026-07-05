@@ -33,7 +33,7 @@ I am a **QA Automation Engineer** with deep expertise in building enterprise-lev
 - 🌐 **API Automation** — REST endpoint testing with Postman and Rest Assured
 - ⚙️ **CI/CD Integration** — Jenkins, GitHub Actions, and cloud-based test execution
 - 📊 **Enterprise Systems** — 40+ years of experience with container management, billing, and inventory systems
-- 💾 **Full Stack Development** — Java, Python, TypeScript, MySQL, and modern web technologies
+- 💾 **Full Stack Development** — Java, Python, TypeScript, MySQL,DataFlex Rdbms, Oracle and modern web technologies
 
 **Philosophy:** *"Quality is never an accident; it is always the result of intelligent effort."*
 
@@ -57,11 +57,11 @@ I am a **QA Automation Engineer** with deep expertise in building enterprise-lev
 ### **Programming Languages**
 | Language | Proficiency | Experience | Projects |
 |----------|------------|-----------|----------|
-| **Java** | Expert | 25+ years | Automation Frameworks, Desktop Apps, API Testing |
+| **Java** | Expert | 10+ years | Automation Frameworks, Desktop Apps, API Testing |
 | **Python** | Advanced | 5+ years | BDD Frameworks, Playwright Automation, Data Analysis |
 | **TypeScript** | Advanced | 4+ years | Playwright, Cucumber, Node.js Applications |
 | **JavaScript** | Intermediate | 3+ years | Automation Scripts, Web Automation |
-| **SQL** | Advanced | 20+ years | Database Design, Query Optimization |
+| **SQL** | Advanced | 5+ years | Database Design, Query Optimization |
 | **Bash/Shell** | Intermediate | 8+ years | CI/CD Scripts, System Automation |
 
 ### **UI Automation & Testing Frameworks**
