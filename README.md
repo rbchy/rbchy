@@ -11,6 +11,11 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-Website-blueviolet?style=for-the-badge&logo=wix&logoColor=white)](https://rbc6543.wixsite.com/rbc-portfolio)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chyranajit@gmail.com)
 [![Download](https://img.shields.io/badge/Download-macOS%20(.dmg)-2dd4bf?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/rbchy/rbchy/releases/download/v1.0.0/RBC.Portfolio-1.0.0-arm64.dmg)
+## 💾 Download
+
+[![Download for macOS](https://img.shields.io/badge/Download-macOS%20(.dmg)-2dd4bf?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/rbchy/rbchy/releases/download/v1.0.0/RBC.Portfolio-1.0.0-arm64.dmg)
+
+Desktop app version of my portfolio, packaged with Electron — runs fully offline, no browser required.
 
 ![Profile Views](https://komarev.com/ghpvc/?username=rbchy&color=blueviolet&style=for-the-badge&label=PROFILE+VIEWS)
 
@@ -46,15 +51,6 @@ I am a **QA Automation Engineer** with deep expertise in building enterprise-lev
 - 💾 **Full Stack Development** — Java, Python, TypeScript, MySQL, DataFlex RDBMS, Oracle and modern web technologies
 
 **Philosophy:** *"Quality is never an accident; it is always the result of intelligent effort."*
-
----
-
-## 💾 Download
-
-[![Download for macOS](https://img.shields.io/badge/Download-macOS%20(.dmg)-2dd4bf?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/rbchy/rbchy/releases/download/v1.0.0/RBC.Portfolio-1.0.0-arm64.dmg)
-
-Desktop app version of my portfolio, packaged with Electron — runs fully offline, no browser required.
-
 ---
 
 ## 🚀 Current Focus Areas
