@@ -16,7 +16,8 @@
     color:#eef2f9;
     text-align:center;
   }
-  .box{max-width:420px;padding:32px;}
+  .box{max-width:460px;padding:32px;text-align:left;}
+  .center{text-align:center;}
   .spinner{
     width:42px;height:42px;border-radius:50%;
     border:4px solid #1f2a45;border-top-color:#2dd4bf;
@@ -24,17 +25,48 @@
     animation:spin 0.8s linear infinite;
   }
   @keyframes spin{to{transform:rotate(360deg);}}
+  .spinner.done{
+    animation:none;
+    border-color:#2dd4bf;
+    position:relative;
+  }
+  .spinner.done::after{
+    content:'✓';
+    position:absolute;inset:0;
+    display:flex;align-items:center;justify-content:center;
+    color:#2dd4bf;font-size:1.3rem;font-weight:700;
+  }
   h2{margin:0 0 10px;font-size:1.2rem;}
   p{color:#8b98b3;font-size:.92rem;line-height:1.6;}
   a{color:#2dd4bf;text-decoration:none;font-weight:600;}
+  .steps{
+    margin-top:28px;background:#121a2e;border:1px solid #1f2a45;
+    border-radius:12px;padding:20px 22px;
+  }
+  .steps h3{margin:0 0 14px;font-size:.95rem;color:#eef2f9;}
+  .steps ol{margin:0;padding-left:20px;}
+  .steps li{margin-bottom:10px;font-size:.87rem;color:#8b98b3;line-height:1.55;}
+  .steps li b{color:#eef2f9;}
 </style>
 </head>
 <body>
   <div class="box">
-    <div class="spinner"></div>
-    <h2>Your download is starting…</h2>
-    <p>RBC Portfolio for macOS (.dmg) should begin downloading automatically.</p>
-    <p>যদি স্বয়ংক্রিয়ভাবে শুরু না হয়, <a id="manual-link" href="#">এখানে ক্লিক করুন</a>।</p>
+    <div class="center">
+      <div class="spinner" id="spinner"></div>
+      <h2 id="status-heading">Your download is starting…</h2>
+      <p id="status-text">RBC Portfolio for macOS (.dmg) should begin downloading automatically.</p>
+      <p>যদি স্বয়ংক্রিয়ভাবে শুরু না হয়, <a id="manual-link" href="#">এখানে ক্লিক করুন</a>।</p>
+    </div>
+
+    <div class="steps">
+      <h3>ডাউনলোডের পর কী করবেন</h3>
+      <ol>
+        <li><b>ধাপ ১:</b> ব্রাউজারের ডাউনলোড আইকনে (উপরে বা নিচে) ক্লিক করে ফাইলটা দেখুন, অথবা <b>Finder → Downloads</b> ফোল্ডারে যান।</li>
+        <li><b>ধাপ ২:</b> <b>RBC Portfolio.dmg</b> ফাইলে ডাবল-ক্লিক করে খুলুন।</li>
+        <li><b>ধাপ ৩:</b> খোলা উইন্ডো থেকে অ্যাপ আইকনটা <b>Applications</b> ফোল্ডারে টেনে (drag) নিন।</li>
+        <li><b>ধাপ ৪:</b> প্রথমবার চালানোর সময় "unidentified developer" মেসেজ এলে, আইকনে <b>right-click করে "Open"</b> চাপুন।</li>
+      </ol>
+    </div>
   </div>
 
 <script>
@@ -45,6 +77,14 @@
 
   window.onload = function () {
     window.location.href = fileUrl;
+
+    // ব্রাউজার নিজে থেকে "download শেষ হয়েছে" জানায় না (নিরাপত্তার কারণে),
+    // তাই ৩ সেকেন্ড পর ধরে নিয়ে স্পিনার বন্ধ করে "done" অবস্থা দেখানো হচ্ছে
+    setTimeout(function () {
+      document.getElementById('spinner').classList.add('done');
+      document.getElementById('status-heading').textContent = 'Download started';
+      document.getElementById('status-text').textContent = 'নিচের ধাপগুলো অনুসরণ করে ফাইলটি খুলুন।';
+    }, 3000);
   };
 </script>
 </body>
