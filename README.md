@@ -51,7 +51,7 @@ I am a **QA Automation Engineer** with deep expertise in building enterprise-lev
 
 ## 💾 Download
 
-[![Download for macOS](https://img.shields.io/badge/Download-macOS%20(.dmg)-2dd4bf?style=for-the-badge&logo=apple&logoColor=white)](https://rbchy.github.io/rbchy/download.html)
+[![Portfolio Download for macOS](https://img.shields.io/badge/Download-macOS%20(.dmg)-2dd4bf?style=for-the-badge&logo=apple&logoColor=white)](https://rbchy.github.io/rbchy/index.html)
 
 Desktop app version of my portfolio, packaged with Electron — runs fully offline, no browser required. Click the button above to see the release page with the `.dmg` file, version notes, and file size before downloading.
 
