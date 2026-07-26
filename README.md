@@ -6,11 +6,11 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=2E9EF7&center=true&vCenter=true&width=650&lines=Remote-Ready+QA+Automation+Engineer;Playwright+%C2%B7+Selenium+%C2%B7+Cucumber+%C2%B7+BDD;Java+%C2%B7+Python+%C2%B7+TypeScript+%C2%B7+Full+Stack;Quality+is+never+an+accident.)](https://git.io/typing-svg)
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Website-blueviolet?style=for-the-badge&logo=wix&logoColor=white)]([](https://img.shields.io/badge/Download-macOS%20(.dmg)-2dd4bf?style=for-the-badge&logo=apple)](https://github.com/rbchy/rbchy/releases/download/v1.0.0/RBC.Portfolio-1.0.0-arm64.dmg))
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rbchy/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rbchy)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Website-blueviolet?style=for-the-badge&logo=wix&logoColor=white)](https://rbc6543.wixsite.com/rbc-portfolio)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chyranajit@gmail.com)
+[![Download](https://img.shields.io/badge/Download-macOS%20(.dmg)-2dd4bf?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/rbchy/rbchy/releases/download/v1.0.0/RBC.Portfolio-1.0.0-arm64.dmg)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=rbchy&color=blueviolet&style=for-the-badge&label=PROFILE+VIEWS)
 
@@ -46,6 +46,14 @@ I am a **QA Automation Engineer** with deep expertise in building enterprise-lev
 - 💾 **Full Stack Development** — Java, Python, TypeScript, MySQL, DataFlex RDBMS, Oracle and modern web technologies
 
 **Philosophy:** *"Quality is never an accident; it is always the result of intelligent effort."*
+
+---
+
+## 💾 Download
+
+[![Download for macOS](https://img.shields.io/badge/Download-macOS%20(.dmg)-2dd4bf?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/rbchy/rbchy/releases/download/v1.0.0/RBC.Portfolio-1.0.0-arm64.dmg)
+
+Desktop app version of my portfolio, packaged with Electron — runs fully offline, no browser required.
 
 ---
 
@@ -164,9 +172,7 @@ I am a **QA Automation Engineer** with deep expertise in building enterprise-lev
 Enterprise BDD test automation framework demonstrating modern Python automation patterns.
 
 **Stack:** Python 3.9+ · Playwright · Behave · Allure Reports · Page Object Model
-
 **Highlights:** 12 PASSED tests consistently · 3 SKIPPED (documented known site bugs) · 0 FAILED in production runs · modular POM structure · screenshot on failure · retry logic
-
 **Repository:** [github.com/rbchy](https://github.com/rbchy)
 
 ---
@@ -176,9 +182,7 @@ Enterprise BDD test automation framework demonstrating modern Python automation 
 Enterprise-grade BDD framework built with TypeScript for modern JavaScript ecosystems.
 
 **Stack:** TypeScript 5.x · Playwright (async/await) · Cucumber.js · Node.js · Cucumber HTML Reporter
-
 **Highlights:** 14 PASSED · 1 PENDING (known site bug) · 0 FAILED · full async/await implementation · CI/CD-ready with GitHub Actions
-
 **Repository:** [github.com/rbchy](https://github.com/rbchy)
 
 ---
@@ -188,9 +192,7 @@ Enterprise-grade BDD framework built with TypeScript for modern JavaScript ecosy
 Original enterprise BDD framework demonstrating Playwright for Java with Cucumber JVM.
 
 **Stack:** Java 17+ · Playwright for Java · Cucumber JVM · TestNG · Maven · POM
-
 **Highlights:** comprehensive Gherkin feature files · multi-threading via TestNG · data-driven scenarios · detailed TestNG + Allure reports
-
 **Repository:** [github.com/rbchy](https://github.com/rbchy)
 
 ---
@@ -200,9 +202,7 @@ Original enterprise BDD framework demonstrating Playwright for Java with Cucumbe
 Healthcare application UI automation framework for OpenEMR (Electronic Medical Records system).
 
 **Stack:** Java · Selenium WebDriver · Cucumber · TestNG · Maven · Jira
-
 **Scope covered:** patient management, authentication, navigation, form validation, medical records access, role-based access control, appointment scheduling
-
 **Live site:** [demo.openemr.io](https://demo.openemr.io) · **Repository:** [github.com/rbchy](https://github.com/rbchy)
 
 ---
@@ -212,9 +212,7 @@ Healthcare application UI automation framework for OpenEMR (Electronic Medical R
 Cross-browser cloud automation framework integrated with Sauce Labs for enterprise testing.
 
 **Stack:** Java · Selenium WebDriver · Cucumber · TestNG · Sauce Labs (700+ browser/OS combinations) · Maven · Jenkins
-
 **Coverage:** Chrome, Firefox, Safari, Edge across Windows/macOS/Linux; desktop & mobile viewports; video recording on failure; Jenkins pipeline with 20+ parallel browser/OS combinations
-
 **Repository:** [github.com/rbchy](https://github.com/rbchy)
 
 ---
@@ -224,9 +222,7 @@ Cross-browser cloud automation framework integrated with Sauce Labs for enterpri
 Comprehensive API test automation covering REST endpoint validation and contract testing.
 
 **Stack:** Postman Collections · Rest Assured (Java) · TestNG · Maven · JSON/XML · OAuth 2.0
-
 **Coverage:** positive/negative cases, auth flow validation, data-driven datasets, response time and header verification, environment-based config (Dev/Staging/Prod)
-
 **Repository:** [github.com/rbchy](https://github.com/rbchy)
 
 ---
@@ -236,9 +232,7 @@ Comprehensive API test automation covering REST endpoint validation and contract
 Full-featured desktop payroll application with enterprise database connectivity.
 
 **Stack:** Java (Swing/AWT) · MySQL 8.0+ · JDBC · DAO pattern · Maven
-
 **Features:** employee CRUD, attendance tracking, automated salary calculation (HRA/DA/PF/Gross/Net), pay slip generation, secure authentication, layered UI → Service → DAO → Database architecture
-
 **Repository:** [github.com/rbchy](https://github.com/rbchy)
 
 ---
@@ -248,9 +242,7 @@ Full-featured desktop payroll application with enterprise database connectivity.
 Enterprise-grade real-time inventory management system for pharmaceutical supply chain.
 
 **Stack:** Java 17+ · MySQL 8.0+ · JDBC + MySQL Connector/J 9.7.0 · DAO + Service + MVC
-
 **Modules:** material inventory CRUD, supplier management with performance ratings, real-time stock dashboard, transaction logging/audit trail, purchase order system, low-stock alerts
-
 **Repository:** [github.com/rbchy](https://github.com/rbchy)
 
 ---
@@ -349,6 +341,7 @@ Actively seeking full-time QA automation engineer roles, contract/project-based 
 | 💼 LinkedIn | [linkedin.com/in/rbchy](https://www.linkedin.com/in/rbchy/) |
 | 🐙 GitHub | [@rbchy](https://github.com/rbchy) |
 | 🌐 Portfolio | [rbc6543.wixsite.com/rbc-portfolio](https://rbc6543.wixsite.com/rbc-portfolio) |
+| 💾 Desktop App | [Download for macOS (.dmg)](https://github.com/rbchy/rbchy/releases/download/v1.0.0/RBC.Portfolio-1.0.0-arm64.dmg) |
 
 <div align="center">
 
