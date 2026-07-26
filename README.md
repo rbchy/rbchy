@@ -10,7 +10,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rbchy)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Website-blueviolet?style=for-the-badge&logo=wix&logoColor=white)](https://rbc6543.wixsite.com/rbc-portfolio)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chyranajit@gmail.com)
-[![Download](https://img.shields.io/badge/ProfileDownload-macOS%20(.dmg)-2dd4bf?style=for-the-badge&logo=apple&logoColor=white)](https://rbchy.github.io/rbchy/download.html)
+[![Download](https://img.shields.io/badge/Profile Download-macOS%20(.dmg)-2dd4bf?style=for-the-badge&logo=apple&logoColor=white)](https://rbchy.github.io/rbchy/download.html)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=rbchy&color=blueviolet&style=for-the-badge&label=PROFILE+VIEWS)
 
@@ -51,7 +51,7 @@ I am a **QA Automation Engineer** with deep expertise in building enterprise-lev
 
 ## 💾 Download
 
-[![Download for macOS](https://img.shields.io/badge/ProfileDownload-macOS%20(.dmg)-2dd4bf?style=for-the-badge&logo=apple&logoColor=white)](https://rbchy.github.io/rbchy/download.html)
+[![Download for macOS](https://img.shields.io/badge/Profile Download-macOS%20(.dmg)-2dd4bf?style=for-the-badge&logo=apple&logoColor=white)](https://rbchy.github.io/rbchy/download.html)
 
 Desktop app version of my portfolio, packaged with Electron — runs fully offline, no browser required. Click the button above to see the release page with the `.dmg` file, version notes, and file size before downloading.
 
