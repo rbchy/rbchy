@@ -2,7 +2,7 @@
 
 <img src="banner.svg" alt="Ranajit Baran Chowdhury banner" width="100%">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=8&pause=1500&color=2E9EF7&vCenter=true&width=950&repeat=true&lines=Build+Test+Automation+with%3A+Java%2C+Spring+Boot+%7C+Appium+%7C+Python+%7C+TypeScript+%7C+Cypress+%7C+Selenium+%7C+Playwright+%7C+Cucumber+%7C+TestNG+%7C+Rest+Assured+-+for+Financial+and+Enterprise-Level+Systems)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=8&pause=1500&color=FFC107&vCenter=true&width=950&repeat=true&lines=Build+Test+Automation+with%3A+Java%2C+Spring+Boot+%7C+Appium+%7C+Python+%7C+TypeScript+%7C+Cypress+%7C+Selenium+%7C+Playwright+%7C+Cucumber+%7C+TestNG+%7C+Rest+Assured+-+for+Financial+and+Enterprise-Level+Systems)](https://git.io/typing-svg)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rbchy/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rbchy)
@@ -245,6 +245,54 @@ Enterprise-grade real-time inventory management system for pharmaceutical supply
 
 ---
 
+## 📦 All Repositories (32)
+
+Full list of my public repositories on GitHub, sorted alphabetically. The frameworks highlighted above under [Featured Automation Projects](#-featured-automation-projects) are the ones with the deepest write-ups — everything else I've built is listed here.
+
+<details>
+<summary><strong>Click to expand the full list of 32 repositories</strong></summary>
+
+| # | Repository | Description | Language |
+|---|-----------|-------------|----------|
+| 1 | [Amazon-Cypress-JavaScript-Automation](https://github.com/rbchy/Amazon-Cypress-JavaScript-Automation) | Production-grade E2E test automation framework for Amazon.com using BDD principles, built with Cypress 14 + Cucumber | — |
+| 2 | [AmazonSeleniumTest](https://github.com/rbchy/AmazonSeleniumTest) | Selenium test for Amazon | Java |
+| 3 | [AndroidUIAppiumTest_MyDemoEcommerce](https://github.com/rbchy/AndroidUIAppiumTest_MyDemoEcommerce) | Android UI automation framework built with Appium 3, UiAutomator2, TestNG, and Java 17 | HTML |
+| 4 | [AppiumAutomation_ApiDemos](https://github.com/rbchy/AppiumAutomation_ApiDemos) | ApiDemos automation built with Appium 3.5.2, TestNG, Maven, and ExtentReports (Page Object Model) | HTML |
+| 5 | [AppiumMobileAutomation](https://github.com/rbchy/AppiumMobileAutomation) | End-to-end Android automation with Appium, TestNG & Allure Reports — 100% pass rate on Sauce Labs My Demo App | Java |
+| 6 | [AppiumTest_Andriod_Automation](https://github.com/rbchy/AppiumTest_Andriod_Automation) | Java-based mobile test automation framework built with Appium, TestNG, Cucumber (BDD), and Page Object Model | HTML |
+| 7 | [BhojanAloy-Food-Coffee-Shop-POS-System](https://github.com/rbchy/BhojanAloy-Food-Coffee-Shop-POS-System) | Java Swing + MySQL point-of-sale system for a food & coffee shop — end-to-end order taking, itemized bill preview | JavaScript |
+| 8 | [Guru99TelTest](https://github.com/rbchy/Guru99TelTest) | Selenium/Java test project against the Guru99 demo site | Java |
+| 9 | [InventoryControlManagement_JavaMySql](https://github.com/rbchy/InventoryControlManagement_JavaMySql) | Real-time inventory management system built with Java 17, MySQL 8.0, and JDBC | — |
+| 10 | [Multicart_Demo_Automation](https://github.com/rbchy/Multicart_Demo_Automation) | E-commerce multi-cart functionality automation — Java, Selenium WebDriver, and Cucumber | HTML |
+| 11 | [NorthFace_AutomationExercise-BDD-Test-Automation](https://github.com/rbchy/NorthFace_AutomationExercise-BDD-Test-Automation) | Multi-layer automation framework covering UI, E2E, API, Unit, Accessibility, Performance, and Security testing in one project | Java |
+| 12 | [OpenEMR_Automation](https://github.com/rbchy/OpenEMR_Automation) | Health record and medical practice management solution automation | HTML |
+| 13 | [OrangeHRM_Automation](https://github.com/rbchy/OrangeHRM_Automation) | Automation for OrangeHRM, an all-in-one HR software platform | HTML |
+| 14 | [OrangeHRM_TestAutomation_TestNG_Junit5](https://github.com/rbchy/OrangeHRM_TestAutomation_TestNG_Junit5) | AI-enhanced QA framework for an HRM/Payroll system, built around the public OrangeHRM demo plus a locally-stubbed payroll/tax/insurance backend | Java |
+| 15 | [ParaBank-BankingAutomationJavaSelenium](https://github.com/rbchy/ParaBank-BankingAutomationJavaSelenium) | Banking automation using Java, JavaScript, MySQL, Spring Boot & Selenium | HTML |
+| 16 | [PayrollManagementSystem](https://github.com/rbchy/PayrollManagementSystem) | Payroll management system using Java & MySQL | Java |
+| 17 | [PayrollManagementSystems_Automation_Java_MySql_Selenium](https://github.com/rbchy/PayrollManagementSystems_Automation_Java_MySql_Selenium) | Desktop payroll application built with Java Swing and MySQL, packaged and tested with Maven | Java |
+| 18 | [PPES-Pharmaceutical-Packaging-Management](https://github.com/rbchy/PPES-Pharmaceutical-Packaging-Management) | Pharmaceutical packaging management system using MySQL, Java | Java |
+| 19 | [QaBrainsAPIAutomationRestAssured](https://github.com/rbchy/QaBrainsAPIAutomationRestAssured) | QaBrains API automation using Rest Assured | HTML |
+| 20 | [QaBrainsAPIAutomation_Postman](https://github.com/rbchy/QaBrainsAPIAutomation_Postman) | QaBrains API automation using Postman & Newman | — |
+| 21 | [QaBrainsAutomationCypressJavaScript](https://github.com/rbchy/QaBrainsAutomationCypressJavaScript) | Production-grade E2E test automation framework for the QaBrains e-commerce application | HTML |
+| 22 | [QaBrainsAutomationJavaPlaywright](https://github.com/rbchy/QaBrainsAutomationJavaPlaywright) | QaBrains automation using Java & Playwright browser automation | HTML |
+| 23 | [QaBrainsAutomationJavaSelenium](https://github.com/rbchy/QaBrainsAutomationJavaSelenium) | Selenium WebDriver + Java + Cucumber BDD + TestNG + Maven | HTML |
+| 24 | [QaBrainsAutomationPythonPlawright](https://github.com/rbchy/QaBrainsAutomationPythonPlawright) | QaBrains automation using Python and Playwright with the Behave BDD framework | Python |
+| 25 | [QaBrainsAutomationTypeScriptPlaywright](https://github.com/rbchy/QaBrainsAutomationTypeScriptPlaywright) | QaBrains automation using TypeScript and Playwright browser automation | HTML |
+| 26 | [QaBrainsSauceLabAPI_Automation](https://github.com/rbchy/QaBrainsSauceLabAPI_Automation) | AI-driven quality automation testing platform using Java, Selenium & BDD Cucumber | HTML |
+| 27 | [ranajitchowdhury](https://github.com/rbchy/ranajitchowdhury) | Portfolio repo — 20+ projects across Mobile, E-Commerce, Banking, Healthcare, HR Systems, and API Testing | — |
+| 28 | [rbchy](https://github.com/rbchy/rbchy) | This profile README repository | HTML |
+| 29 | [RbcTcsWorld-EPMS](https://github.com/rbchy/RbcTcsWorld-EPMS) | Full-stack payroll management system with Spring Boot REST API and a comprehensive test suite | PowerShell |
+| 30 | [RbcTcsWorld_ClinTrial-Connect](https://github.com/rbchy/RbcTcsWorld_ClinTrial-Connect) | Spring Boot clinical-trial patient-matching application with 115+ automated tests | Java |
+| 31 | [Sauce-Demo.MyShopify.AutomationTest](https://github.com/rbchy/Sauce-Demo.MyShopify.AutomationTest) | E-commerce site automation test using Java and Selenium | HTML |
+| 32 | [WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG](https://github.com/rbchy/WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG) | Mobile test automation framework for the Android WDIO Native Demo App — Appium 9.2.2 (java-client), TestNG, Maven, Allure Report, ExtentReports | Java |
+
+</details>
+
+*(Language column shows GitHub's detected primary language for each repo; "—" means GitHub hasn't detected one, usually for very small or config-only repos.)*
+
+---
+
 ## 📊 Testing Methodologies & Practices
 
 | Practice | Details | Tools |
@@ -324,7 +372,7 @@ Actively seeking full-time QA automation engineer roles, contract/project-based 
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=rbchy&show_icons=true&hide_border=true&bg_color=0d1117&title_color=5eead4&icon_color=0d9488&text_color=c9d1d9)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rbchy&layout=compact&hide_border=true&bg_color=0d1117&title_color=5eead4&text_color=c9d1d9)
-![GitHub Streak](https://streak-stats.demolab.com/?user=rbchy&hide_border=true&background=0D1117&border=30363D&stroke=30363D&ring=0D9488&fire=5EEAD4&currStreakNum=FFFFFF&sideNums=5EEAD4&sideLabels=C9D1D9&currStreakLabel=5EEAD4&dates=8B949E)
+![GitHub Streak](https://streak-stats.demolab.com/?user=rbchy&hide_border=true&background=0D1117&ring=0D9488&fire=5EEAD4&currStreakLabel=5EEAD4)
 
 </div>
 
@@ -343,7 +391,7 @@ Actively seeking full-time QA automation engineer roles, contract/project-based 
 
 <div align="center">
 
-**Version:** 2.2 · **Last Updated:** September 2026 · **Status:** Actively Open to New Opportunities
+**Version:** 2.3 · **Last Updated:** September 2026 · **Status:** Actively Open to New Opportunities
 
 *"Quality is never an accident; it is always the result of intelligent effort."*
 
