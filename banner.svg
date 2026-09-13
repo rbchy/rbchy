@@ -1,0 +1,51 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ranajit Baran Chowdhury — GitHub profile banner">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="55%" stop-color="#155e75"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- decorative circles -->
+  <circle cx="1130" cy="230" r="120" fill="#ffffff" opacity="0.05"/>
+  <circle cx="40" cy="20" r="70" fill="#ffffff" opacity="0.05"/>
+
+  <!-- RbcTcsWorld brand badge, top-right -->
+  <g transform="translate(918,26)">
+    <rect x="0" y="0" width="242" height="38" rx="19" fill="#ffffff" opacity="0.16"/>
+    <g transform="translate(20,19)" fill="none" stroke="#ffffff" stroke-width="1.4">
+      <circle r="9"/>
+      <ellipse rx="4" ry="9"/>
+      <line x1="-9" y1="0" x2="9" y2="0"/>
+    </g>
+    <text x="130" y="25" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">RbcTcsWorld · GitHub</text>
+  </g>
+
+  <!-- Name -->
+  <text x="60" y="140" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="50" font-weight="700" fill="#ffffff">Ranajit Baran Chowdhury</text>
+
+  <!-- Subtitle -->
+  <text x="63" y="176" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#ccfbf1">QA Automation Engineer &amp; Full Stack Developer</text>
+  <text x="63" y="203" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#ccfbf1">Test Automation Specialist</text>
+
+  <!-- Skill chips -->
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600">
+    <rect x="63" y="230" width="108" height="32" rx="16" fill="#ffffff" opacity="0.14"/>
+    <text x="80" y="251" fill="#ffffff">Selenium</text>
+
+    <rect x="181" y="230" width="115" height="32" rx="16" fill="#ffffff" opacity="0.14"/>
+    <text x="198" y="251" fill="#ffffff">Playwright</text>
+
+    <rect x="306" y="230" width="98" height="32" rx="16" fill="#ffffff" opacity="0.14"/>
+    <text x="323" y="251" fill="#ffffff">Cypress</text>
+
+    <rect x="414" y="230" width="100" height="32" rx="16" fill="#ffffff" opacity="0.14"/>
+    <text x="431" y="251" fill="#ffffff">Appium</text>
+
+    <rect x="524" y="230" width="150" height="32" rx="16" fill="#ffffff" opacity="0.14"/>
+    <text x="541" y="251" fill="#ffffff">Java · Spring Boot</text>
+  </g>
+</svg>
