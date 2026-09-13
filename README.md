@@ -1,8 +1,12 @@
 <div align="center">
 
-
 <img src="banner.svg" alt="Ranajit Baran Chowdhury banner" width="100%">
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1500&color=2E9EF7&center=true&vCenter=true&width=950&repeat=true&lines=Building+Test+Automation+Frameworks%3A+Java%2C+Spring+Boot+%7C+Appium+%7C+Python+%7C+TypeScript+%7C+Cypress+%7C+Selenium+%7C+Playwright+%7C+Cucumber+%7C+TestNG+%7C+Rest+Assured+-+for+Financial+and+Enterprise-Level+Systems)](https://git.io/typing-svg)
+
+# Hi there, I'm Ranajit Baran Chowdhury 👋
+
+### QA Automation Engineer & Full Stack Developer | Test Automation Specialist
+
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1500&color=2E9EF7&vCenter=true&width=950&repeat=true&lines=Building+Test+Automation+Frameworks%3A+Java%2C+Spring+Boot+%7C+Appium+%7C+Python+%7C+TypeScript+%7C+Cypress+%7C+Selenium+%7C+Playwright+%7C+Cucumber+%7C+TestNG+%7C+Rest+Assured+-+for+Financial+and+Enterprise-Level+Systems)](https://git.io/typing-svg)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rbchy/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rbchy)
@@ -171,7 +175,7 @@ Enterprise BDD test automation framework demonstrating modern Python automation 
 
 **Stack:** Python 3.9+ · Playwright · Behave · Allure Reports · Page Object Model
 **Highlights:** 12 PASSED tests consistently · 3 SKIPPED (documented known site bugs) · 0 FAILED in production runs · modular POM structure · screenshot on failure · retry logic
-**Repository:** [github.com/rbchy](https://github.com/rbchy)
+**Repository:** [QaBrainsAutomationPythonPlawright](https://github.com/rbchy/QaBrainsAutomationPythonPlawright)
 
 ---
 
@@ -181,7 +185,7 @@ Enterprise-grade BDD framework built with TypeScript for modern JavaScript ecosy
 
 **Stack:** TypeScript 5.x · Playwright (async/await) · Cucumber.js · Node.js · Cucumber HTML Reporter
 **Highlights:** 14 PASSED · 1 PENDING (known site bug) · 0 FAILED · full async/await implementation · CI/CD-ready with GitHub Actions
-**Repository:** [github.com/rbchy](https://github.com/rbchy)
+**Repository:** [QaBrainsAutomationTypeScriptPlaywright](https://github.com/rbchy/QaBrainsAutomationTypeScriptPlaywright)
 
 ---
 
@@ -191,7 +195,7 @@ Original enterprise BDD framework demonstrating Playwright for Java with Cucumbe
 
 **Stack:** Java 17+ · Playwright for Java · Cucumber JVM · TestNG · Maven · POM
 **Highlights:** comprehensive Gherkin feature files · multi-threading via TestNG · data-driven scenarios · detailed TestNG + Allure reports
-**Repository:** [github.com/rbchy](https://github.com/rbchy)
+**Repository:** [QaBrainsAutomationJavaPlaywright](https://github.com/rbchy/QaBrainsAutomationJavaPlaywright)
 
 ---
 
@@ -201,7 +205,7 @@ Healthcare application UI automation framework for OpenEMR (Electronic Medical R
 
 **Stack:** Java · Selenium WebDriver · Cucumber · TestNG · Maven · Jira
 **Scope covered:** patient management, authentication, navigation, form validation, medical records access, role-based access control, appointment scheduling
-**Live site:** [demo.openemr.io](https://demo.openemr.io) · **Repository:** [github.com/rbchy](https://github.com/rbchy)
+**Live site:** [demo.openemr.io](https://demo.openemr.io) · **Repository:** [OpenEMR_Automation](https://github.com/rbchy/OpenEMR_Automation)
 
 ---
 
@@ -211,7 +215,7 @@ Cross-browser cloud automation framework integrated with Sauce Labs for enterpri
 
 **Stack:** Java · Selenium WebDriver · Cucumber · TestNG · Sauce Labs (700+ browser/OS combinations) · Maven · Jenkins
 **Coverage:** Chrome, Firefox, Safari, Edge across Windows/macOS/Linux; desktop & mobile viewports; video recording on failure; Jenkins pipeline with 20+ parallel browser/OS combinations
-**Repository:** [github.com/rbchy](https://github.com/rbchy)
+**Repository:** [QaBrainsSauceLabAPI_Automation](https://github.com/rbchy/QaBrainsSauceLabAPI_Automation) <!-- TODO: confirm this is the right repo for this project -->
 
 ---
 
@@ -221,7 +225,7 @@ Comprehensive API test automation covering REST endpoint validation and contract
 
 **Stack:** Postman Collections · Rest Assured (Java) · TestNG · Maven · JSON/XML · OAuth 2.0
 **Coverage:** positive/negative cases, auth flow validation, data-driven datasets, response time and header verification, environment-based config (Dev/Staging/Prod)
-**Repository:** [github.com/rbchy](https://github.com/rbchy)
+**Repositories:** [QaBrainsAPIAutomationRestAssured](https://github.com/rbchy/QaBrainsAPIAutomationRestAssured) · [QaBrainsAPIAutomation_Postman](https://github.com/rbchy/QaBrainsAPIAutomation_Postman)
 
 ---
 
@@ -231,7 +235,7 @@ Full-featured desktop payroll application with enterprise database connectivity.
 
 **Stack:** Java (Swing/AWT) · MySQL 8.0+ · JDBC · DAO pattern · Maven
 **Features:** employee CRUD, attendance tracking, automated salary calculation (HRA/DA/PF/Gross/Net), pay slip generation, secure authentication, layered UI → Service → DAO → Database architecture
-**Repository:** [github.com/rbchy](https://github.com/rbchy)
+**Repository:** [PayrollManagementSystem](https://github.com/rbchy/PayrollManagementSystem)
 
 ---
 
@@ -241,7 +245,7 @@ Enterprise-grade real-time inventory management system for pharmaceutical supply
 
 **Stack:** Java 17+ · MySQL 8.0+ · JDBC + MySQL Connector/J 9.7.0 · DAO + Service + MVC
 **Modules:** material inventory CRUD, supplier management with performance ratings, real-time stock dashboard, transaction logging/audit trail, purchase order system, low-stock alerts
-**Repository:** [github.com/rbchy](https://github.com/rbchy)
+**Repository:** [PPES-Pharmaceutical-Packaging-Management](https://github.com/rbchy/PPES-Pharmaceutical-Packaging-Management)
 
 ---
 
@@ -324,7 +328,7 @@ Actively seeking full-time QA automation engineer roles, contract/project-based 
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=rbchy&show_icons=true&hide_border=true&bg_color=0d1117&title_color=5eead4&icon_color=0d9488&text_color=c9d1d9)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rbchy&layout=compact&hide_border=true&bg_color=0d1117&title_color=5eead4&text_color=c9d1d9)
-![GitHub Streak](https://streak-stats.demolab.com/?user=rbchy&hide_border=true&background=0D1117&ring=0D9488&fire=5EEAD4&currStreakLabel=5EEAD4)
+![GitHub Streak](https://streak-stats.demolab.com/?user=rbchy&hide_border=true&background=0D1117&border=30363D&stroke=30363D&ring=0D9488&fire=5EEAD4&currStreakNum=FFFFFF&sideNums=5EEAD4&sideLabels=C9D1D9&currStreakLabel=5EEAD4&dates=8B949E)
 
 </div>
 
@@ -343,7 +347,7 @@ Actively seeking full-time QA automation engineer roles, contract/project-based 
 
 <div align="center">
 
-**Version:** 2.1 · **Last Updated:** July 2026 · **Status:** Actively Open to New Opportunities
+**Version:** 2.2 · **Last Updated:** September 2026 · **Status:** Actively Open to New Opportunities
 
 *"Quality is never an accident; it is always the result of intelligent effort."*
 
