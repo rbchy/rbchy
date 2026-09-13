@@ -324,9 +324,9 @@ Actively seeking full-time QA automation engineer roles, contract/project-based 
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=rbchy&show_icons=true&theme=default&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rbchy&layout=compact&hide_border=true)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=rbchy&hide_border=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=rbchy&show_icons=true&hide_border=true&bg_color=0d1117&title_color=5eead4&icon_color=0d9488&text_color=c9d1d9)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rbchy&layout=compact&hide_border=true&bg_color=0d1117&title_color=5eead4&text_color=c9d1d9)
+![GitHub Streak](https://streak-stats.demolab.com/?user=rbchy&hide_border=true&background=0D1117&ring=0D9488&fire=5EEAD4&currStreakLabel=5EEAD4)
 
 </div>
 
