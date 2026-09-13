@@ -3,7 +3,7 @@
 # Hi there, I'm Ranajit Baran Chowdhury 👋
 
 ### QA Automation Engineer & Full Stack Developer | Test Automation Specialist
-
+<img src="banner.svg" alt="Ranajit Baran Chowdhury banner" width="100%">
 [![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=2E9EF7&center=true&vCenter=true&width=650&lines=Remote-Ready+QA+Automation+Engineer;Playwright+%C2%B7+Selenium+%C2%B7+Cucumber+%C2%B7+BDD;Java+%C2%B7+Python+%C2%B7+TypeScript+%C2%B7+Full+Stack;Quality+is+never+an+accident.)](https://git.io/typing-svg)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rbchy/)
