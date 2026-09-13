@@ -2,7 +2,7 @@
 
 
 <img src="banner.svg" alt="Ranajit Baran Chowdhury banner" width="100%">
-
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1500&color=2E9EF7&center=true&vCenter=true&width=950&repeat=true&lines=Building+Test+Automation+Frameworks%3A+Java%2C+Spring+Boot+%7C+Appium+%7C+Python+%7C+TypeScript+%7C+Cypress+%7C+Selenium+%7C+Playwright+%7C+Cucumber+%7C+TestNG+%7C+Rest+Assured+-+for+Financial+and+Enterprise-Level+Systems)](https://git.io/typing-svg)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rbchy/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rbchy)
@@ -20,7 +20,7 @@
 
 | Field | Details |
 |-------|---------|
-| **Location** | Plymouth Meeting, Pennsylvania 19462, USA |
+| **Location** | West Norriton, Pennsylvania 19403, USA |
 | **Email** | chyranajit@gmail.com |
 | **Phone** | +1 (267) 342-5565 |
 | **Portfolio** | [rbc6543.wixsite.com/rbc-portfolio](https://rbc6543.wixsite.com/rbc-portfolio) |
