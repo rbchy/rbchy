@@ -239,6 +239,10 @@ flowchart LR
 
 ## 🚦 Project Status Board
 
+<div align="center">
+<img src="project-status.svg" alt="Project status board chart: 11 featured projects — 6 stable, 4 verified with test results, 1 in active development; QA Brains Python 12 passed / 3 skipped / 0 failed, TypeScript 14 passed / 1 pending / 0 failed" width="100%" />
+</div>
+
 Live **last-commit** badges update automatically from GitHub; test results are from the latest recorded runs.
 
 | Project | Stack | Test Results | Last Activity |
