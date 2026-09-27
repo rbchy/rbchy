@@ -29,16 +29,7 @@
 
 <table>
 <tr>
-<td width="24%" align="center" valign="top">
-
-<img src="https://github.com/rbchy.png" alt="Ranajit Baran Chowdhury" width="160" />
-
-<img src="qr-contact.png" alt="QR code — scan to save my contact card" width="160" />
-
-<sub>📱 <b>Scan to save my contact</b></sub>
-
-</td>
-<td width="38%" valign="top">
+<td width="50%" valign="top">
 
 **🙋 Who I am**
 
@@ -47,7 +38,7 @@ QA Automation Engineer building **enterprise-grade BDD frameworks** with Playwri
 > *"Quality is never an accident; it is always the result of intelligent effort."*
 
 </td>
-<td width="38%" valign="top">
+<td width="50%" valign="top">
 
 **📍 Quick facts**
 
