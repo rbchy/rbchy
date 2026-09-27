@@ -487,37 +487,13 @@ Desktop version of my portfolio, packaged with Electron — runs fully offline. 
 
 ---
 
-## 📊 GitHub Activity
+## 📈 GitHub Stats
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="profile-summary-card-output/github_dark/0-profile-details.svg" />
-  <img src="profile-summary-card-output/default/0-profile-details.svg" alt="Profile details and contribution graph" width="100%" />
-</picture>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=rbchy&theme=radical" alt="Profile details and contributions in the last year" width="100%" />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="profile-summary-card-output/github_dark/3-stats.svg" />
-  <img src="profile-summary-card-output/default/3-stats.svg" alt="GitHub stats" width="49%" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="profile-summary-card-output/github_dark/1-repos-per-language.svg" />
-  <img src="profile-summary-card-output/default/1-repos-per-language.svg" alt="Repos per language" width="49%" />
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="profile-summary-card-output/github_dark/2-most-commit-language.svg" />
-  <img src="profile-summary-card-output/default/2-most-commit-language.svg" alt="Most commit language" width="49%" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="profile-summary-card-output/github_dark/4-productive-time.svg" />
-  <img src="profile-summary-card-output/default/4-productive-time.svg" alt="Productive time" width="49%" />
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=rbchy&theme=dark&hide_border=true&background=0D1117&ring=0D9488&fire=5EEAD4&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=5EEAD4&sideLabels=C9D1D9&dates=8B949E&stroke=30363D" />
-  <img src="https://streak-stats.demolab.com/?user=rbchy&theme=default&hide_border=true&ring=0D9488&fire=0D9488&currStreakLabel=0D9488" alt="GitHub streak" />
-</picture>
+<img src="https://streak-stats.demolab.com/?user=rbchy&theme=radical" alt="GitHub streak" />
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rbchy/rbchy/output/github-contribution-grid-snake-dark.svg" />
