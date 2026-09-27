@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="banner.svg" alt="Ranajit Baran Chowdhury banner" width="100%">
+<a href="https://rbchy.github.io/rbchy/" title="Visit my website"><img src="banner.svg" alt="Ranajit Baran Chowdhury — AI-assisted QA Automation Engineer. Click to visit my website." width="100%"></a>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=13&pause=1500&color=FFC107&vCenter=true&width=950&repeat=true&lines=Test+Automation+with+Python+%7C+TypeScript+%7C+Cucumber+%7C+TestNG+%7C+Rest+Assured+for+Financial+and+Enterprise-Level+Systems)](https://git.io/typing-svg)
 
