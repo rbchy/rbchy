@@ -34,10 +34,7 @@
 <img src="https://github.com/rbchy.png" alt="Ranajit Baran Chowdhury" width="160" />
 
 <img src="qr-contact.png" alt="QR code — scan to save my contact card" width="160" />
-<div align="center">
 
-
-</div>
 <sub>📱 <b>Scan to save my contact</b></sub>
 
 </td>
