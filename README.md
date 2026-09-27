@@ -454,6 +454,7 @@ Traffic Inspector, Super User & System Consultant for the NAVIS SPARCS N4 Contai
 | Continuous Learning | QA Automation, BDD, Modern Web | Online Certifications & Self-Study | 2020–Present |
 
 **Training:**
+
 ![](https://img.shields.io/badge/Selenium%20WebDriver-43B02A?style=flat-square&logo=selenium&logoColor=white)
 ![](https://img.shields.io/badge/Cucumber%20BDD-23D96C?style=flat-square&logo=cucumber&logoColor=white)
 ![](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
