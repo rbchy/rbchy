@@ -12,6 +12,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rbchy/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rbchy)
+[![Website](https://img.shields.io/badge/Website-rbchy.github.io%2Frbchy-0d9488?style=for-the-badge&logo=githubpages&logoColor=white)](https://rbchy.github.io/rbchy/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Website-blueviolet?style=for-the-badge&logo=wix&logoColor=white)](https://rbc6543.wixsite.com/rbc-portfolio)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chyranajit@gmail.com)
 [![Download](https://img.shields.io/badge/ProfileDownload-macOS%20(.dmg)-2dd4bf?style=for-the-badge&logo=apple&logoColor=white)](https://rbchy.github.io/rbchy/download.html)
@@ -517,6 +518,7 @@ Desktop version of my portfolio, packaged with Electron — runs fully offline. 
 ![Phone](https://img.shields.io/badge/Phone-%2B1%20(267)%20342--5565-0d9488?style=for-the-badge&logo=phone&logoColor=white)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-rbchy-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rbchy/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-rbc6543.wixsite.com-blueviolet?style=for-the-badge&logo=wix&logoColor=white)](https://rbc6543.wixsite.com/rbc-portfolio)
+[![Website](https://img.shields.io/badge/Website-rbchy.github.io%2Frbchy-0d9488?style=for-the-badge&logo=githubpages&logoColor=white)](https://rbchy.github.io/rbchy/)
 
 ![Version](https://img.shields.io/badge/README-v2.5-155e75?style=flat-square)
 ![Updated](https://img.shields.io/badge/Last%20Updated-September%202026-1e3a8a?style=flat-square)
