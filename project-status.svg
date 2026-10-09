@@ -1,15 +1,15 @@
-<svg width="1000" height="470" viewBox="0 0 1000 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project status board: 11 featured projects; 6 stable, 4 verified with test results, 1 in active development. QA Brains Python: 12 passed, 3 skipped, 0 failed. QA Brains TypeScript: 14 passed, 1 pending, 0 failed.">
+<svg width="1000" height="470" viewBox="0 0 1000 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project status board: 12 featured projects; 6 stable, 5 verified with test results, 1 in active development. QA Brains Python: 12 passed, 3 skipped, 0 failed. QA Brains TypeScript: 14 passed, 1 pending, 0 failed.">
 <rect width="1000" height="470" rx="12" fill="#141321"/>
 <text x="32" y="48" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#fe428e">Project Status Board</text>
-<text x="32" y="72" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#c3c2b7">11 featured projects · figures from the latest recorded test runs</text>
+<text x="32" y="72" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#c3c2b7">12 featured projects · figures from the latest recorded test runs</text>
 <rect x="32" y="92" width="221" height="92" rx="10" fill="#1f1e33"/>
-<text x="48" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">11</text>
+<text x="48" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">12</text>
 <text x="48" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">featured projects</text>
 <text x="48" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">tracked on this board</text>
 <rect x="269" y="92" width="221" height="92" rx="10" fill="#1f1e33"/>
-<text x="285" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">115+</text>
+<text x="285" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">571</text>
 <text x="285" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">automated tests</text>
-<text x="285" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">ClinTrial-Connect</text>
+<text x="285" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">E-Commerce Suite, 14 CI gates</text>
 <rect x="506" y="92" width="221" height="92" rx="10" fill="#1f1e33"/>
 <text x="522" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">100%</text>
 <text x="522" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">pass rate</text>
@@ -19,20 +19,20 @@
 <text x="759" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">parallel browser/OS combos</text>
 <text x="759" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">Sauce Labs cloud runs</text>
 <text x="32" y="222" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Status of featured projects</text>
-<g transform="translate(14,0)"><path d="M120.00,257.00 A78,78 0 1 1 98.02,409.84" fill="none" stroke="#d95926" stroke-width="24"><title>Stable: 6</title></path></g>
-<g transform="translate(14,0)"><path d="M98.02,409.84 A78,78 0 0 1 77.83,269.38" fill="none" stroke="#3987e5" stroke-width="24"><title>Verified with test results: 4</title></path></g>
-<g transform="translate(14,0)"><path d="M77.83,269.38 A78,78 0 0 1 120.00,257.00" fill="none" stroke="#199e70" stroke-width="24"><title>Active development: 1</title></path></g>
+<g transform="translate(14,0)"><path d="M120.00,257.00 A78,78 0 0 1 120.00,413.00" fill="none" stroke="#d95926" stroke-width="24"><title>Stable: 6</title></path></g>
+<g transform="translate(14,0)"><path d="M120.00,413.00 A78,78 0 0 1 81.00,267.45" fill="none" stroke="#3987e5" stroke-width="24"><title>Verified with test results: 5</title></path></g>
+<g transform="translate(14,0)"><path d="M81.00,267.45 A78,78 0 0 1 120.00,257.00" fill="none" stroke="#199e70" stroke-width="24"><title>Active development: 1</title></path></g>
 <g transform="translate(14,0)"><line x1="120.00" y1="270.00" x2="120.00" y2="244.00" stroke="#141321" stroke-width="3"/></g>
-<g transform="translate(14,0)"><line x1="101.69" y1="397.37" x2="94.36" y2="422.31" stroke="#141321" stroke-width="3"/></g>
-<g transform="translate(14,0)"><line x1="84.86" y1="280.32" x2="70.80" y2="258.45" stroke="#141321" stroke-width="3"/></g>
-<g transform="translate(14,0)"><text x="120" y="339" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">11</text></g>
+<g transform="translate(14,0)"><line x1="120.00" y1="400.00" x2="120.00" y2="426.00" stroke="#141321" stroke-width="3"/></g>
+<g transform="translate(14,0)"><line x1="87.50" y1="278.71" x2="74.50" y2="256.19" stroke="#141321" stroke-width="3"/></g>
+<g transform="translate(14,0)"><text x="120" y="339" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">12</text></g>
 <g transform="translate(14,0)"><text x="120" y="359" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7" text-anchor="middle">projects</text></g>
 <rect x="248" y="281" width="12" height="12" rx="3" fill="#d95926"/>
 <text x="268" y="292" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#c3c2b7">Stable</text>
 <text x="268" y="308" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">6 projects</text>
 <rect x="248" y="315" width="12" height="12" rx="3" fill="#3987e5"/>
 <text x="268" y="326" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#c3c2b7">Verified with test results</text>
-<text x="268" y="342" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">4 projects</text>
+<text x="268" y="342" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">5 projects</text>
 <rect x="248" y="349" width="12" height="12" rx="3" fill="#199e70"/>
 <text x="268" y="360" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#c3c2b7">Active development</text>
 <text x="268" y="376" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">1 project</text>
