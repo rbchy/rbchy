@@ -2,7 +2,7 @@
 
 <a href="https://rbchy.github.io/rbchy/" title="Visit my website"><img src="banner.svg" alt="Ranajit Baran Chowdhury — AI-assisted QA Automation Engineer. Click to visit my website." width="100%"></a>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=13&pause=1500&color=FFC107&vCenter=true&width=950&repeat=true&lines=Test+Automation+with+Python+%7C+TypeScript+%7C+Cucumber+%7C+TestNG+%7C+Rest+Assured+for+Financial+and+Enterprise-Level+Systems)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=13&pause=1500&color=FFC107&vCenter=true&width=950&repeat=true&lines=Senior+QA+Automation+%2F+SDET+%7C+Java+%C2%B7+Spring+Boot+%C2%B7+REST+Assured+%C2%B7+Selenium+%C2%B7+Playwright;Quality+gates+in+CI%3A+contract%2C+mutation%2C+accessibility%2C+performance%2C+security)](https://git.io/typing-svg)
 
 <!-- ============ STATUS BAR ============ -->
 ![Status](https://img.shields.io/badge/Status-Open%20to%20Work-22c55e?style=for-the-badge&logo=checkmarx&logoColor=white)
@@ -19,7 +19,7 @@
 
 ![Profile Views](https://komarev.com/ghpvc/?username=rbchy&color=blueviolet&style=flat-square&label=PROFILE+VIEWS)
 ![Followers](https://img.shields.io/github/followers/rbchy?style=flat-square&color=0d9488&label=Followers)
-![Repos](https://img.shields.io/badge/Public%20Repos-32-155e75?style=flat-square&logo=github)
+![Repos](https://img.shields.io/badge/Public%20Repos-36-155e75?style=flat-square&logo=github)
 ![Experience](https://img.shields.io/badge/Tech%20Experience-40%2B%20years-f59e0b?style=flat-square)
 
 </div>
@@ -34,7 +34,7 @@
 
 **🙋 Who I am**
 
-QA Automation Engineer building **enterprise-grade BDD frameworks** with Playwright, Selenium, Cypress, Appium and Cucumber — backed by **four decades** of enterprise systems work, from container terminal management (NAVIS SPARCS N4) to modern web, mobile and API automation.
+QA Automation Engineer / SDET. I build the test system around an application: API, contract, UI, accessibility, performance and security tests that run as **quality gates in CI** (GitHub Actions and Jenkins), plus the QA documents that turn the results into a release decision. Backed by **four decades** of enterprise systems work, from container terminal management (NAVIS SPARCS N4) to modern web, mobile and API automation.
 
 > *"Quality is never an accident; it is always the result of intelligent effort."*
 
@@ -57,6 +57,43 @@ QA Automation Engineer building **enterprise-grade BDD frameworks** with Playwri
 
 ---
 
+## ⭐ Flagship Project: RbcTcsWorld E-Commerce Suite
+
+**[RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite)** — an Amazon-inspired online store
+(Spring Boot 4.1 · Java 21 · PostgreSQL · React) built *to be tested*. The application is the test object; the work
+is the test system around it.
+
+[![CI](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/actions/workflows/ci.yml/badge.svg)](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/actions/workflows/ci.yml)
+![Tests](https://img.shields.io/badge/automated%20tests-571-brightgreen?style=flat-square)
+[![Coverage](https://img.shields.io/badge/line%20coverage-97.5%25-brightgreen?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/coverage/)
+[![Mutation](https://img.shields.io/badge/mutation%20score-84.9%25-brightgreen?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/mutation/)
+[![Allure](https://img.shields.io/badge/Allure-live%20report-orange?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/)
+
+| Layer | What gates every push | Latest result |
+|---|---|---|
+| Unit + integration | JUnit 5, Mockito, JaCoCo (>= 97 % lines, >= 88 % branches) | 284 / 284 · 97.5 % / 88.3 % |
+| API, DB, BDD, UI | REST Assured, JDBC, Cucumber 7, Selenium 4 (Page Objects) | 287 / 287 |
+| Test quality | PIT mutation testing (>= 84 %) | 84.9 %, test strength 97.5 % |
+| API contract | 12 strict JSON Schemas + OpenAPI breaking-change gate | 0 breaking changes |
+| Accessibility | axe-core, WCAG 2.1 AA, 8 pages | 0 serious / critical |
+| Cross-browser | Chrome, Firefox, Edge (CI matrix), Safari via Jenkins | 20 / 20 per browser |
+| Performance | k6 smoke, 60-buyer flash sale, catalog, with SLO thresholds | 0 % errors, no overselling |
+| Security | OWASP ZAP API scan, OSV dependency scan, JWT / RBAC / IDOR tests | 0 Medium/High, 0 vulnerable libraries |
+| Delivery | Docker Compose stack, GitHub Actions + Jenkins (macOS ARM) | 44 / 44 smoke tests |
+
+**What the tests found** (20 documented defects, each with root cause, fix and regression test): a test that could
+never fail (found by mutation testing), a brute-force and account-enumeration gap, 21 vulnerable libraries, an
+unpaginated catalog (p95 22 → 9 ms after the fix), a search race in the UI, a 500 on malformed query strings,
+and WCAG failures on all 8 storefront pages — fixed test-first.
+
+**QA documents:** [Test Strategy](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TEST_STRATEGY.md) ·
+[Risk Register](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/RISK_REGISTER.md) ·
+[Traceability (63 requirements)](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TRACEABILITY_MATRIX.md) ·
+[Defect Reports](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/DEFECT_REPORTS.md) ·
+[Test Summary Report](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TEST_SUMMARY_REPORT.md)
+
+---
+
 ## 🧰 Tech Stack
 
 <div align="center">
@@ -74,6 +111,14 @@ QA Automation Engineer building **enterprise-grade BDD frameworks** with Playwri
 ![JUnit5](https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=junit5&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![Rest Assured](https://img.shields.io/badge/Rest%20Assured-0d9488?style=for-the-badge)
+
+**Quality Engineering**<br>
+![k6](https://img.shields.io/badge/k6-7D64FF?style=for-the-badge&logo=k6&logoColor=white)
+![OWASP ZAP](https://img.shields.io/badge/OWASP%20ZAP-000000?style=for-the-badge&logo=owasp&logoColor=white)
+![axe-core](https://img.shields.io/badge/axe--core%20WCAG%202.1-663399?style=for-the-badge)
+![PIT](https://img.shields.io/badge/PIT%20Mutation-B22222?style=for-the-badge)
+![JaCoCo](https://img.shields.io/badge/JaCoCo-C71A36?style=for-the-badge)
+![JSON Schema](https://img.shields.io/badge/Contract%20Testing-000000?style=for-the-badge&logo=json&logoColor=white)
 
 **CI/CD, Cloud & Tools**<br>
 <img src="https://skillicons.dev/icons?i=maven,gradle,jenkins,githubactions,docker,aws,git,github,gitlab,idea,eclipse,vscode,spring&theme=dark" alt="Tools" />
@@ -104,6 +149,9 @@ QA Automation Engineer building **enterprise-grade BDD frameworks** with Playwri
 | 🔌 **API (Postman / Rest Assured)** | `████████████████████` Expert | REST · OAuth 2.0 |
 | ⚙️ **CI/CD (Jenkins / GH Actions)** | `████████████████░░░░` Advanced | Pipelines · PR gates |
 | ☁️ **Cloud (Sauce Labs / AWS)** | `████████████████░░░░` Advanced | 700+ browser/OS combos |
+| 🧬 **Test quality (JaCoCo / PIT)** | `████████████████░░░░` Advanced | Coverage + mutation gates |
+| 📜 **Contract & accessibility** | `████████████████░░░░` Advanced | JSON Schema · OpenAPI diff · axe-core |
+| 🛡️ **Performance & security** | `████████████████░░░░` Advanced | k6 · OWASP ZAP · OSV |
 
 <details>
 <summary><strong>🔎 Full technical skills matrix</strong></summary>
@@ -127,7 +175,8 @@ QA Automation Engineer building **enterprise-grade BDD frameworks** with Playwri
 |------|-----------|----------|
 | Postman / Newman | Expert | Collections, environments, CI/CD integration |
 | Rest Assured | Expert | REST API automation with Java + TestNG |
-| Swagger / OpenAPI | Advanced | API specification and contract testing |
+| Swagger / OpenAPI | Advanced | API specification; breaking-change gate with openapi-diff |
+| JSON Schema | Advanced | Consumer-side contract tests (REST Assured json-schema-validator) |
 | Insomnia | Intermediate | REST API testing and debugging |
 | GraphQL | Intermediate | GraphQL endpoint testing |
 
@@ -143,6 +192,17 @@ QA Automation Engineer building **enterprise-grade BDD frameworks** with Playwri
 | Docker | Intermediate | Containerized test execution |
 | Sauce Labs | Expert | Cross-browser cloud, video on failure |
 | AWS (EC2 / S3 / CloudWatch) | Intermediate | Cloud test infrastructure |
+
+### Quality Engineering
+
+| Area | Tools | Use Case |
+|------|-------|----------|
+| Mutation testing | PIT (pitest) | Proves tests fail when the code is wrong; score gate in CI |
+| Coverage | JaCoCo | Line and branch gates |
+| Performance | k6 | Smoke, load, stress, spike, soak, flash-sale concurrency with SLO thresholds |
+| Security | OWASP ZAP, OSV-Scanner | DAST API scan, dependency CVE gate |
+| Accessibility | axe-core (Selenium) | WCAG 2.1 A/AA checks per page |
+| QA documentation | IEEE 829 / ISO 29119 style | Strategy, plan, risk register, RTM, defect reports, test summary (go / no-go) |
 
 ### Reporting & Management
 
@@ -198,6 +258,12 @@ mindmap
       Cucumber JVM / JS
       Behave
       TestNG / JUnit 5
+    Quality Engineering
+      Contract testing
+      Mutation testing PIT
+      Accessibility axe-core
+      k6 performance
+      OWASP ZAP / OSV
     DevOps
       Jenkins
       GitHub Actions
@@ -241,13 +307,14 @@ flowchart LR
 ## 🚦 Project Status Board
 
 <div align="center">
-<img src="project-status.svg" alt="Project status board chart: 11 featured projects — 6 stable, 4 verified with test results, 1 in active development; QA Brains Python 12 passed / 3 skipped / 0 failed, TypeScript 14 passed / 1 pending / 0 failed" width="100%" />
+<img src="project-status.svg" alt="Project status board chart: 12 featured projects — 6 stable, 5 verified with test results, 1 in active development; QA Brains Python 12 passed / 3 skipped / 0 failed, TypeScript 14 passed / 1 pending / 0 failed" width="100%" />
 </div>
 
 Live **last-commit** badges update automatically from GitHub; test results are from the latest recorded runs.
 
 | Project | Stack | Test Results | Last Activity |
 |---------|-------|-------------|---------------|
+| ⭐ [E-Commerce Suite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | Java 21 · Spring Boot 4.1 · REST Assured · Selenium · Cucumber · k6 | ![tests](https://img.shields.io/badge/passed-571%2F571-22c55e?style=flat-square) ![gates](https://img.shields.io/badge/CI%20gates-14-155e75?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/RbcTcsWorld_ECommerceSuite?style=flat-square&label=) |
 | 🔬 [QA Brains — Python + Playwright](https://github.com/rbchy/QaBrainsAutomationPythonPlawright) | Python · Playwright · Behave · Allure | ![passed](https://img.shields.io/badge/passed-12-22c55e?style=flat-square) ![skipped](https://img.shields.io/badge/skipped-3-f59e0b?style=flat-square) ![failed](https://img.shields.io/badge/failed-0-lightgrey?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationPythonPlawright?style=flat-square&label=) |
 | 🔬 [QA Brains — TypeScript + Playwright](https://github.com/rbchy/QaBrainsAutomationTypeScriptPlaywright) | TS 5 · Playwright · Cucumber.js | ![passed](https://img.shields.io/badge/passed-14-22c55e?style=flat-square) ![pending](https://img.shields.io/badge/pending-1-f59e0b?style=flat-square) ![failed](https://img.shields.io/badge/failed-0-lightgrey?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationTypeScriptPlaywright?style=flat-square&label=) |
 | 🔬 [QA Brains — Java + Playwright](https://github.com/rbchy/QaBrainsAutomationJavaPlaywright) | Java 17 · Playwright · Cucumber JVM · TestNG | ![status](https://img.shields.io/badge/status-stable-0d9488?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationJavaPlaywright?style=flat-square&label=) |
@@ -267,6 +334,17 @@ Live **last-commit** badges update automatically from GitHub; test results are f
 ## 📂 Featured Automation Projects
 
 <details open>
+<summary><strong>🛒 RbcTcsWorld E-Commerce Suite — Spring Boot + full test system (flagship)</strong></summary>
+
+<br>
+
+**Stack:** Java 21 · Spring Boot 4.1 · PostgreSQL · React · JUnit 5 · REST Assured · Selenium 4 · Cucumber 7 · k6 · OWASP ZAP · PIT · Docker · GitHub Actions · Jenkins
+**Scope:** catalog, cart, checkout with coupons and tax, mock payments, order state machine, shipping and public tracking, returns and refunds, verified-purchase reviews, wishlist
+**Repo:** [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) · **Reports:** [Allure](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/)
+
+</details>
+
+<details>
 <summary><strong>🔬 QA Brains Automation — Python · TypeScript · Java (Playwright)</strong></summary>
 
 <br>
@@ -341,16 +419,16 @@ Live **last-commit** badges update automatically from GitHub; test results are f
 
 ```mermaid
 pie showData
-    title 32 Public Repositories by Category
+    title 36 Public Repositories by Category
     "Web UI Automation" : 16
-    "Full-Stack Applications" : 7
+    "Full-Stack Applications" : 11
     "Mobile (Appium)" : 5
     "API Automation" : 2
     "Portfolio / Profile" : 2
 ```
 
 <details>
-<summary><strong>📦 Click to expand the full list of 32 repositories</strong></summary>
+<summary><strong>📦 Click to expand the full list of 36 repositories</strong></summary>
 
 | # | Repository | Category | Description |
 |---|-----------|----------|-------------|
@@ -384,8 +462,12 @@ pie showData
 | 28 | [rbchy](https://github.com/rbchy/rbchy) | 🗂️ Portfolio | This profile README repository |
 | 29 | [RbcTcsWorld-EPMS](https://github.com/rbchy/RbcTcsWorld-EPMS) | 💻 App | Full-stack payroll — Spring Boot REST API + test suite |
 | 30 | [RbcTcsWorld_ClinTrial-Connect](https://github.com/rbchy/RbcTcsWorld_ClinTrial-Connect) | 💻 App | Spring Boot clinical-trial patient matching, 115+ automated tests |
-| 31 | [Sauce-Demo.MyShopify.AutomationTest](https://github.com/rbchy/Sauce-Demo.MyShopify.AutomationTest) | 🌐 Web | E-commerce automation — Java + Selenium |
-| 32 | [WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG](https://github.com/rbchy/WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG) | 📱 Mobile | WDIO Native Demo App — Appium 9.2.2, TestNG, Allure, ExtentReports |
+| 31 | [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | 💻 App | ⭐ Spring Boot 4 e-commerce + 571 automated tests, 14 CI quality gates |
+| 32 | [RbcTcsWorld_PharmaPackQMS](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS) | 💻 App | Pharmaceutical packaging quality management (QMS) |
+| 33 | [RbcTcsWorld_PharmaPackQMS_Serialization](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS_Serialization) | 💻 App | Pharma packaging QMS + serialization, CI and desktop builds for Windows / macOS / Linux |
+| 34 | [RbcTcsWorld_Pharmaceuticals_PMC](https://github.com/rbchy/RbcTcsWorld_Pharmaceuticals_PMC) | 💻 App | Pharma Packaging Execution System — Java Swing desktop app |
+| 35 | [Sauce-Demo.MyShopify.AutomationTest](https://github.com/rbchy/Sauce-Demo.MyShopify.AutomationTest) | 🌐 Web | E-commerce automation — Java + Selenium |
+| 36 | [WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG](https://github.com/rbchy/WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG) | 📱 Mobile | WDIO Native Demo App — Appium 9.2.2, TestNG, Allure, ExtentReports |
 
 </details>
 
@@ -395,6 +477,8 @@ pie showData
 
 | Focus Area | Progress |
 |-----------|----------|
+| E-Commerce Suite: refresh tokens, shared login lockout, payment-provider sandbox contract tests | ![](https://img.shields.io/badge/-next-0d9488?style=flat-square) |
+| Quality gates: contract, mutation, accessibility, performance and security in every build | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
 | Enterprise BDD frameworks from scratch | ![](https://img.shields.io/badge/-ongoing-22c55e?style=flat-square) |
 | Playwright with TypeScript & Python | ![](https://img.shields.io/badge/-ongoing-22c55e?style=flat-square) |
 | API automation & data-driven testing | ![](https://img.shields.io/badge/-ongoing-22c55e?style=flat-square) |
@@ -415,6 +499,10 @@ pie showData
 | **Page Object Model** | Element abstraction, maintainable scripts | Selenium, Playwright |
 | **CI/CD Integration** | Automated build/test, quality gates | Jenkins, GitHub Actions |
 | **API Testing** | Contract, data-driven and auth testing | Postman, Rest Assured |
+| **Contract Testing** | Consumer JSON Schemas + provider OpenAPI breaking-change gate | REST Assured, openapi-diff |
+| **Test Quality** | Mutation testing over coverage numbers | PIT, JaCoCo |
+| **Risk-Based Testing** | Risk register, requirements traceability checked in CI, go / no-go report | Markdown + Python check |
+| **Non-Functional** | SLO thresholds, DAST, dependency scanning, WCAG 2.1 AA | k6, OWASP ZAP, OSV, axe-core |
 | **Defect Management** | Triage, severity, root cause analysis | Jira |
 | **Cloud Testing** | Cross-browser/device, real-time dashboards | Sauce Labs, AWS |
 
@@ -477,6 +565,7 @@ Traffic Inspector, Super User & System Consultant for the NAVIS SPARCS N4 Contai
 |---|---|
 | 🏛️ **Decades of systems experience** | Deep understanding of complex enterprise systems, process optimization and system design |
 | 🤖 **Modern automation expertise** | Production-grade BDD frameworks with Playwright, Selenium, Cypress, Appium and Cucumber |
+| 🚦 **Quality gates, not just tests** | Coverage, mutation, contract, accessibility, performance and security gates that block a bad build |
 | 🧱 **Full-stack capabilities** | Backend services, APIs and databases for end-to-end solutions |
 | ☁️ **Cloud-ready** | Sauce Labs cross-browser testing, AWS infrastructure, CI/CD pipelines |
 | 🏠 **Remote-ready** | Disciplined, self-motivated, strong communicator |
@@ -520,8 +609,8 @@ Desktop version of my portfolio, packaged with Electron — runs fully offline. 
 [![Portfolio](https://img.shields.io/badge/Portfolio-rbc6543.wixsite.com-blueviolet?style=for-the-badge&logo=wix&logoColor=white)](https://rbc6543.wixsite.com/rbc-portfolio)
 [![Website](https://img.shields.io/badge/Website-rbchy.github.io%2Frbchy-0d9488?style=for-the-badge&logo=githubpages&logoColor=white)](https://rbchy.github.io/rbchy/)
 
-![Version](https://img.shields.io/badge/README-v2.5-155e75?style=flat-square)
-![Updated](https://img.shields.io/badge/Last%20Updated-September%202026-1e3a8a?style=flat-square)
+![Version](https://img.shields.io/badge/README-v2.6-155e75?style=flat-square)
+![Updated](https://img.shields.io/badge/Last%20Updated-October%202026-1e3a8a?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Actively%20Open%20to%20New%20Opportunities-22c55e?style=flat-square)
 
 *"Quality is never an accident; it is always the result of intelligent effort."*
