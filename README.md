@@ -2,7 +2,7 @@
 
 <a href="https://rbchy.github.io/rbchy/" title="Visit my website"><img src="banner.svg" alt="Ranajit Baran Chowdhury — AI-assisted QA Automation Engineer. Click to visit my website." width="100%"></a>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=13&pause=1500&color=FFC107&vCenter=true&width=950&repeat=true&lines=Senior+QA+Automation+%2F+SDET+%7C+Java+%C2%B7+Spring+Boot+%C2%B7+REST+Assured+%C2%B7+Selenium+%C2%B7+Playwright;Quality+gates+in+CI%3A+contract%2C+mutation%2C+accessibility%2C+performance%2C+security)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1500&color=FFC107&vCenter=true&width=950&repeat=true&lines=Senior+QA+Automation+%2F+SDET+%7C+Java+%C2%B7+Spring+Boot+%C2%B7+REST+Assured+%C2%B7+Selenium+%C2%B7+Playwright;Quality+gates+in+CI%3A+contract%2C+mutation%2C+accessibility%2C+performance%2C+security)](https://git.io/typing-svg)
 
 <!-- ============ STATUS BAR ============ -->
 ![Status](https://img.shields.io/badge/Status-Open%20to%20Work-22c55e?style=for-the-badge&logo=checkmarx&logoColor=white)
