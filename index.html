@@ -275,10 +275,11 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
           <li><b>Accessibility</b><span>8 / 8 pages</span><small>axe-core, WCAG 2.1 AA, 0 serious or critical</small></li>
           <li><b>Cross-browser</b><span>20 / 20</span><small>Chrome, Firefox, Edge in CI; Safari via Jenkins</small></li>
           <li><b>Performance</b><span>0 % errors</span><small>k6 smoke, 60-buyer flash sale, catalog; p95 15–73 ms</small></li>
-          <li><b>Security</b><span>0 High / Medium</span><small>OWASP ZAP API scan, OSV dependency scan, JWT / RBAC / IDOR tests</small></li>
+          <li><b>Security</b><span>0 High / Medium</span><small>OWASP ZAP API scan, SBOM-based OSV scan with self-test, JWT / RBAC / IDOR tests</small></li>
         </ul>
         <h3 style="font-size:18px;margin-bottom:10px">What the tests found</h3>
         <ul class="found">
+          <li>A dependency scanner that went silently blind on a rate limit and hid a CVSS 9.1 library, found by a runner canary.</li>
           <li>A test that could never fail, found by mutation testing at 96 % coverage.</li>
           <li>No brute-force lockout, and login timing that revealed which e-mails exist.</li>
           <li>An unpaginated catalog: p95 22 → 9 ms after a test-first fix.</li>
@@ -288,7 +289,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <div class="cta">
           <a class="btn primary" href="https://github.com/rbchy/RbcTcsWorld_ECommerceSuite" target="_blank" rel="noopener">Repository</a>
           <a class="btn" href="https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/" target="_blank" rel="noopener">Live Allure report</a>
-          <a class="btn" href="https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/DEFECT_REPORTS.md" target="_blank" rel="noopener">20 defect reports</a>
+          <a class="btn" href="https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/DEFECT_REPORTS.md" target="_blank" rel="noopener">21 defect reports</a>
         </div>
       </div>
       <figure class="shot">
