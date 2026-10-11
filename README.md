@@ -60,7 +60,8 @@ QA Automation Engineer / SDET. I build the test system around an application: AP
 ## ⭐ Flagship Project: RbcTcsWorld E-Commerce Suite
 
 **[RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite)** — an Amazon-inspired online store
-(Spring Boot 4.1 · Java 21 · PostgreSQL · React) built *to be tested*. The application is the test object; the work
+(Spring Boot 4.1 · Java 21 · PostgreSQL · React) built *to be tested*. The storefront has a store-admin panel
+(products, coupons, orders, returns, reviews), six languages including right-to-left Arabic, and installs as a desktop app. The application is the test object; the work
 is the test system around it.
 
 [![CI](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/actions/workflows/ci.yml/badge.svg)](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/actions/workflows/ci.yml)
@@ -72,25 +73,51 @@ is the test system around it.
 | Layer | What gates every push | Latest result |
 |---|---|---|
 | Unit + integration | JUnit 5, Mockito, JaCoCo (>= 97 % lines, >= 88 % branches) | 284 / 284 · 97.5 % / 88.3 % |
-| API, DB, BDD, UI | REST Assured, JDBC, Cucumber 7, Selenium 4 (Page Objects) | 287 / 287 |
+| API, DB, BDD, UI | REST Assured, JDBC, Cucumber 7, Selenium 4 (Page Objects) | 299 / 299 |
 | Test quality | PIT mutation testing (>= 84 %) | 84.9 %, test strength 97.5 % |
 | API contract | 12 strict JSON Schemas + OpenAPI breaking-change gate | 0 breaking changes |
 | Accessibility | axe-core, WCAG 2.1 AA, 13 pages | 0 serious / critical |
-| Cross-browser | Chrome, Firefox, Edge (CI matrix), Safari via Jenkins | 20 / 20 per browser |
+| Cross-browser | Chrome, Firefox, Edge (CI matrix), Safari via Jenkins | 32 / 32 per browser |
 | Performance | k6 smoke, 60-buyer flash sale, catalog, with SLO thresholds | 0 % errors, no overselling |
 | Security | OWASP ZAP API scan, SBOM-based OSV scan with self-test, JWT / RBAC / IDOR tests | 0 Medium/High, 0 vulnerable libraries |
 | Delivery | Docker Compose stack, GitHub Actions + Jenkins (macOS ARM) | 44 / 44 smoke tests |
 
-**What the tests found** (22 documented defects, each with root cause, fix and regression test): a dependency scanner that went silently blind on a rate limit (found by a runner canary), a test that could
+**What the tests found** (24 documented defects, each with root cause, fix and regression test): a dependency scanner that went silently blind on a rate limit (found by a runner canary), a test that could
 never fail (found by mutation testing), a brute-force and account-enumeration gap, 21 vulnerable libraries, an
 unpaginated catalog (p95 22 → 9 ms after the fix), a search race in the UI, a 500 on malformed query strings,
-and WCAG failures on all 8 storefront pages — fixed test-first.
+WCAG failures on all 8 original storefront pages (fixed test-first), a QA dashboard that showed a failed Jenkins build as
+green, and a Safari-only keyboard bug that made every form test type nothing.
 
 **QA documents:** [Test Strategy](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TEST_STRATEGY.md) ·
 [Risk Register](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/RISK_REGISTER.md) ·
 [Traceability (67 requirements)](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TRACEABILITY_MATRIX.md) ·
 [Defect Reports](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/DEFECT_REPORTS.md) ·
 [Test Summary Report](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TEST_SUMMARY_REPORT.md)
+
+### CI/CD: two pipelines, one set of gates
+
+Every change goes through a pull request; nothing reaches `main` until all checks are green.
+
+```mermaid
+flowchart LR
+  B["feature branch"] --> PR["pull request"]
+  PR --> GA["GitHub Actions<br/>9 jobs, Linux"]
+  GA -->|all green| M["merge to main"]
+  M --> J["Jenkins on macOS ARM<br/>Build with Parameters"]
+  J --> R["QA Reports page<br/>Allure + Cucumber"]
+  M --> P["Allure report<br/>GitHub Pages"]
+```
+
+| | GitHub Actions (cloud) | Jenkins (my Mac, Apple Silicon) |
+|---|---|---|
+| Runs | every push and pull request | on demand, `BROWSER` = chrome / firefox / edge / safari |
+| Jobs | backend + coverage, mutation (PIT), API + DB + BDD + UI on PostgreSQL, Firefox, Edge, ZAP + OSV security, Docker Compose smoke, Jenkinsfile lint, Allure publish | same stages from one `Jenkinsfile`, plus Safari |
+| Safeguards | pinned runner image + a canary on the next image | JDK 21 pinned as a Jenkins tool, per-stage timeouts, Docker and Safari readiness checks before tests start |
+| Reports | Allure on GitHub Pages | QA Reports page that is never greener than the build |
+| Latest | 9 / 9 checks green | Chrome, Firefox, Edge 287 / 287 each (builds #35-#37); Safari fix (DEF-024) merged |
+
+Running the same tests on a second CI system, OS and CPU found real problems that one pipeline hid: four
+defects came only from Jenkins on the Mac (DEF-014, DEF-015, DEF-022, DEF-024).
 
 ---
 
@@ -339,7 +366,7 @@ Live **last-commit** badges update automatically from GitHub; test results are f
 <br>
 
 **Stack:** Java 21 · Spring Boot 4.1 · PostgreSQL · React · JUnit 5 · REST Assured · Selenium 4 · Cucumber 7 · k6 · OWASP ZAP · PIT · Docker · GitHub Actions · Jenkins
-**Scope:** catalog, cart, checkout with coupons and tax, mock payments, order state machine, shipping and public tracking, returns and refunds, verified-purchase reviews, wishlist
+**Scope:** catalog, cart, checkout with coupons and tax, mock payments, order state machine, shipping and public tracking, returns and refunds, verified-purchase reviews, wishlist, store-admin panel, six-language storefront with help center, installable desktop app (PWA + one-click launchers)
 **Repo:** [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) · **Reports:** [Allure](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/)
 
 </details>
@@ -477,6 +504,7 @@ pie showData
 
 | Focus Area | Progress |
 |-----------|----------|
+| E-Commerce Suite: store-admin panel, six languages, desktop app, Safari on Jenkins | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
 | E-Commerce Suite: refresh tokens, shared login lockout, payment-provider sandbox contract tests | ![](https://img.shields.io/badge/-next-0d9488?style=flat-square) |
 | Quality gates: contract, mutation, accessibility, performance and security in every build | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
 | Enterprise BDD frameworks from scratch | ![](https://img.shields.io/badge/-ongoing-22c55e?style=flat-square) |
