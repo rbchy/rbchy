@@ -64,7 +64,7 @@ QA Automation Engineer / SDET. I build the test system around an application: AP
 is the test system around it.
 
 [![CI](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/actions/workflows/ci.yml/badge.svg)](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/actions/workflows/ci.yml)
-![Tests](https://img.shields.io/badge/automated%20tests-571-brightgreen?style=flat-square)
+![Tests](https://img.shields.io/badge/automated%20tests-583-brightgreen?style=flat-square)
 [![Coverage](https://img.shields.io/badge/line%20coverage-97.5%25-brightgreen?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/coverage/)
 [![Mutation](https://img.shields.io/badge/mutation%20score-84.9%25-brightgreen?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/mutation/)
 [![Allure](https://img.shields.io/badge/Allure-live%20report-orange?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/)
@@ -75,7 +75,7 @@ is the test system around it.
 | API, DB, BDD, UI | REST Assured, JDBC, Cucumber 7, Selenium 4 (Page Objects) | 287 / 287 |
 | Test quality | PIT mutation testing (>= 84 %) | 84.9 %, test strength 97.5 % |
 | API contract | 12 strict JSON Schemas + OpenAPI breaking-change gate | 0 breaking changes |
-| Accessibility | axe-core, WCAG 2.1 AA, 8 pages | 0 serious / critical |
+| Accessibility | axe-core, WCAG 2.1 AA, 13 pages | 0 serious / critical |
 | Cross-browser | Chrome, Firefox, Edge (CI matrix), Safari via Jenkins | 20 / 20 per browser |
 | Performance | k6 smoke, 60-buyer flash sale, catalog, with SLO thresholds | 0 % errors, no overselling |
 | Security | OWASP ZAP API scan, SBOM-based OSV scan with self-test, JWT / RBAC / IDOR tests | 0 Medium/High, 0 vulnerable libraries |
@@ -88,7 +88,7 @@ and WCAG failures on all 8 storefront pages — fixed test-first.
 
 **QA documents:** [Test Strategy](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TEST_STRATEGY.md) ·
 [Risk Register](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/RISK_REGISTER.md) ·
-[Traceability (63 requirements)](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TRACEABILITY_MATRIX.md) ·
+[Traceability (67 requirements)](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TRACEABILITY_MATRIX.md) ·
 [Defect Reports](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/DEFECT_REPORTS.md) ·
 [Test Summary Report](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TEST_SUMMARY_REPORT.md)
 
@@ -314,7 +314,7 @@ Live **last-commit** badges update automatically from GitHub; test results are f
 
 | Project | Stack | Test Results | Last Activity |
 |---------|-------|-------------|---------------|
-| ⭐ [E-Commerce Suite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | Java 21 · Spring Boot 4.1 · REST Assured · Selenium · Cucumber · k6 | ![tests](https://img.shields.io/badge/passed-571%2F571-22c55e?style=flat-square) ![gates](https://img.shields.io/badge/CI%20gates-14-155e75?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/RbcTcsWorld_ECommerceSuite?style=flat-square&label=) |
+| ⭐ [E-Commerce Suite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | Java 21 · Spring Boot 4.1 · REST Assured · Selenium · Cucumber · k6 | ![tests](https://img.shields.io/badge/passed-583%2F583-22c55e?style=flat-square) ![gates](https://img.shields.io/badge/CI%20gates-14-155e75?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/RbcTcsWorld_ECommerceSuite?style=flat-square&label=) |
 | 🔬 [QA Brains — Python + Playwright](https://github.com/rbchy/QaBrainsAutomationPythonPlawright) | Python · Playwright · Behave · Allure | ![passed](https://img.shields.io/badge/passed-12-22c55e?style=flat-square) ![skipped](https://img.shields.io/badge/skipped-3-f59e0b?style=flat-square) ![failed](https://img.shields.io/badge/failed-0-lightgrey?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationPythonPlawright?style=flat-square&label=) |
 | 🔬 [QA Brains — TypeScript + Playwright](https://github.com/rbchy/QaBrainsAutomationTypeScriptPlaywright) | TS 5 · Playwright · Cucumber.js | ![passed](https://img.shields.io/badge/passed-14-22c55e?style=flat-square) ![pending](https://img.shields.io/badge/pending-1-f59e0b?style=flat-square) ![failed](https://img.shields.io/badge/failed-0-lightgrey?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationTypeScriptPlaywright?style=flat-square&label=) |
 | 🔬 [QA Brains — Java + Playwright](https://github.com/rbchy/QaBrainsAutomationJavaPlaywright) | Java 17 · Playwright · Cucumber JVM · TestNG | ![status](https://img.shields.io/badge/status-stable-0d9488?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationJavaPlaywright?style=flat-square&label=) |
@@ -462,7 +462,7 @@ pie showData
 | 28 | [rbchy](https://github.com/rbchy/rbchy) | 🗂️ Portfolio | This profile README repository |
 | 29 | [RbcTcsWorld-EPMS](https://github.com/rbchy/RbcTcsWorld-EPMS) | 💻 App | Full-stack payroll — Spring Boot REST API + test suite |
 | 30 | [RbcTcsWorld_ClinTrial-Connect](https://github.com/rbchy/RbcTcsWorld_ClinTrial-Connect) | 💻 App | Spring Boot clinical-trial patient matching, 115+ automated tests |
-| 31 | [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | 💻 App | ⭐ Spring Boot 4 e-commerce + 571 automated tests, 14 CI quality gates |
+| 31 | [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | 💻 App | ⭐ Spring Boot 4 e-commerce + 583 automated tests, 14 CI quality gates |
 | 32 | [RbcTcsWorld_PharmaPackQMS](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS) | 💻 App | Pharmaceutical packaging quality management (QMS) |
 | 33 | [RbcTcsWorld_PharmaPackQMS_Serialization](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS_Serialization) | 💻 App | Pharma packaging QMS + serialization, CI and desktop builds for Windows / macOS / Linux |
 | 34 | [RbcTcsWorld_Pharmaceuticals_PMC](https://github.com/rbchy/RbcTcsWorld_Pharmaceuticals_PMC) | 💻 App | Pharma Packaging Execution System — Java Swing desktop app |
