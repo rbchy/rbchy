@@ -81,7 +81,7 @@ is the test system around it.
 | Security | OWASP ZAP API scan, SBOM-based OSV scan with self-test, JWT / RBAC / IDOR tests | 0 Medium/High, 0 vulnerable libraries |
 | Delivery | Docker Compose stack, GitHub Actions + Jenkins (macOS ARM) | 44 / 44 smoke tests |
 
-**What the tests found** (21 documented defects, each with root cause, fix and regression test): a dependency scanner that went silently blind on a rate limit (found by a runner canary), a test that could
+**What the tests found** (22 documented defects, each with root cause, fix and regression test): a dependency scanner that went silently blind on a rate limit (found by a runner canary), a test that could
 never fail (found by mutation testing), a brute-force and account-enumeration gap, 21 vulnerable libraries, an
 unpaginated catalog (p95 22 → 9 ms after the fix), a search race in the UI, a 500 on malformed query strings,
 and WCAG failures on all 8 storefront pages — fixed test-first.
