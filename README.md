@@ -77,12 +77,12 @@ is the test system around it.
 | Test quality | PIT mutation testing (>= 84 %) | 84.9 %, test strength 97.5 % |
 | API contract | 12 strict JSON Schemas + OpenAPI breaking-change gate | 0 breaking changes |
 | Accessibility | axe-core, WCAG 2.1 AA, 13 pages | 0 serious / critical |
-| Cross-browser | Chrome, Firefox, Edge (CI matrix), Safari via Jenkins | 32 / 32 per browser |
+| Cross-browser | Chrome, Firefox, Edge (CI matrix), Safari via Jenkins | 32 / 32 per browser, Safari included |
 | Performance | k6 smoke, 60-buyer flash sale, catalog, with SLO thresholds | 0 % errors, no overselling |
 | Security | OWASP ZAP API scan, SBOM-based OSV scan with self-test, JWT / RBAC / IDOR tests | 0 Medium/High, 0 vulnerable libraries |
 | Delivery | Docker Compose stack, GitHub Actions + Jenkins (macOS ARM) | 44 / 44 smoke tests |
 
-**What the tests found** (24 documented defects, each with root cause, fix and regression test): a dependency scanner that went silently blind on a rate limit (found by a runner canary), a test that could
+**What the tests found** (25 documented defects, each with root cause, fix and regression test): a dependency scanner that went silently blind on a rate limit (found by a runner canary), a test that could
 never fail (found by mutation testing), a brute-force and account-enumeration gap, 21 vulnerable libraries, an
 unpaginated catalog (p95 22 → 9 ms after the fix), a search race in the UI, a 500 on malformed query strings,
 WCAG failures on all 8 original storefront pages (fixed test-first), a QA dashboard that showed a failed Jenkins build as
@@ -114,10 +114,10 @@ flowchart LR
 | Jobs | backend + coverage, mutation (PIT), API + DB + BDD + UI on PostgreSQL, Firefox, Edge, ZAP + OSV security, Docker Compose smoke, Jenkinsfile lint, Allure publish | same stages from one `Jenkinsfile`, plus Safari |
 | Safeguards | pinned runner image + a canary on the next image | JDK 21 pinned as a Jenkins tool, per-stage timeouts, Docker and Safari readiness checks before tests start |
 | Reports | Allure on GitHub Pages | QA Reports page that is never greener than the build |
-| Latest | 9 / 9 checks green | Chrome, Firefox, Edge 287 / 287 each (builds #35-#37); Safari fix (DEF-024) merged |
+| Latest | 9 / 9 checks green | Safari 26: 583 / 583, all gates passed (build #41); Chrome, Firefox, Edge green (#35-#37) |
 
-Running the same tests on a second CI system, OS and CPU found real problems that one pipeline hid: four
-defects came only from Jenkins on the Mac (DEF-014, DEF-015, DEF-022, DEF-024).
+Running the same tests on a second CI system, OS and CPU found real problems that one pipeline hid: five
+defects came only from Jenkins on the Mac (DEF-014, DEF-015, DEF-022, DEF-024, DEF-025).
 
 ---
 
