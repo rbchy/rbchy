@@ -69,14 +69,14 @@ is the test system around it.
 [![CI](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/actions/workflows/ci.yml/badge.svg)](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/actions/workflows/ci.yml)
 ![Tests](https://img.shields.io/badge/automated%20tests-910-brightgreen?style=flat-square)
 [![Coverage](https://img.shields.io/badge/line%20coverage-98.1%25-brightgreen?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/coverage/)
-[![Mutation](https://img.shields.io/badge/mutation%20score-91.9%25-brightgreen?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/mutation/)
+[![Mutation](https://img.shields.io/badge/mutation%20score-92.2%25-brightgreen?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/mutation/)
 [![Allure](https://img.shields.io/badge/Allure-live%20report-orange?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/)
 
 | Layer | What gates every push | Latest result |
 |---|---|---|
-| Unit + integration | JUnit 5, Mockito, JaCoCo (>= 97 % lines, >= 88 % branches) | 469 / 469 · 98.1 % / 93.4 % |
+| Unit + integration | JUnit 5, Mockito, JaCoCo (>= 97 % lines, >= 88 % branches) | 469 / 469 · 98.1 % / 93.9 % |
 | API, DB, BDD, UI | REST Assured, JDBC, Cucumber 7, Selenium 4 (Page Objects) | 328 / 328 |
-| Test quality | PIT mutation testing (>= 84 %) | 91.9 %, test strength 99.3 % |
+| Test quality | PIT mutation testing (>= 84 %) | 92.2 %, test strength 99.3 % |
 | API contract | 12 strict JSON Schemas + OpenAPI breaking-change gate | 0 breaking changes |
 | Accessibility | axe-core, WCAG 2.1 AA, 15 pages | 0 serious / critical |
 | Cross-browser | Chrome, Firefox, Edge (CI matrix), Safari via Jenkins | 48 / 48 per browser, Safari included |
@@ -88,17 +88,23 @@ is the test system around it.
 | Security | OWASP ZAP API scan, SBOM-based OSV scan with self-test, JWT / RBAC / IDOR tests, refresh-token theft detection, Redis lockout across 2 backends | 0 Medium/High, 0 vulnerable libraries |
 | Delivery | Docker Compose stack, GitHub Actions + Jenkins (macOS ARM) | 44 / 44 smoke tests |
 
-**What the tests found** (25 documented defects, each with root cause, fix and regression test): a dependency scanner that went silently blind on a rate limit (found by a runner canary), a test that could
+**What the tests found** (26 documented defects, each with root cause, fix and regression test): a dependency scanner that went silently blind on a rate limit (found by a runner canary), a test that could
 never fail (found by mutation testing), a brute-force and account-enumeration gap, 21 vulnerable libraries, an
 unpaginated catalog (p95 22 → 9 ms after the fix), a search race in the UI, a 500 on malformed query strings,
 WCAG failures on all 8 original storefront pages (fixed test-first), a QA dashboard that showed a failed Jenkins build as
-green, and a Safari-only keyboard bug that made every form test type nothing.
+green, a Safari-only keyboard bug that made every form test type nothing, and a broken product picture that
+left an empty frame only in Safari (found by Playwright on WebKit).
 
 **QA documents:** [Test Strategy](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TEST_STRATEGY.md) ·
 [Risk Register](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/RISK_REGISTER.md) ·
 [Traceability (83 requirements)](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TRACEABILITY_MATRIX.md) ·
 [Defect Reports](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/DEFECT_REPORTS.md) ·
 [Test Summary Report](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TEST_SUMMARY_REPORT.md)
+
+**Engineering:** [9 Architecture Decision Records](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/tree/main/docs/adr) ·
+one-command workflow (`make app`, `make test`, `make playwright`, `make doctor` checks the machine first) ·
+[Contributing guide](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/CONTRIBUTING.md) ·
+[MIT License](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/LICENSE)
 
 ### CI/CD: two pipelines, one set of gates
 
@@ -107,7 +113,7 @@ Every change goes through a pull request; nothing reaches `main` until all check
 ```mermaid
 flowchart LR
   B["feature branch"] --> PR["pull request"]
-  PR --> GA["GitHub Actions<br/>9 jobs, Linux"]
+  PR --> GA["GitHub Actions<br/>12 jobs, Linux + macOS"]
   GA -->|all green| M["merge to main"]
   M --> J["Jenkins on macOS ARM<br/>Build with Parameters"]
   J --> R["QA Reports page<br/>Allure + Cucumber"]
@@ -116,11 +122,11 @@ flowchart LR
 
 | | GitHub Actions (cloud) | Jenkins (my Mac, Apple Silicon) |
 |---|---|---|
-| Runs | every push and pull request | on demand, `BROWSER` = chrome / firefox / edge / safari |
-| Jobs | backend + coverage, mutation (PIT), API + DB + BDD + UI on PostgreSQL, Firefox, Edge, ZAP + OSV security, Docker Compose smoke, Jenkinsfile lint, Allure publish | same stages from one `Jenkinsfile`, plus Safari |
+| Runs | every push and pull request | on demand: `BROWSER` = chrome / firefox / edge / safari, `RUN_PLAYWRIGHT`, `PHONE` = ios-safari / android-chrome |
+| Jobs | backend + coverage, mutation (PIT), API + DB + BDD + UI on PostgreSQL, cross-browser, Playwright, Appium on an Android emulator and an iOS Simulator, ZAP + OSV security, Docker Compose smoke, public demo stack, Jenkinsfile lint, Allure publish | same stages from one `Jenkinsfile`, plus Safari |
 | Safeguards | pinned runner image + a canary on the next image | JDK 21 pinned as a Jenkins tool, per-stage timeouts, Docker and Safari readiness checks before tests start |
 | Reports | Allure on GitHub Pages | QA Reports page that is never greener than the build |
-| Latest | 9 / 9 checks green | Safari 26: 583 / 583, all gates passed (build #41); Chrome, Firefox, Edge green (#35-#37) |
+| Latest | all checks green on `main` | builds #50, #51, #54 (15 Oct 2026): 797 tests, all gates passed, p95 18-20 ms; Safari 26 green since #41 |
 
 Running the same tests on a second CI system, OS and CPU found real problems that one pipeline hid: five
 defects came only from Jenkins on the Mac (DEF-014, DEF-015, DEF-022, DEF-024, DEF-025).
@@ -371,8 +377,8 @@ Live **last-commit** badges update automatically from GitHub; test results are f
 
 <br>
 
-**Stack:** Java 21 · Spring Boot 4.1 · PostgreSQL · React · JUnit 5 · REST Assured · Selenium 4 · Cucumber 7 · k6 · OWASP ZAP · PIT · Docker · GitHub Actions · Jenkins
-**Scope:** catalog, cart, checkout with coupons and tax, mock payments, order state machine, shipping and public tracking, returns and refunds, verified-purchase reviews, wishlist, store-admin panel, six-language storefront with help center, installable desktop app (PWA + one-click launchers)
+**Stack:** Java 21 · Spring Boot 4.1 · PostgreSQL · Redis · React · JUnit 5 · REST Assured · Selenium 4 · Playwright (TypeScript) · Appium 3 · Cucumber 7 · k6 · OWASP ZAP · PIT · Docker · GitHub Actions · Jenkins
+**Scope:** catalog, cart, checkout with coupons and tax, Stripe payments, order e-mails, order state machine, shipping and public tracking, returns and refunds, verified-purchase reviews, wishlist, store-admin panel, six-language storefront with help center, installable desktop app (PWA + one-click launchers)
 **Repo:** [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) · **Reports:** [Allure](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/)
 
 </details>

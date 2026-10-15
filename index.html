@@ -250,7 +250,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
       <div class="stat" role="listitem"><b>40+</b><span>years in technology</span><small>since 1979</small></div>
       <div class="stat" role="listitem"><b>36</b><span>public repositories</span><small>web, mobile, API, apps</small></div>
       <div class="stat" role="listitem"><b>910</b><span>automated tests, all passing</span><small>E-Commerce Suite</small></div>
-      <div class="stat" role="listitem"><b>14</b><span>CI quality gates per build</span><small>GitHub Actions + Jenkins</small></div>
+      <div class="stat" role="listitem"><b>18</b><span>CI quality gates per build</span><small>GitHub Actions + Jenkins</small></div>
     </div>
   </div>
 </header>
@@ -265,12 +265,12 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <div class="flag">
       <div>
         <div class="flag-meta">
-          <span>Java 21</span><span>Spring Boot 4.1</span><span>PostgreSQL</span><span>React</span><span>REST Assured</span><span>Selenium 4</span><span>Cucumber 7</span><span>k6</span><span>OWASP ZAP</span><span>PIT</span><span>Docker</span>
+          <span>Java 21</span><span>Spring Boot 4.1</span><span>PostgreSQL</span><span>React</span><span>REST Assured</span><span>Selenium 4</span><span>Cucumber 7</span><span>Playwright</span><span>Appium 3</span><span>Redis</span><span>k6</span><span>OWASP ZAP</span><span>PIT</span><span>Docker</span>
         </div>
         <ul class="gates" aria-label="Quality gates and latest results">
-          <li><b>Unit + integration</b><span>469 / 469</span><small>JUnit 5, Mockito, Testcontainers; JaCoCo 98.1 % lines, 93.4 % branches</small></li>
+          <li><b>Unit + integration</b><span>469 / 469</span><small>JUnit 5, Mockito, Testcontainers; JaCoCo 98.1 % lines, 93.9 % branches</small></li>
           <li><b>API, database, BDD, UI</b><span>328 / 328</span><small>REST Assured, JDBC, 43 Cucumber scenarios, Selenium Page Objects</small></li>
-          <li><b>Mutation testing</b><span>91.9 %</span><small>PIT, gate at 84 %; test strength 99.3 %</small></li>
+          <li><b>Mutation testing</b><span>92.2 %</span><small>PIT, gate at 84 %; test strength 99.3 %</small></li>
           <li><b>API contract</b><span>0 breaking</span><small>12 strict JSON Schemas + OpenAPI breaking-change gate</small></li>
           <li><b>Accessibility</b><span>15 / 15 pages</span><small>axe-core, WCAG 2.1 AA, 0 serious or critical</small></li>
           <li><b>Cross-browser</b><span>48 / 48</span><small>Chrome, Firefox, Edge in CI; Safari via Jenkins</small></li>
@@ -287,16 +287,18 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
           <li>An unpaginated catalog: p95 22 → 9 ms after a test-first fix.</li>
           <li>WCAG failures on all 8 storefront pages, fixed test-first.</li>
           <li>21 vulnerable libraries reduced to 0, then a Spring Boot 4 upgrade.</li>
+          <li>A broken product picture that left an empty frame only in Safari, found by Playwright on WebKit.</li>
         </ul>
         <div class="cta">
           <a class="btn primary" href="https://github.com/rbchy/RbcTcsWorld_ECommerceSuite" target="_blank" rel="noopener">Repository</a>
           <a class="btn" href="https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/" target="_blank" rel="noopener">Live Allure report</a>
-          <a class="btn" href="https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/DEFECT_REPORTS.md" target="_blank" rel="noopener">25 defect reports</a>
+          <a class="btn" href="https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/DEFECT_REPORTS.md" target="_blank" rel="noopener">26 defect reports</a>
+          <a class="btn" href="https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/tree/main/docs/adr" target="_blank" rel="noopener">9 design decisions</a>
         </div>
       </div>
       <figure class="shot">
-        <img src="ecommerce-qa-reports.png" alt="Jenkins QA Reports page: all gates passed, 284/284 backend tests, 287/287 automation tests, 97.5% coverage, 84.9% mutation score, 0 ZAP and OSV findings" width="1200" height="1477" loading="lazy">
-        <figcaption>One page per Jenkins build with every gate. All gates passed.</figcaption>
+        <img src="ecommerce-qa-reports.png" alt="Jenkins QA Reports page, build 54: all gates passed, 469/469 backend tests, 326/328 automation tests with 2 skipped, 98.1% line coverage, 92.2% mutation score, k6 p95 18 ms and 73 ms with 0% errors" width="1600" height="681" loading="lazy">
+        <figcaption>One page per Jenkins build with every gate: build #54, 15 Oct 2026, all gates passed.</figcaption>
       </figure>
     </div>
   </div>
