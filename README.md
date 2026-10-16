@@ -88,12 +88,13 @@ is the test system around it.
 | Security | OWASP ZAP API scan, SBOM-based OSV scan with self-test, JWT / RBAC / IDOR tests, refresh-token theft detection, Redis lockout across 2 backends | 0 Medium/High, 0 vulnerable libraries |
 | Delivery | Docker Compose stack, GitHub Actions + Jenkins (macOS ARM) | 44 / 44 smoke tests |
 
-**What the tests found** (26 documented defects, each with root cause, fix and regression test): a dependency scanner that went silently blind on a rate limit (found by a runner canary), a test that could
+**What the tests found** (27 documented defects, each with root cause, fix and regression test): a dependency scanner that went silently blind on a rate limit (found by a runner canary), a test that could
 never fail (found by mutation testing), a brute-force and account-enumeration gap, 21 vulnerable libraries, an
 unpaginated catalog (p95 22 → 9 ms after the fix), a search race in the UI, a 500 on malformed query strings,
 WCAG failures on all 8 original storefront pages (fixed test-first), a QA dashboard that showed a failed Jenkins build as
 green, a Safari-only keyboard bug that made every form test type nothing, and a broken product picture that
-left an empty frame only in Safari (found by Playwright on WebKit).
+left an empty frame only in Safari (found by Playwright on WebKit), and a UI search helper that waited for
+nothing on a slow Safari run (found by Jenkins on the Mac).
 
 **QA documents:** [Test Strategy](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TEST_STRATEGY.md) ·
 [Risk Register](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/RISK_REGISTER.md) ·
@@ -126,10 +127,10 @@ flowchart LR
 | Jobs | backend + coverage, mutation (PIT), API + DB + BDD + UI on PostgreSQL, cross-browser, Playwright, Appium on an Android emulator and an iOS Simulator, ZAP + OSV security, Docker Compose smoke, public demo stack, Jenkinsfile lint, Allure publish | same stages from one `Jenkinsfile`, plus Safari |
 | Safeguards | pinned runner image + a canary on the next image | JDK 21 pinned as a Jenkins tool, per-stage timeouts, Docker and Safari readiness checks before tests start |
 | Reports | Allure on GitHub Pages | QA Reports page that is never greener than the build |
-| Latest | all checks green on `main` | builds #50, #51, #54 (15 Oct 2026): 797 tests, all gates passed, p95 18-20 ms; Safari 26 green since #41 |
+| Latest | all checks green on `main` | Chrome builds #50, #51, #54 and Safari build #59 (Oct 2026): 797 tests, all gates passed, k6 p95 16-72 ms |
 
-Running the same tests on a second CI system, OS and CPU found real problems that one pipeline hid: five
-defects came only from Jenkins on the Mac (DEF-014, DEF-015, DEF-022, DEF-024, DEF-025).
+Running the same tests on a second CI system, OS and CPU found real problems that one pipeline hid: six
+defects came only from Jenkins on the Mac (DEF-014, DEF-015, DEF-022, DEF-024, DEF-025, DEF-027).
 
 ---
 
