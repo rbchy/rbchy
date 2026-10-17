@@ -61,27 +61,28 @@ QA Automation Engineer / SDET. I build the test system around an application: AP
 
 **[RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite)** — an Amazon-inspired online store
 (Spring Boot 4.1 · Java 21 · PostgreSQL · React) built *to be tested*. The storefront has a full store back office
-(products, coupons, orders, payments, returns, reviews, customer accounts, seven printable reports with CSV export, advanced search), six languages including right-to-left Arabic, and installs as a desktop app. Sessions use rotating refresh tokens with theft detection; the login
+(products, coupons, orders, payments, returns, reviews, customer accounts, multi-warehouse inventory, eight printable reports with CSV export, advanced search), six languages including right-to-left Arabic, and installs as a desktop app. Sessions use rotating refresh tokens with theft detection; the login
 lockout is shared by every backend instance through Redis. Payments run on Stripe (contract-tested against
 Stripe's own mock on every build) and every order step sends an e-mail through a transactional outbox. Every order
 ships to a validated US address, a forgotten password is reset by a single-use e-mailed link, and every product, order, coupon and customer change lands in an append-only, hash-chained audit trail inspired by 21 CFR Part 11 / ALCOA+. The application is the test object; the work
 is the test system around it.
 
 [![CI](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/actions/workflows/ci.yml/badge.svg)](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/actions/workflows/ci.yml)
-![Tests](https://img.shields.io/badge/automated%20tests-1157-brightgreen?style=flat-square)
+![Tests](https://img.shields.io/badge/automated%20tests-1230-brightgreen?style=flat-square)
 [![Coverage](https://img.shields.io/badge/line%20coverage-98.6%25-brightgreen?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/coverage/)
 [![Mutation](https://img.shields.io/badge/mutation%20score-93.2%25-brightgreen?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/mutation/)
 [![Allure](https://img.shields.io/badge/Allure-live%20report-orange?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/)
+[![Cucumber](https://img.shields.io/badge/Cucumber-60%20scenarios-23d96c?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/cucumber/)
 
 | Layer | What gates every push | Latest result |
 |---|---|---|
-| Unit + integration | JUnit 5, Mockito, JaCoCo (>= 97 % lines, >= 88 % branches) | 619 / 619 · 98.6 % / 95.5 % |
-| API, DB, BDD, UI | REST Assured, JDBC, Cucumber 7, Selenium 4 (Page Objects), e-mails read from Mailpit | 374 / 374 |
-| Test quality | PIT mutation testing (>= 84 %) | 93.2 %, test strength 98.5 % |
+| Unit + integration | JUnit 5, Mockito, JaCoCo (>= 97 % lines, >= 88 % branches) | 663 / 663 · 98.6 % / 95.6 % |
+| API, DB, BDD, UI | REST Assured, JDBC, Cucumber 7, Selenium 4 (Page Objects), e-mails read from Mailpit | 398 / 398 |
+| Test quality | PIT mutation testing (>= 84 %) | 93.2 %, test strength 98.0 % |
 | API contract | 12 strict JSON Schemas + OpenAPI breaking-change gate | 0 breaking changes |
-| Accessibility | axe-core, WCAG 2.1 AA, 22 pages | 0 serious / critical |
+| Accessibility | axe-core, WCAG 2.1 AA, 23 pages | 0 serious / critical |
 | Cross-browser | Chrome, Firefox, Edge (CI matrix), Safari via Jenkins | 53 / 53 per browser, Safari included |
-| Playwright (TypeScript) | Chromium, Firefox, WebKit, Pixel 7, iPhone 14; network mocking, visual regression, traces | 153 / 153 (+3 skipped by design) |
+| Playwright (TypeScript) | Chromium, Firefox, WebKit, Pixel 7, iPhone 14; network mocking, visual regression, traces | 158 / 158 (+3 skipped by design) |
 | Real phone browsers | Appium 3: Chrome on an Android emulator, Safari on an iOS Simulator, same page objects | 4 / 4 on each phone |
 | Payments | Stripe consumer contract (stripe-mock), recorded Stripe answers, idempotency keys | 0 double charges |
 | E-mails | Transactional outbox, real SMTP into Mailpit, 2 backends never send twice | 1 e-mail per event |
@@ -99,7 +100,7 @@ nothing on a slow Safari run (found by Jenkins on the Mac).
 
 **QA documents:** [Test Strategy](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TEST_STRATEGY.md) ·
 [Risk Register](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/RISK_REGISTER.md) ·
-[Traceability (102 requirements)](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TRACEABILITY_MATRIX.md) ·
+[Traceability (109 requirements)](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TRACEABILITY_MATRIX.md) ·
 [Defect Reports](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/DEFECT_REPORTS.md) ·
 [Test Summary Report](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TEST_SUMMARY_REPORT.md)
 
@@ -503,7 +504,7 @@ pie showData
 | 28 | [rbchy](https://github.com/rbchy/rbchy) | 🗂️ Portfolio | This profile README repository |
 | 29 | [RbcTcsWorld-EPMS](https://github.com/rbchy/RbcTcsWorld-EPMS) | 💻 App | Full-stack payroll — Spring Boot REST API + test suite |
 | 30 | [RbcTcsWorld_ClinTrial-Connect](https://github.com/rbchy/RbcTcsWorld_ClinTrial-Connect) | 💻 App | Spring Boot clinical-trial patient matching, 115+ automated tests |
-| 31 | [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | 💻 App | ⭐ Spring Boot 4 e-commerce + 1157 automated tests, 18 CI quality gates |
+| 31 | [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | 💻 App | ⭐ Spring Boot 4 e-commerce + 1230 automated tests, 18 CI quality gates |
 | 32 | [RbcTcsWorld_PharmaPackQMS](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS) | 💻 App | Pharmaceutical packaging quality management (QMS) |
 | 33 | [RbcTcsWorld_PharmaPackQMS_Serialization](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS_Serialization) | 💻 App | Pharma packaging QMS + serialization, CI and desktop builds for Windows / macOS / Linux |
 | 34 | [RbcTcsWorld_Pharmaceuticals_PMC](https://github.com/rbchy/RbcTcsWorld_Pharmaceuticals_PMC) | 💻 App | Pharma Packaging Execution System — Java Swing desktop app |
