@@ -153,6 +153,29 @@ td a{font-weight:600;text-decoration:none}
 .fs-nums{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0;list-style:none}
 .fs-nums li{font:500 13px var(--mono);padding:6px 10px;border-radius:8px;background:var(--surface-2);color:var(--ink-2)}
 .fs-nums b{color:var(--ink)}
+.gallery .tabs{display:flex;flex-wrap:wrap;gap:6px;margin:2px 2px 10px}
+.gallery .tabs button{font-weight:600;font-size:13px;font-family:inherit;padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink-2);cursor:pointer}
+.gallery .tabs button[aria-selected=true]{background:var(--deep);color:#fff;border-color:var(--deep)}
+@media (prefers-color-scheme:dark){.gallery .tabs button[aria-selected=true]{color:#06201d}}
+.gallery .tabs button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.viz{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px;margin:0 0 22px;align-items:center}
+.rings{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.ring{text-align:center;font-size:12.5px;color:var(--ink-2)}
+.ring svg{width:100%;max-width:108px;height:auto;display:block;margin:0 auto 4px}
+.ring b{display:block;color:var(--ink);font:700 14px var(--mono)}
+.tlv h4,.viz-h{font-size:15px;margin:0 0 10px}
+.tlv small{font:500 12px var(--mono);color:var(--ink-3);margin-left:6px}
+.lv{display:grid;grid-template-columns:132px 1fr 48px;gap:8px;align-items:center;font-size:13px;margin-bottom:7px}
+.lv i{display:block;height:14px;border-radius:4px;background:var(--surface-2);overflow:hidden}
+.lv i u{display:block;height:100%;border-radius:4px;text-decoration:none}
+.lv span:last-child{font:600 12px var(--mono);text-align:right}
+.heat{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-bottom:22px}
+.heat div{border-radius:10px;padding:10px 12px;border:1px solid var(--line);position:relative;overflow:hidden}
+.heat div::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--pass)}
+.heat b{display:block;font-size:13px;line-height:1.25;margin-bottom:6px}
+.heat span{font:600 12px var(--mono);color:var(--ink-2)}
+.heat em{font-style:normal;color:var(--pass);font-weight:700}
+@media(max-width:820px){.viz{grid-template-columns:1fr}.rings{grid-template-columns:repeat(2,1fr)}}
 .fs .table-wrap{margin-top:0}
 .reports{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:20px;padding:0;list-style:none}
 .reports a{display:block;height:100%;padding:14px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);background:var(--bg)}
@@ -314,9 +337,18 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
           <a class="btn" href="https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/tree/main/docs/adr" target="_blank" rel="noopener">9 design decisions</a>
         </div>
       </div>
-      <figure class="shot">
-        <img src="ecommerce-qa-reports.png" alt="Jenkins QA Reports page, build 54: all gates passed, 469/469 backend tests, 326/328 automation tests with 2 skipped, 98.1% line coverage, 92.2% mutation score, k6 p95 18 ms and 73 ms with 0% errors" width="1600" height="681" loading="lazy">
-        <figcaption>One page per Jenkins build with every gate: build #54, 15 Oct 2026, all gates passed.</figcaption>
+      <figure class="shot gallery" id="screens">
+        <div class="tabs" role="tablist" aria-label="Application screens">
+          <button role="tab" aria-selected="true" aria-controls="scr-menu" id="tab-menu" type="button">Menu</button>
+          <button role="tab" aria-selected="false" aria-controls="scr-dashboard" id="tab-dashboard" type="button" tabindex="-1">Dashboard</button>
+          <button role="tab" aria-selected="false" aria-controls="scr-reports" id="tab-reports" type="button" tabindex="-1">Report</button>
+          <button role="tab" aria-selected="false" aria-controls="scr-jenkins" id="tab-jenkins" type="button" tabindex="-1">Jenkins QA page</button>
+        </div>
+        <div role="tabpanel" id="scr-menu" aria-labelledby="tab-menu"><a href="app-menu.webp" target="_blank" rel="noopener"><img src="app-menu.webp" alt="Storefront on a desktop: coloured sidebar with icon tiles, top bar with cart badge, a coupon banner and product cards with illustrations" width="1360" height="860" loading="lazy"></a></div>
+        <div role="tabpanel" id="scr-dashboard" aria-labelledby="tab-dashboard" hidden><a href="app-dashboard.webp" target="_blank" rel="noopener"><img src="app-dashboard.webp" alt="Store admin dashboard on a desktop: five figure tiles, money received bar chart, orders by status donut and an orders calendar heat map" width="1360" height="860" loading="lazy"></a></div>
+        <div role="tabpanel" id="scr-reports" aria-labelledby="tab-reports" hidden><a href="app-reports.webp" target="_blank" rel="noopener"><img src="app-reports.webp" alt="Reports screen on a desktop: report, calendar date fields, quick ranges, bar chart of money received and a printable table" width="1360" height="860" loading="lazy"></a></div>
+        <div role="tabpanel" id="scr-jenkins" aria-labelledby="tab-jenkins" hidden><img src="ecommerce-qa-reports.png" alt="Jenkins QA Reports page, build 54: all gates passed, 469/469 backend tests, 326/328 automation tests with 2 skipped, 98.1% line coverage, 92.2% mutation score, k6 p95 18 ms and 73 ms with 0% errors" width="1600" height="681" loading="lazy"></div>
+        <figcaption id="scr-cap">Desktop menu: sidebar by area, top bar, cart badge. Screens show sample data.</figcaption>
       </figure>
     </div>
   </div>
@@ -345,6 +377,15 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <li><b>23</b> pages WCAG 2.1 AA</li>
         <li>verified <b>17 Oct 2026</b></li>
       </ul>
+      <div class="viz" aria-label="Flagship status at a glance">
+        <div class="rings" id="rings"></div>
+        <div class="tlv">
+          <h4>Tests by level <small id="lvlTotal"></small></h4>
+          <div id="lvlBars"></div>
+        </div>
+      </div>
+      <h4 class="viz-h">Modules and the requirements each one proves</h4>
+      <div class="heat" id="heat" role="list"></div>
       <div class="table-wrap">
         <table>
           <caption class="sr-only">Status of each module of the flagship project</caption>
@@ -508,6 +549,31 @@ const REPOS = [{"n": "Amazon-Cypress-JavaScript-Automation", "u": "https://githu
     ["Storefront and non-functional","6 languages, accessibility, cross-browser, phones, performance, security, Docker, CI",26,"UI · Playwright · Appium · k6 · ZAP · OSV"]
   ];
   document.getElementById('fsRows').innerHTML=rows.map(([m,w,n,l])=>`<tr><td><b>${m}</b></td><td>${w}</td><td>${n} / ${n}</td><td>${l}</td><td><span class="chip pass">✓ Verified</span></td></tr>`).join('');
+})();
+
+// flagship graphics: rings, level bars, module heat grid, screen tabs
+(function(){
+  const NS='http://www.w3.org/2000/svg';
+  const rings=[["Lines",98.6,"JaCoCo"],["Branches",95.6,"JaCoCo"],["Mutation",93.2,"PIT"],["Requirements",100,"109 / 109"]];
+  document.getElementById('rings').innerHTML=rings.map(([n,v,sub])=>{
+    const R=40,C=2*Math.PI*R,len=C*v/100;
+    return `<div class="ring"><svg viewBox="0 0 100 100" role="img" aria-label="${n}: ${v} percent"><circle cx="50" cy="50" r="${R}" fill="none" stroke="var(--surface-2)" stroke-width="11"/><circle cx="50" cy="50" r="${R}" fill="none" stroke="var(--pass)" stroke-width="11" stroke-linecap="round" stroke-dasharray="${len} ${C}" transform="rotate(-90 50 50)"/><text x="50" y="56" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="20" font-weight="800" fill="currentColor">${v%1?v.toFixed(1):v}%</text></svg><b>${n}</b>${sub}</div>`;
+  }).join('');
+  const lv=[["Unit + integration",663,"#0d8479"],["API, DB, BDD, UI",398,"#2b6cb0"],["Playwright",158,"#7c4dbd"],["Real phones",8,"#c2410c"]];
+  const tot=lv.reduce((a,x)=>a+x[1],0), max=Math.max(...lv.map(x=>x[1]));
+  document.getElementById('lvlTotal').textContent=`${tot} passed · 3 skipped by design`;
+  document.getElementById('lvlBars').innerHTML=lv.map(([n,v,c])=>`<div class="lv"><span>${n}</span><i role="img" aria-label="${n}: ${v} tests"><u style="width:${Math.max(v/max*100,2)}%;background:${c}"></u></i><span>${v}</span></div>`).join('');
+  const heat=document.getElementById('heat'), body=document.getElementById('fsRows');
+  if(heat&&body){
+    heat.innerHTML=[...body.rows].map(r=>{const c=r.cells,n=c[2].textContent.trim();
+      return `<div role="listitem"><b>${c[0].textContent.trim()}</b><span>${n} reqs <em>✓</em></span></div>`;}).join('');
+  }
+  const tabs=[...document.querySelectorAll('#screens [role=tab]')];
+  const cap={menu:"Desktop menu: sidebar by area, top bar, cart badge. Screens show sample data.",dashboard:"Dashboard: figures, money chart, status donut and calendar heat map. Sample data.",reports:"Report screen: calendar dates, quick ranges, chart, print and CSV. Sample data.",jenkins:"One page per Jenkins build with every gate: build #54, 15 Oct 2026, all gates passed."};
+  const pick=t=>{tabs.forEach(x=>{const on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});
+    document.getElementById('scr-cap').textContent=cap[t.id.replace('tab-','')];};
+  tabs.forEach((t,i)=>{t.addEventListener('click',()=>pick(t));t.addEventListener('keydown',e=>{
+    const k={ArrowRight:1,ArrowLeft:-1}[e.key]; if(!k)return; const n=tabs[(i+k+tabs.length)%tabs.length]; n.focus(); pick(n); e.preventDefault();});});
 })();
 
 // board table
