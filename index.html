@@ -288,7 +288,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <div class="stats" role="list">
       <div class="stat" role="listitem"><b>40+</b><span>years in technology</span><small>since 1979</small></div>
       <div class="stat" role="listitem"><b>36</b><span>public repositories</span><small>web, mobile, API, apps</small></div>
-      <div class="stat" role="listitem"><b>1230</b><span>automated tests, all passing</span><small>E-Commerce Suite</small></div>
+      <div class="stat" role="listitem"><b>1481</b><span>automated tests, all passing</span><small>E-Commerce Suite</small></div>
       <div class="stat" role="listitem"><b>18</b><span>CI quality gates per build</span><small>GitHub Actions + Jenkins</small></div>
     </div>
   </div>
@@ -299,7 +299,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <div class="sec-head">
       <span class="eyebrow">Flagship project</span>
       <h2>RbcTcsWorld E-Commerce Suite</h2>
-      <p>An Amazon-inspired online store built to be tested: checkout with a validated delivery address, Stripe payments, order e-mails, a password reset by single-use e-mailed link, a full store back office with eight printable reports, multi-warehouse inventory, and an append-only, hash-chained audit trail inspired by 21 CFR Part 11 / ALCOA+. The application is the test object; the work is the test system around it. Every push runs 18 quality gates, and a failing gate blocks the build.</p>
+      <p>An Amazon-inspired online store built to be tested: checkout with a validated delivery address, Stripe payments, order e-mails, a password reset by single-use e-mailed link, guest checkout and an address book, size and colour variants, a faceted filter panel with counts, flash deals with a countdown, "customers also bought", invoice PDFs, optional two-factor sign-in by e-mailed code, a saved-card wallet that keeps tokens only, a full store back office with eight printable reports, multi-warehouse inventory, and an append-only, hash-chained audit trail inspired by 21 CFR Part 11 / ALCOA+. The application is the test object; the work is the test system around it. Every push runs 18 quality gates, and a failing gate blocks the build.</p>
     </div>
     <div class="flag">
       <div>
@@ -307,13 +307,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
           <span>Java 21</span><span>Spring Boot 4.1</span><span>PostgreSQL</span><span>React</span><span>REST Assured</span><span>Selenium 4</span><span>Cucumber 7</span><span>Playwright</span><span>Appium 3</span><span>Redis</span><span>k6</span><span>OWASP ZAP</span><span>PIT</span><span>Docker</span>
         </div>
         <ul class="gates" aria-label="Quality gates and latest results">
-          <li><b>Unit + integration</b><span>663 / 663</span><small>JUnit 5, Mockito, Testcontainers; JaCoCo 98.6 % lines, 95.6 % branches</small></li>
-          <li><b>API, database, BDD, UI</b><span>398 / 398</span><small>REST Assured, JDBC, 60 Cucumber scenarios, Selenium Page Objects, e-mails read from Mailpit</small></li>
-          <li><b>Mutation testing</b><span>93.2 %</span><small>PIT, gate at 84 %; test strength 98.0 %</small></li>
+          <li><b>Unit + integration</b><span>772 / 772</span><small>JUnit 5, Mockito, Testcontainers; JaCoCo 97.3 % lines, 94.2 % branches</small></li>
+          <li><b>API, database, BDD, UI</b><span>444 / 444</span><small>REST Assured, JDBC, 52 Cucumber scenarios, Selenium Page Objects, e-mails read from Mailpit</small></li>
+          <li><b>Mutation testing</b><span>89.3 %</span><small>PIT, gate at 84 %; test strength 94.7 %</small></li>
           <li><b>API contract</b><span>0 breaking</span><small>12 strict JSON Schemas + OpenAPI breaking-change gate</small></li>
           <li><b>Accessibility</b><span>23 / 23 pages</span><small>axe-core, WCAG 2.1 AA, 0 serious or critical</small></li>
           <li><b>Cross-browser</b><span>53 / 53</span><small>Chrome, Firefox, Edge in CI; Safari via Jenkins</small></li>
-          <li><b>Playwright</b><span>158 / 158</span><small>TypeScript; Chromium, Firefox, WebKit, Pixel 7, iPhone 14; mocking, visual regression</small></li>
+          <li><b>Playwright</b><span>254 / 254</span><small>TypeScript; Chromium, Firefox, WebKit, Pixel 7, iPhone 14; mocking, visual regression</small></li>
           <li><b>Real phones</b><span>8 / 8</span><small>Appium 3: Chrome on Android, Safari on iOS Simulator</small></li>
           <li><b>Performance</b><span>0 % errors</span><small>k6 smoke, flash sale, catalog; JMeter 100 users p95 77 ms</small></li>
           <li><b>Security</b><span>0 High / Medium</span><small>OWASP ZAP API scan, SBOM-based OSV scan with self-test, JWT / RBAC / IDOR tests</small></li>
@@ -368,12 +368,12 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
           <img src="https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/actions/workflows/ci.yml/badge.svg" alt="Live CI status of the main branch" width="120" height="20"></a>
       </div>
       <ul class="fs-nums" aria-label="Latest verified numbers">
-        <li><b>1230</b> automated tests</li>
+        <li><b>1481</b> automated tests</li>
         <li><b>18</b> CI quality gates</li>
-        <li><b>98.6 %</b> lines · <b>95.6 %</b> branches</li>
-        <li><b>93.2 %</b> mutation score</li>
+        <li><b>97.3 %</b> lines · <b>94.2 %</b> branches</li>
+        <li><b>89.3 %</b> mutation score</li>
         <li><b>60</b> Cucumber scenarios</li>
-        <li><b>109 / 109</b> requirements traced</li>
+        <li><b>129 / 129</b> requirements traced</li>
         <li><b>23</b> pages WCAG 2.1 AA</li>
         <li>verified <b>17 Oct 2026</b></li>
       </ul>
@@ -535,18 +535,19 @@ const REPOS = [{"n": "Amazon-Cypress-JavaScript-Automation", "u": "https://githu
 // flagship module status
 (function(){
   const rows=[
-    ["Accounts and sessions","Register, login lockout, refresh-token rotation, password reset by e-mail, disabled accounts",14,"Unit · Integration · API · UI · Security"],
-    ["Catalog and search","Paging, sorting, category and price filters, pictures, similar products",6,"Unit · Integration · API · UI · k6 · JMeter"],
+    ["Accounts and sessions","Register, guest checkout, login lockout, two-factor sign-in by e-mailed code, refresh-token rotation, password reset, disabled accounts",16,"Unit · Integration · API · UI · Security"],
+    ["Catalog and search","Paging, sorting, faceted filters with counts, variants, flash deals, bought-together, pictures, similar products",14,"Unit · Integration · API · UI · k6 · JMeter"],
     ["Cart","Add, change quantity, remove, stock checks",3,"Unit · API · BDD · UI"],
-    ["Orders and inventory","Order from cart, atomic stock, cancel, delivery address",10,"Unit · Integration · API · BDD · DB · UI"],
+    ["Orders and inventory","Order from cart, atomic stock, cancel, delivery address, invoice PDF",11,"Unit · Integration · API · BDD · DB · UI"],
     ["Multi-warehouse","Allocation (local first, fewest parcels), split shipments, transfers, no overselling",5,"Unit · Integration · API · BDD · DB · UI"],
-    ["Checkout, coupons, payments","Tax and shipping maths, coupon rules, Stripe and mock payments, refunds",12,"Unit · Integration · API · BDD · Contract"],
+    ["Checkout, coupons, payments","Tax and shipping maths, coupon rules, Stripe and mock payments, saved-card wallet (tokens only), refunds",13,"Unit · Integration · API · BDD · Contract"],
     ["Shipping and returns","Ship, deliver, public tracking, 30-day returns, refund and restock",6,"Unit · Integration · API · BDD · DB"],
     ["Customer e-mails","Order e-mails through a transactional outbox, real SMTP into Mailpit",4,"Unit · Integration · API"],
     ["Reviews and wishlist","Verified-buyer reviews, moderation, ratings, price-drop wishlist",11,"Unit · Integration · API · BDD · DB · UI"],
     ["Store back office","Banner and sub-menus, customers, coupon edit, 8 reports, payment ledger, advanced search",8,"Unit · Integration · API · BDD · UI"],
     ["Audit trail","Append-only, hash-chained record of every change (inspired by 21 CFR Part 11 / ALCOA+)",4,"Unit · Integration · API · BDD · DB · UI"],
-    ["Storefront and non-functional","6 languages, accessibility, cross-browser, phones, performance, security, Docker, CI",26,"UI · Playwright · Appium · k6 · ZAP · OSV"]
+    ["Address book","Up to 10 saved addresses, default, checkout picks from the book",3,"Unit · Integration · API · BDD · UI"],
+    ["Storefront and non-functional","6 languages, accessibility, cross-browser, phones, performance, security, Docker, CI",31,"UI · Playwright · Appium · k6 · ZAP · OSV"]
   ];
   document.getElementById('fsRows').innerHTML=rows.map(([m,w,n,l])=>`<tr><td><b>${m}</b></td><td>${w}</td><td>${n} / ${n}</td><td>${l}</td><td><span class="chip pass">✓ Verified</span></td></tr>`).join('');
 })();
@@ -554,12 +555,12 @@ const REPOS = [{"n": "Amazon-Cypress-JavaScript-Automation", "u": "https://githu
 // flagship graphics: rings, level bars, module heat grid, screen tabs
 (function(){
   const NS='http://www.w3.org/2000/svg';
-  const rings=[["Lines",98.6,"JaCoCo"],["Branches",95.6,"JaCoCo"],["Mutation",93.2,"PIT"],["Requirements",100,"109 / 109"]];
+  const rings=[["Lines",97.3,"JaCoCo"],["Branches",94.2,"JaCoCo"],["Mutation",89.3,"PIT"],["Requirements",100,"129 / 129"]];
   document.getElementById('rings').innerHTML=rings.map(([n,v,sub])=>{
     const R=40,C=2*Math.PI*R,len=C*v/100;
     return `<div class="ring"><svg viewBox="0 0 100 100" role="img" aria-label="${n}: ${v} percent"><circle cx="50" cy="50" r="${R}" fill="none" stroke="var(--surface-2)" stroke-width="11"/><circle cx="50" cy="50" r="${R}" fill="none" stroke="var(--pass)" stroke-width="11" stroke-linecap="round" stroke-dasharray="${len} ${C}" transform="rotate(-90 50 50)"/><text x="50" y="56" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="20" font-weight="800" fill="currentColor">${v%1?v.toFixed(1):v}%</text></svg><b>${n}</b>${sub}</div>`;
   }).join('');
-  const lv=[["Unit + integration",663,"#0d8479"],["API, DB, BDD, UI",398,"#2b6cb0"],["Playwright",158,"#7c4dbd"],["Real phones",8,"#c2410c"]];
+  const lv=[["Unit + integration",772,"#0d8479"],["API, DB, BDD, UI",444,"#2b6cb0"],["Playwright",254,"#7c4dbd"],["Real phones",8,"#c2410c"]];
   const tot=lv.reduce((a,x)=>a+x[1],0), max=Math.max(...lv.map(x=>x[1]));
   document.getElementById('lvlTotal').textContent=`${tot} passed · 3 skipped by design`;
   document.getElementById('lvlBars').innerHTML=lv.map(([n,v,c])=>`<div class="lv"><span>${n}</span><i role="img" aria-label="${n}: ${v} tests"><u style="width:${Math.max(v/max*100,2)}%;background:${c}"></u></i><span>${v}</span></div>`).join('');
@@ -579,7 +580,7 @@ const REPOS = [{"n": "Amazon-Cypress-JavaScript-Automation", "u": "https://githu
 // board table
 (function(){
   const rows=[
-    ["E-Commerce Suite (flagship)","RbcTcsWorld_ECommerceSuite","Java 21 · Spring Boot 4.1 · REST Assured · Cucumber · Playwright · k6 · JMeter","pass","1227 passed, 3 skipped by design · 18 CI gates · 109/109 requirements"],
+    ["E-Commerce Suite (flagship)","RbcTcsWorld_ECommerceSuite","Java 21 · Spring Boot 4.1 · REST Assured · Cucumber · Playwright · k6 · JMeter","pass","1478 passed, 3 skipped by design · 18 CI gates · 129/129 requirements"],
     ["QA Brains · Python + Playwright","QaBrainsAutomationPythonPlawright","Python · Playwright · Behave · Allure","pass","12 passed · 3 skipped · 0 failed"],
     ["QA Brains · TypeScript + Playwright","QaBrainsAutomationTypeScriptPlaywright","TS 5 · Playwright · Cucumber.js","pass","14 passed · 1 pending · 0 failed"],
     ["QA Brains · Java + Playwright","QaBrainsAutomationJavaPlaywright","Java 17 · Playwright · Cucumber JVM · TestNG","stable","TestNG + Allure reports"],
