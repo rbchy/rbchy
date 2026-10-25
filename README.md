@@ -34,7 +34,7 @@
 
 **🙋 Who I am**
 
-QA Automation Engineer / SDET. I build the test system around an application: API, contract, UI, accessibility, performance and security tests that run as **quality gates in CI** (GitHub Actions and Jenkins), plus the QA documents that turn the results into a release decision. Backed by **four decades** of enterprise systems work, from container terminal management (NAVIS SPARCS N4) to modern web, mobile and API automation.
+QA Automation Engineer / SDET. I build the test system around an application: API, contract, UI, accessibility, performance and security tests that run as **quality gates in CI** (GitHub Actions and Jenkins), plus the QA documents that turn the results into a release decision. Backed by **four decades** of enterprise systems work, from container terminal management (NAVIS SPARCS N4) and GMP pharmaceutical packaging operations to modern web, mobile and API automation.
 
 > *"Quality is never an accident; it is always the result of intelligent effort."*
 
@@ -64,15 +64,16 @@ QA Automation Engineer / SDET. I build the test system around an application: AP
 (products, coupons, orders, payments, returns, reviews, customer accounts, multi-warehouse inventory, eight printable reports with CSV export, advanced search), six languages including right-to-left Arabic, and installs as a desktop app. Sessions use rotating refresh tokens with theft detection; the login
 lockout is shared by every backend instance through Redis. Payments run on Stripe (contract-tested against
 Stripe's own mock on every build) and every order step sends an e-mail through a transactional outbox. Every order
-ships to a validated US address, a forgotten password is reset by a single-use e-mailed link, and every product, order, coupon and customer change lands in an append-only, hash-chained audit trail inspired by 21 CFR Part 11 / ALCOA+. The application is the test object; the work
+ships to a validated US address, a forgotten password is reset by a single-use e-mailed link, and every product, order, coupon and customer change lands in an append-only, hash-chained audit trail inspired by 21 CFR Part 11 / ALCOA+.
+Shoppers also get guest checkout, an address book, a faceted filter panel, flash deals with a countdown, "customers also bought", invoice PDFs, optional two-factor sign-in by e-mailed code and a saved-card wallet that keeps only a provider token, never the card number. The application is the test object; the work
 is the test system around it.
 
 [![CI](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/actions/workflows/ci.yml/badge.svg)](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/actions/workflows/ci.yml)
-![Tests](https://img.shields.io/badge/automated%20tests-1481-brightgreen?style=flat-square)
+![Tests](https://img.shields.io/badge/automated%20tests-1489-brightgreen?style=flat-square)
 [![Coverage](https://img.shields.io/badge/line%20coverage-97.3%25-brightgreen?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/coverage/)
 [![Mutation](https://img.shields.io/badge/mutation%20score-89.3%25-brightgreen?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/mutation/)
 [![Allure](https://img.shields.io/badge/Allure-live%20report-orange?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/)
-[![Cucumber](https://img.shields.io/badge/Cucumber-60%20scenarios-23d96c?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/cucumber/)
+[![Cucumber](https://img.shields.io/badge/Cucumber-52%20scenarios-23d96c?style=flat-square)](https://rbchy.github.io/RbcTcsWorld_ECommerceSuite/cucumber/)
 
 | Layer | What gates every push | Latest result |
 |---|---|---|
@@ -81,14 +82,15 @@ is the test system around it.
 | Test quality | PIT mutation testing (>= 84 %) | 89.3 %, test strength 94.7 % |
 | API contract | 12 strict JSON Schemas + OpenAPI breaking-change gate | 0 breaking changes |
 | Accessibility | axe-core, WCAG 2.1 AA, 23 pages | 0 serious / critical |
-| Cross-browser | Chrome, Firefox, Edge (CI matrix), Safari via Jenkins | 53 / 53 per browser, Safari included |
-| Playwright (TypeScript) | Chromium, Firefox, WebKit, Pixel 7, iPhone 14; network mocking, visual regression, traces | 254 / 254 (+3 skipped by design) |
+| Cross-browser | Chrome, Firefox, Edge (CI matrix), Safari via Jenkins | 59 / 59 in Firefox and Edge |
+| Playwright (TypeScript) | Chromium, Firefox, WebKit, Pixel 7, iPhone 14; network mocking, visual regression, traces | 262 / 262 (+3 skipped by design) |
 | Real phone browsers | Appium 3: Chrome on an Android emulator, Safari on an iOS Simulator, same page objects | 4 / 4 on each phone |
 | Payments | Stripe consumer contract (stripe-mock), recorded Stripe answers, idempotency keys | 0 double charges |
 | E-mails | Transactional outbox, real SMTP into Mailpit, 2 backends never send twice | 1 e-mail per event |
 | Performance | k6 smoke, 60-buyer flash sale, catalog, with SLO thresholds | 0 % errors, no overselling |
 | Security | OWASP ZAP API scan, SBOM-based OSV scan with self-test, JWT / RBAC / IDOR tests, refresh-token theft detection, Redis lockout across 2 backends | 0 Medium/High, 0 vulnerable libraries |
-| Delivery | Docker Compose stack, GitHub Actions + Jenkins (macOS ARM) | 44 / 44 smoke tests |
+| Delivery | Docker Compose stack, GitHub Actions + Jenkins (macOS ARM) | 63 / 63 smoke tests |
+| Acceptance (UAT) | 10 goal-based tasks for non-tester users, each traced to its requirements; GO / NO-GO sign-off | plan ready, sessions next |
 
 **What the tests found** (28 documented defects, each with root cause, fix and regression test): a dependency scanner that went silently blind on a rate limit (found by a runner canary), a test that could
 never fail (found by mutation testing), a brute-force and account-enumeration gap, 21 vulnerable libraries, an
@@ -102,7 +104,8 @@ nothing on a slow Safari run (found by Jenkins on the Mac).
 [Risk Register](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/RISK_REGISTER.md) ·
 [Traceability (129 requirements)](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TRACEABILITY_MATRIX.md) ·
 [Defect Reports](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/DEFECT_REPORTS.md) ·
-[Test Summary Report](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TEST_SUMMARY_REPORT.md)
+[Test Summary Report](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/TEST_SUMMARY_REPORT.md) ·
+[UAT Plan](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/blob/main/docs/qa/UAT_PLAN.md)
 
 **Engineering:** [9 Architecture Decision Records](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite/tree/main/docs/adr) ·
 one-command workflow (`make app`, `make test`, `make playwright`, `make doctor` checks the machine first) ·
@@ -116,7 +119,7 @@ Every change goes through a pull request; nothing reaches `main` until all check
 ```mermaid
 flowchart LR
   B["feature branch"] --> PR["pull request"]
-  PR --> GA["GitHub Actions<br/>12 jobs, Linux + macOS"]
+  PR --> GA["GitHub Actions<br/>13 jobs, Linux + macOS"]
   GA -->|all green| M["merge to main"]
   M --> J["Jenkins on macOS ARM<br/>Build with Parameters"]
   J --> R["QA Reports page<br/>Allure + Cucumber"]
@@ -129,7 +132,7 @@ flowchart LR
 | Jobs | backend + coverage, mutation (PIT), API + DB + BDD + UI on PostgreSQL, cross-browser, Playwright, Appium on an Android emulator and an iOS Simulator, ZAP + OSV security, Docker Compose smoke, public demo stack, Jenkinsfile lint, Allure publish | same stages from one `Jenkinsfile`, plus Safari |
 | Safeguards | pinned runner image + a canary on the next image | JDK 21 pinned as a Jenkins tool, per-stage timeouts, Docker and Safari readiness checks before tests start |
 | Reports | Allure on GitHub Pages | QA Reports page that is never greener than the build |
-| Latest | all checks green on `main` | Chrome builds #50, #51, #54 and Safari build #59 (Oct 2026): 797 tests, all gates passed, k6 p95 16-72 ms |
+| Latest | all checks green on `main` | Chrome #67, Firefox #68 and Edge #69 (Oct 2026): all gates passed; the display is kept awake during Safari runs (`caffeinate`) |
 
 Running the same tests on a second CI system, OS and CPU found real problems that one pipeline hid: six
 defects came only from Jenkins on the Mac (DEF-014, DEF-015, DEF-022, DEF-024, DEF-025, DEF-027).
@@ -356,7 +359,7 @@ Live **last-commit** badges update automatically from GitHub; test results are f
 
 | Project | Stack | Test Results | Last Activity |
 |---------|-------|-------------|---------------|
-| ⭐ [E-Commerce Suite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | Java 21 · Spring Boot 4.1 · REST Assured · Selenium · Playwright · Appium · k6 | ![tests](https://img.shields.io/badge/passed-1478-22c55e?style=flat-square) ![skipped](https://img.shields.io/badge/skipped%20by%20design-3-f59e0b?style=flat-square) ![gates](https://img.shields.io/badge/CI%20gates-18-155e75?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/RbcTcsWorld_ECommerceSuite?style=flat-square&label=) |
+| ⭐ [E-Commerce Suite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | Java 21 · Spring Boot 4.1 · REST Assured · Selenium · Playwright · Appium · k6 | ![tests](https://img.shields.io/badge/passed-1486-22c55e?style=flat-square) ![skipped](https://img.shields.io/badge/skipped%20by%20design-3-f59e0b?style=flat-square) ![gates](https://img.shields.io/badge/CI%20gates-18-155e75?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/RbcTcsWorld_ECommerceSuite?style=flat-square&label=) |
 | 🔬 [QA Brains — Python + Playwright](https://github.com/rbchy/QaBrainsAutomationPythonPlawright) | Python · Playwright · Behave · Allure | ![passed](https://img.shields.io/badge/passed-12-22c55e?style=flat-square) ![skipped](https://img.shields.io/badge/skipped-3-f59e0b?style=flat-square) ![failed](https://img.shields.io/badge/failed-0-lightgrey?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationPythonPlawright?style=flat-square&label=) |
 | 🔬 [QA Brains — TypeScript + Playwright](https://github.com/rbchy/QaBrainsAutomationTypeScriptPlaywright) | TS 5 · Playwright · Cucumber.js | ![passed](https://img.shields.io/badge/passed-14-22c55e?style=flat-square) ![pending](https://img.shields.io/badge/pending-1-f59e0b?style=flat-square) ![failed](https://img.shields.io/badge/failed-0-lightgrey?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationTypeScriptPlaywright?style=flat-square&label=) |
 | 🔬 [QA Brains — Java + Playwright](https://github.com/rbchy/QaBrainsAutomationJavaPlaywright) | Java 17 · Playwright · Cucumber JVM · TestNG | ![status](https://img.shields.io/badge/status-stable-0d9488?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationJavaPlaywright?style=flat-square&label=) |
@@ -504,7 +507,7 @@ pie showData
 | 28 | [rbchy](https://github.com/rbchy/rbchy) | 🗂️ Portfolio | This profile README repository |
 | 29 | [RbcTcsWorld-EPMS](https://github.com/rbchy/RbcTcsWorld-EPMS) | 💻 App | Full-stack payroll — Spring Boot REST API + test suite |
 | 30 | [RbcTcsWorld_ClinTrial-Connect](https://github.com/rbchy/RbcTcsWorld_ClinTrial-Connect) | 💻 App | Spring Boot clinical-trial patient matching, 115+ automated tests |
-| 31 | [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | 💻 App | ⭐ Spring Boot 4 e-commerce + 1481 automated tests, 18 CI quality gates |
+| 31 | [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | 💻 App | ⭐ Spring Boot 4 e-commerce + 1489 automated tests, 18 CI quality gates |
 | 32 | [RbcTcsWorld_PharmaPackQMS](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS) | 💻 App | Pharmaceutical packaging quality management (QMS) |
 | 33 | [RbcTcsWorld_PharmaPackQMS_Serialization](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS_Serialization) | 💻 App | Pharma packaging QMS + serialization, CI and desktop builds for Windows / macOS / Linux |
 | 34 | [RbcTcsWorld_Pharmaceuticals_PMC](https://github.com/rbchy/RbcTcsWorld_Pharmaceuticals_PMC) | 💻 App | Pharma Packaging Execution System — Java Swing desktop app |
@@ -522,7 +525,9 @@ pie showData
 | E-Commerce Suite: store-admin panel, six languages, desktop app, Safari on Jenkins | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
 | E-Commerce Suite: refresh tokens (rotation, reuse detection) and Redis login lockout | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
 | E-Commerce Suite: Stripe payments (3 test layers) and order e-mails (outbox, Mailpit) | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
-| E-Commerce Suite: Stripe webhooks, multilingual e-mails, SMTP with TLS | ![](https://img.shields.io/badge/-next-0d9488?style=flat-square) |
+| E-Commerce Suite: guest checkout, address book, filters, flash deals, invoice PDF, two-factor sign-in, saved-card wallet | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
+| E-Commerce Suite: user acceptance testing with non-tester users, GO / NO-GO sign-off | ![](https://img.shields.io/badge/-next-0d9488?style=flat-square) |
+| E-Commerce Suite: Stripe webhooks, multilingual e-mails, SMTP with TLS | ![](https://img.shields.io/badge/-planned-64748b?style=flat-square) |
 | Quality gates: contract, mutation, accessibility, performance and security in every build | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
 | Enterprise BDD frameworks from scratch | ![](https://img.shields.io/badge/-ongoing-22c55e?style=flat-square) |
 | Playwright with TypeScript & Python | ![](https://img.shields.io/badge/-ongoing-22c55e?style=flat-square) |
@@ -654,7 +659,7 @@ Desktop version of my portfolio, packaged with Electron — runs fully offline. 
 [![Portfolio](https://img.shields.io/badge/Portfolio-rbc6543.wixsite.com-blueviolet?style=for-the-badge&logo=wix&logoColor=white)](https://rbc6543.wixsite.com/rbc-portfolio)
 [![Website](https://img.shields.io/badge/Website-rbchy.github.io%2Frbchy-0d9488?style=for-the-badge&logo=githubpages&logoColor=white)](https://rbchy.github.io/rbchy/)
 
-![Version](https://img.shields.io/badge/README-v2.6-155e75?style=flat-square)
+![Version](https://img.shields.io/badge/README-v2.7-155e75?style=flat-square)
 ![Updated](https://img.shields.io/badge/Last%20Updated-October%202026-1e3a8a?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Actively%20Open%20to%20New%20Opportunities-22c55e?style=flat-square)
 
