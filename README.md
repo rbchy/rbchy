@@ -571,10 +571,15 @@ timeline
                : 10,000+ container transactions/day · 95% fewer billing errors · 99.8% uptime · 50+ users trained
     2016–Present : RbcTcsWorld — Full Stack Developer & QA Automation Specialist
                  : Playwright · Selenium · Cucumber · Appium · Rest Assured · Spring Boot
+    2022–Present : Sharp Packaging Services LLC — Line Lead
+                 : GMP-compliant primary and secondary pharmaceutical packaging
 ```
 
 <details>
 <summary><strong>📄 Detailed experience</strong></summary>
+
+**June 2022–Present — Sharp Packaging Services LLC**
+Line Lead. Leads GMP-compliant primary and secondary pharmaceutical packaging lines.
 
 **2016–Present — Self-Employed / RbcTcsWorld**
 System Designer, Web Developer, Full Stack Developer & QA Automation Specialist. Enterprise BDD frameworks (Playwright, Selenium, Cucumber), API automation (Rest Assured, Postman), full-stack apps (Java, Python, JavaScript), inventory and payroll systems, healthcare application automation.
