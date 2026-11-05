@@ -16,6 +16,7 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-Website-blueviolet?style=for-the-badge&logo=wix&logoColor=white)](https://rbc6543.wixsite.com/rbc-portfolio)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chyranajit@gmail.com)
 [![Download](https://img.shields.io/badge/ProfileDownload-macOS%20(.dmg)-2dd4bf?style=for-the-badge&logo=apple&logoColor=white)](https://rbchy.github.io/rbchy/download.html)
+[![App](https://img.shields.io/badge/App-Android%20%C2%B7%20iPhone%20%C2%B7%20desktop-0f3d4a?style=for-the-badge&logo=pwa&logoColor=white)](#-mobile-app-android--iphone--desktop)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=rbchy&color=blueviolet&style=flat-square&label=PROFILE+VIEWS)
 ![Followers](https://img.shields.io/github/followers/rbchy?style=flat-square&color=0d9488&label=Followers)
@@ -562,6 +563,9 @@ pie showData
 | RbcTcsWorld Shop: return labels, tax reversal, account deletion, HTML e-mail, Amazon partner products | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
 | RbcTcsWorld Shop: go live as an Amazon affiliate site (`STORE_SALES=off`) | ![](https://img.shields.io/badge/-in%20progress-f59e0b?style=flat-square) |
 | RbcTcsWorld Shop: own products, LLC, sales tax license, UAT with real cards | ![](https://img.shields.io/badge/-later-64748b?style=flat-square) |
+| RbcTcsWorld Shop: phone app (installable website first, Android app with the own shop) | ![](https://img.shields.io/badge/-later-64748b?style=flat-square) |
+| This portfolio as an app: installable website (PWA, offline) and Android APK/AAB from GitHub Actions | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
+| Portfolio app: full screen on Android (assetlinks.json) and Google Play listing | ![](https://img.shields.io/badge/-next-0d9488?style=flat-square) |
 | E-Commerce Suite: store-admin panel, six languages, desktop app, Safari on Jenkins | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
 | E-Commerce Suite: refresh tokens (rotation, reuse detection) and Redis login lockout | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
 | E-Commerce Suite: Stripe payments (3 test layers) and order e-mails (outbox, Mailpit) | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
@@ -668,13 +672,15 @@ Traffic Inspector, Super User & System Consultant for the NAVIS SPARCS N4 Contai
 
 ---
 
-## 💾 Desktop Portfolio App
+## 💾 Portfolio Apps
+
+### Desktop (macOS)
 
 [![Download for macOS](https://img.shields.io/badge/ProfileDownload-macOS%20(.dmg)-2dd4bf?style=for-the-badge&logo=apple&logoColor=white)](https://rbchy.github.io/rbchy/download.html)
 
 Desktop version of my portfolio, packaged with Electron — runs fully offline. The release page shows the `.dmg`, version notes and file size before downloading.
 
-## 📱 Mobile App (Android · iPhone · desktop)
+### 📱 Mobile App (Android · iPhone · desktop)
 
 The website itself is an installable app (PWA) with an offline mode: on Android or desktop Chrome/Edge press **Install app** in the site's menu bar; on iPhone use Safari → Share → **Add to Home Screen**. An Android APK/Play Store bundle (Trusted Web Activity) is built by the [`build Android app`](.github/workflows/android-app.yml) workflow — see the [Bangla setup guide](android/README_BN.md).
 
