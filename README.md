@@ -19,7 +19,7 @@
 
 ![Profile Views](https://komarev.com/ghpvc/?username=rbchy&color=blueviolet&style=flat-square&label=PROFILE+VIEWS)
 ![Followers](https://img.shields.io/github/followers/rbchy?style=flat-square&color=0d9488&label=Followers)
-![Repos](https://img.shields.io/badge/Public%20Repos-36-155e75?style=flat-square&logo=github)
+![Repos](https://img.shields.io/badge/Public%20Repos-37-155e75?style=flat-square&logo=github)
 ![Experience](https://img.shields.io/badge/Tech%20Experience-40%2B%20years-f59e0b?style=flat-square)
 
 </div>
@@ -136,6 +136,40 @@ flowchart LR
 
 Running the same tests on a second CI system, OS and CPU found real problems that one pipeline hid: six
 defects came only from Jenkins on the Mac (DEF-014, DEF-015, DEF-022, DEF-024, DEF-025, DEF-027).
+
+---
+
+## 🛍️ RbcTcsWorld Shop: the suite's code on its way to a live store
+
+**[RbcTcsWorld Shop](https://github.com/rbchy/RbcTcsWorld)** takes the E-Commerce Suite's code, with its full history and
+its quality bar, through what a real store needs. **The plan: affiliate first, own shop later.** The site goes live first
+as an Amazon affiliate site (one setting, `STORE_SALES=off`: hand-picked partner products with my own short reviews,
+bought at Amazon, nothing sold on the site itself); everything the own shop needs is already built and tested and opens
+with `STORE_SALES=on`.
+
+[![Shop CI](https://github.com/rbchy/RbcTcsWorld/actions/workflows/ci.yml/badge.svg)](https://github.com/rbchy/RbcTcsWorld/actions/workflows/ci.yml)
+![Stage](https://img.shields.io/badge/stage-affiliate%20site%20first-f59e0b?style=flat-square)
+![Tests](https://img.shields.io/badge/automated%20tests-2033-brightgreen?style=flat-square)
+![Coverage](https://img.shields.io/badge/line%20coverage-97.5%25-brightgreen?style=flat-square)
+![Mutation](https://img.shields.io/badge/mutation%20score-86.9%25-brightgreen?style=flat-square)
+![Requirements](https://img.shields.io/badge/requirements%20traced-163%2F163-155e75?style=flat-square)
+
+| Built for the live store (each with its tests, a traced requirement and a decision record) | |
+|---|---|
+| Card payments with Stripe Elements and signed webhooks: card numbers never reach the server | ✅ |
+| Stripe Tax by delivery address, recorded after payment, reversed on refunds, product tax codes | ✅ |
+| Shippo labels and carrier tracking from each product's weight and box; prepaid return labels | ✅ |
+| E-mail from the store's own domain (Amazon SES), bounce suppression, HTML twin of every e-mail | ✅ |
+| Production stack: encrypted off-site backups, weekly restore drill, health alerts | ✅ |
+| Policy pages from the shop's own settings; the policy version kept on every order; self-service account deletion | ✅ |
+| Product photo upload (EXIF/GPS stripped), contact form with tickets, search-engine pages and sitemap | ✅ |
+| Amazon partner products with the required disclosure, and the affiliate-only site mode | ✅ |
+| Go live as an Amazon affiliate site (server, domain, products, Associates application) | 🟡 now |
+| Own shop: products, LLC and sales tax license, user acceptance test with real cards | ⏳ later |
+
+**Numbers from the main CI run of 4 Nov 2026:** 2,033 automated tests (1,164 backend, 464 API · DB · BDD · Selenium UI,
+397 Playwright on five browsers and devices, 8 Appium phone tests), all 19 CI gates green, 26 architecture decision
+records, 30 documented defects, 34 merged pull requests. Guides for every step are written in Bangla for the owner.
 
 ---
 
@@ -359,6 +393,7 @@ Live **last-commit** badges update automatically from GitHub; test results are f
 
 | Project | Stack | Test Results | Last Activity |
 |---------|-------|-------------|---------------|
+| 🛍️ [RbcTcsWorld Shop](https://github.com/rbchy/RbcTcsWorld) | Java 21 · Spring Boot 4.1 · React · Stripe · Shippo · Amazon SES | ![tests](https://img.shields.io/badge/passed-2030-22c55e?style=flat-square) ![skipped](https://img.shields.io/badge/skipped%20by%20design-3-f59e0b?style=flat-square) ![gates](https://img.shields.io/badge/CI%20gates-19-155e75?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/RbcTcsWorld?style=flat-square&label=) |
 | ⭐ [E-Commerce Suite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | Java 21 · Spring Boot 4.1 · REST Assured · Selenium · Playwright · Appium · k6 | ![tests](https://img.shields.io/badge/passed-1486-22c55e?style=flat-square) ![skipped](https://img.shields.io/badge/skipped%20by%20design-3-f59e0b?style=flat-square) ![gates](https://img.shields.io/badge/CI%20gates-18-155e75?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/RbcTcsWorld_ECommerceSuite?style=flat-square&label=) |
 | 🔬 [QA Brains — Python + Playwright](https://github.com/rbchy/QaBrainsAutomationPythonPlawright) | Python · Playwright · Behave · Allure | ![passed](https://img.shields.io/badge/passed-12-22c55e?style=flat-square) ![skipped](https://img.shields.io/badge/skipped-3-f59e0b?style=flat-square) ![failed](https://img.shields.io/badge/failed-0-lightgrey?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationPythonPlawright?style=flat-square&label=) |
 | 🔬 [QA Brains — TypeScript + Playwright](https://github.com/rbchy/QaBrainsAutomationTypeScriptPlaywright) | TS 5 · Playwright · Cucumber.js | ![passed](https://img.shields.io/badge/passed-14-22c55e?style=flat-square) ![pending](https://img.shields.io/badge/pending-1-f59e0b?style=flat-square) ![failed](https://img.shields.io/badge/failed-0-lightgrey?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationTypeScriptPlaywright?style=flat-square&label=) |
@@ -464,16 +499,16 @@ Live **last-commit** badges update automatically from GitHub; test results are f
 
 ```mermaid
 pie showData
-    title 36 Public Repositories by Category
+    title 37 Public Repositories by Category
     "Web UI Automation" : 16
-    "Full-Stack Applications" : 11
+    "Full-Stack Applications" : 12
     "Mobile (Appium)" : 5
     "API Automation" : 2
     "Portfolio / Profile" : 2
 ```
 
 <details>
-<summary><strong>📦 Click to expand the full list of 36 repositories</strong></summary>
+<summary><strong>📦 Click to expand the full list of 37 repositories</strong></summary>
 
 | # | Repository | Category | Description |
 |---|-----------|----------|-------------|
@@ -507,12 +542,13 @@ pie showData
 | 28 | [rbchy](https://github.com/rbchy/rbchy) | 🗂️ Portfolio | This profile README repository |
 | 29 | [RbcTcsWorld-EPMS](https://github.com/rbchy/RbcTcsWorld-EPMS) | 💻 App | Full-stack payroll — Spring Boot REST API + test suite |
 | 30 | [RbcTcsWorld_ClinTrial-Connect](https://github.com/rbchy/RbcTcsWorld_ClinTrial-Connect) | 💻 App | Spring Boot clinical-trial patient matching, 115+ automated tests |
-| 31 | [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | 💻 App | ⭐ Spring Boot 4 e-commerce + 1489 automated tests, 18 CI quality gates |
-| 32 | [RbcTcsWorld_PharmaPackQMS](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS) | 💻 App | Pharmaceutical packaging quality management (QMS) |
-| 33 | [RbcTcsWorld_PharmaPackQMS_Serialization](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS_Serialization) | 💻 App | Pharma packaging QMS + serialization, CI and desktop builds for Windows / macOS / Linux |
-| 34 | [RbcTcsWorld_Pharmaceuticals_PMC](https://github.com/rbchy/RbcTcsWorld_Pharmaceuticals_PMC) | 💻 App | Pharma Packaging Execution System — Java Swing desktop app |
-| 35 | [Sauce-Demo.MyShopify.AutomationTest](https://github.com/rbchy/Sauce-Demo.MyShopify.AutomationTest) | 🌐 Web | E-commerce automation — Java + Selenium |
-| 36 | [WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG](https://github.com/rbchy/WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG) | 📱 Mobile | WDIO Native Demo App — Appium 9.2.2, TestNG, Allure, ExtentReports |
+| 31 | [RbcTcsWorld](https://github.com/rbchy/RbcTcsWorld) | 💻 App | 🛍️ RbcTcsWorld Shop: the suite on its way to a live store, Amazon affiliate site first; 2,033 tests, 19 CI gates |
+| 32 | [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | 💻 App | ⭐ Spring Boot 4 e-commerce + 1489 automated tests, 18 CI quality gates |
+| 33 | [RbcTcsWorld_PharmaPackQMS](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS) | 💻 App | Pharmaceutical packaging quality management (QMS) |
+| 34 | [RbcTcsWorld_PharmaPackQMS_Serialization](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS_Serialization) | 💻 App | Pharma packaging QMS + serialization, CI and desktop builds for Windows / macOS / Linux |
+| 35 | [RbcTcsWorld_Pharmaceuticals_PMC](https://github.com/rbchy/RbcTcsWorld_Pharmaceuticals_PMC) | 💻 App | Pharma Packaging Execution System — Java Swing desktop app |
+| 36 | [Sauce-Demo.MyShopify.AutomationTest](https://github.com/rbchy/Sauce-Demo.MyShopify.AutomationTest) | 🌐 Web | E-commerce automation — Java + Selenium |
+| 37 | [WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG](https://github.com/rbchy/WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG) | 📱 Mobile | WDIO Native Demo App — Appium 9.2.2, TestNG, Allure, ExtentReports |
 
 </details>
 
@@ -522,6 +558,10 @@ pie showData
 
 | Focus Area | Progress |
 |-----------|----------|
+| RbcTcsWorld Shop: Stripe Elements, Stripe Tax, Shippo, Amazon SES, production stack with backups | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
+| RbcTcsWorld Shop: return labels, tax reversal, account deletion, HTML e-mail, Amazon partner products | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
+| RbcTcsWorld Shop: go live as an Amazon affiliate site (`STORE_SALES=off`) | ![](https://img.shields.io/badge/-in%20progress-f59e0b?style=flat-square) |
+| RbcTcsWorld Shop: own products, LLC, sales tax license, UAT with real cards | ![](https://img.shields.io/badge/-later-64748b?style=flat-square) |
 | E-Commerce Suite: store-admin panel, six languages, desktop app, Safari on Jenkins | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
 | E-Commerce Suite: refresh tokens (rotation, reuse detection) and Redis login lockout | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
 | E-Commerce Suite: Stripe payments (3 test layers) and order e-mails (outbox, Mailpit) | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
