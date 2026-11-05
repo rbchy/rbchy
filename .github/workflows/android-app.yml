@@ -1,0 +1,139 @@
+name: build Android app (TWA)
+
+# Wraps the portfolio site (https://rbchy.github.io/rbchy/) in a Trusted Web Activity
+# and builds an installable APK plus a Play Store bundle (AAB).
+# Optional secrets for a permanent signing key (otherwise a throw-away test key is used):
+#   ANDROID_KEYSTORE_BASE64, ANDROID_KEYSTORE_PASSWORD, ANDROID_KEY_ALIAS, ANDROID_KEY_PASSWORD
+
+on:
+  workflow_dispatch:
+    inputs:
+      version_code:
+        description: "versionCode (raise by 1 for every Play Store upload)"
+        default: "1"
+  pull_request:
+    paths: ["manifest.webmanifest", "app/**", "android/**", ".github/workflows/android-app.yml"]
+  push:
+    branches: [main]
+    paths: ["manifest.webmanifest", "app/**", "android/**", ".github/workflows/android-app.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      APP_VERSION_CODE: ${{ github.event.inputs.version_code || github.run_number }}
+      PORT: "8765"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Install Bubblewrap
+        working-directory: android
+        run: npm install --no-audit --no-fund
+
+      - name: Serve this checkout at /rbchy/ (icons are read from here, not the live site)
+        run: |
+          mkdir -p "$RUNNER_TEMP/www"
+          ln -s "$GITHUB_WORKSPACE" "$RUNNER_TEMP/www/rbchy"
+          (cd "$RUNNER_TEMP/www" && python3 -m http.server "$PORT" --bind 127.0.0.1 >/dev/null 2>&1 &)
+          for i in $(seq 1 20); do curl -fsS "http://127.0.0.1:$PORT/rbchy/manifest.webmanifest" >/dev/null && break; sleep 1; done
+
+      - name: Generate the Android project
+        run: node android/build-twa.mjs android/build "http://localhost:$PORT/rbchy/"
+
+      - name: Signing key
+        env:
+          KS_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KS_PASS: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KS_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KEY_PASS: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          KS="$RUNNER_TEMP/portfolio.keystore"
+          if [ -n "$KS_B64" ]; then
+            echo "$KS_B64" | base64 -d > "$KS"
+            echo "KS_PASS=$KS_PASS" >> "$GITHUB_ENV"
+            echo "KS_ALIAS=${KS_ALIAS:-portfolio}" >> "$GITHUB_ENV"
+            echo "KEY_PASS=${KEY_PASS:-$KS_PASS}" >> "$GITHUB_ENV"
+            echo "KEY_KIND=permanent (from secrets)" >> "$GITHUB_ENV"
+          else
+            PASS="test-$(openssl rand -hex 12)"
+            keytool -genkeypair -keystore "$KS" -storepass "$PASS" -keypass "$PASS" -alias portfolio \
+              -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=RB Chowdhury, O=rbchy, C=BD" -noprompt
+            echo "::add-mask::$PASS"
+            echo "KS_PASS=$PASS" >> "$GITHUB_ENV"
+            echo "KS_ALIAS=portfolio" >> "$GITHUB_ENV"
+            echo "KEY_PASS=$PASS" >> "$GITHUB_ENV"
+            echo "KEY_KIND=temporary test key (add the secrets for a real one)" >> "$GITHUB_ENV"
+          fi
+          echo "KS=$KS" >> "$GITHUB_ENV"
+
+      - name: Build APK and AAB
+        working-directory: android/build
+        run: |
+          chmod +x gradlew
+          ./gradlew --no-daemon assembleRelease bundleRelease
+
+      - name: Sign
+        run: |
+          BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
+          OUT="$RUNNER_TEMP/out"; mkdir -p "$OUT"
+          APK_IN=$(ls android/build/app/build/outputs/apk/release/*.apk | head -1)
+          AAB_IN=$(ls android/build/app/build/outputs/bundle/release/*.aab | head -1)
+          "$BT/zipalign" -f -p 4 "$APK_IN" "$OUT/aligned.apk"
+          "$BT/apksigner" sign --ks "$KS" --ks-pass env:KS_PASS --ks-key-alias "$KS_ALIAS" --key-pass env:KEY_PASS \
+            --out "$OUT/rb-portfolio.apk" "$OUT/aligned.apk"
+          "$BT/apksigner" verify "$OUT/rb-portfolio.apk"
+          cp "$AAB_IN" "$OUT/rb-portfolio.aab"
+          jarsigner -keystore "$KS" -storepass "$KS_PASS" -keypass "$KEY_PASS" -sigalg SHA256withRSA -digestalg SHA-256 \
+            "$OUT/rb-portfolio.aab" "$KS_ALIAS"
+          rm "$OUT/aligned.apk"
+
+      - name: assetlinks.json and summary
+        run: |
+          OUT="$RUNNER_TEMP/out"
+          SHA=$(keytool -list -v -keystore "$KS" -storepass "$KS_PASS" -alias "$KS_ALIAS" | awk '/SHA256:/{print $2; exit}')
+          cat > "$OUT/assetlinks.json" <<EOF
+          [{
+            "relation": ["delegate_permission/common.handle_all_urls"],
+            "target": {
+              "namespace": "android_app",
+              "package_name": "io.github.rbchy.portfolio",
+              "sha256_cert_fingerprints": ["$SHA"]
+            }
+          }]
+          EOF
+          python3 -m json.tool "$OUT/assetlinks.json" >/dev/null
+          {
+            echo "## RB Portfolio Android app"
+            echo ""
+            echo "- package: \`io.github.rbchy.portfolio\`"
+            echo "- versionCode: \`$APP_VERSION_CODE\`"
+            echo "- signing key: $KEY_KIND"
+            echo "- SHA-256: \`$SHA\`"
+            echo ""
+            echo "Download the **rb-portfolio-android** artifact below (APK to install, AAB for Play Console)."
+            echo "For full-screen (no URL bar), publish this file at https://rbchy.github.io/.well-known/assetlinks.json:"
+            echo ""
+            echo '```json'
+            cat "$OUT/assetlinks.json"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          ls -la "$OUT"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rb-portfolio-android
+          path: ${{ runner.temp }}/out/
+          retention-days: 30
