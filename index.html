@@ -10,6 +10,15 @@
 <meta property="og:description" content="QA automation portfolio of RB Chowdhury: the RbcTcsWorld E-Commerce Suite (1,489 automated tests, 18 CI quality gates, 89.3% mutation score, 129 traced requirements) and RbcTcsWorld Shop, the same code on its way to a live store: Amazon affiliate site first, own shop later (2,033 automated tests, 19 CI gates).">
 <meta property="og:image" content="https://rbchy.github.io/rbchy/og-card.png">
 <meta name="twitter:card" content="summary_large_image">
+<!-- installable as an app on Android, iPhone and desktop (manifest + service worker) -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0f3d4a">
+<link rel="icon" type="image/png" sizes="32x32" href="app/favicon-32.png">
+<link rel="apple-touch-icon" href="app/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="RB Portfolio">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -274,6 +283,10 @@ td a{font-weight:600;text-decoration:none}
 footer{border-top:1px solid var(--line);padding-block:28px;color:var(--ink-3);font-size:14px}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .theme-btn{font:500 13px var(--mono);border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:8px;padding:6px 10px;cursor:pointer}
+.install-btn{border-color:var(--accent);color:var(--accent)}
+.install-tip{position:fixed;left:16px;right:16px;bottom:16px;max-width:420px;margin:0 auto;z-index:60;background:var(--surface);
+  color:var(--ink);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:14px 16px}
+.install-tip p{margin:0 0 8px}
 </style>
 
 </head>
@@ -284,6 +297,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <div class="links">
       <a href="#news">Latest</a><a href="#flagship">Flagship</a><a href="#shop">Shop</a><a href="#status">Status</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#career">Career</a><a href="#contact">Contact</a>
     </div>
+    <button class="theme-btn install-btn" id="installBtn" type="button" hidden>Install app</button>
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch color theme">Theme</button>
   </div>
 </nav>
@@ -370,6 +384,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
       <p>The newest work first. Every item is merged into <code>main</code> with its CI gates green.</p>
     </div>
     <ol class="timeline">
+      <li><time>4 Nov 2026</time><div><h3>This portfolio is now an app</h3><p>Install it from the <strong>Install app</strong> button (Android, Windows, Mac) or with Safari's <em>Add to Home Screen</em> on iPhone: own icon, full screen, shortcuts to Shop, Projects and Contact, and it opens offline. An Android APK and Play Store bundle are built in GitHub Actions as a Trusted Web Activity.</p></div></li>
       <li><time>4 Nov 2026</time><div><h3>RbcTcsWorld Shop: affiliate first, own shop later</h3><p>One setting, <code>STORE_SALES=off</code>, runs the whole site as an Amazon affiliate site: only partner products with my own short reviews, nothing can be bought on the site itself (cart, checkout and payments answer 409), and the privacy policy carries Amazon's third-party cookie statement. The own shop stays built and tested for later. Now 2,033 automated tests, 163 traced requirements, all 19 CI gates green.</p></div></li>
       <li><time>2 Nov 2026</time><div><h3>Shop: return labels, account deletion, policy versions, HTML e-mail</h3><p>Prepaid Shippo return labels for approved returns, customers can delete their own account (orders kept for the tax records), every order records the version of the policies it was placed under, and every e-mail also goes out as HTML built only from its text.</p></div></li>
       <li><time>31 Oct 2026</time><div><h3>Shop: tax reversal, product tax codes, parcel sizes, blocked addresses</h3><p>A refund now reverses its tax in Stripe Tax; products carry their own tax code, shipping weight and box size, so labels are rated for the real parcel; the admin sees and can lift bounced e-mail addresses. One CI run caught a connection-pool starvation under load before merge.</p></div></li>
@@ -780,5 +795,31 @@ document.addEventListener('click',e=>{
 document.querySelectorAll('.console.play .line').forEach((l,i)=>l.style.animationDelay=(i*0.12)+'s');
 </script>
 
+<div class="install-tip" id="installTip" role="dialog" aria-modal="false" aria-labelledby="installTipTitle" hidden>
+  <p id="installTipTitle"><b>Install on iPhone or iPad</b></p>
+  <p>Tap the Share button <span aria-hidden="true">&#x2191;&#xFE0E;</span> in Safari, then <b>Add to Home Screen</b>.</p>
+  <button class="theme-btn" type="button" id="installTipClose">OK</button>
+</div>
+<script>
+// App: offline support and the "Install app" button (Android/desktop: the browser's own install; iPhone: a short tip)
+(function(){
+  if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+    window.addEventListener('load', function(){ navigator.serviceWorker.register('sw.js').catch(function(){}); });
+  }
+  var btn = document.getElementById('installBtn'), tip = document.getElementById('installTip');
+  var standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+  if (standalone || !btn) return;
+  var deferred = null;
+  window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); deferred = e; btn.hidden = false; });
+  window.addEventListener('appinstalled', function(){ btn.hidden = true; deferred = null; });
+  var ios = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  if (ios) btn.hidden = false;
+  btn.addEventListener('click', function(){
+    if (deferred) { deferred.prompt(); deferred.userChoice.finally(function(){ deferred = null; btn.hidden = true; }); }
+    else if (ios) { tip.hidden = false; document.getElementById('installTipClose').focus(); }
+  });
+  document.getElementById('installTipClose').addEventListener('click', function(){ tip.hidden = true; btn.focus(); });
+})();
+</script>
 </body>
 </html>

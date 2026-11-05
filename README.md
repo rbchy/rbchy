@@ -674,6 +674,10 @@ Traffic Inspector, Super User & System Consultant for the NAVIS SPARCS N4 Contai
 
 Desktop version of my portfolio, packaged with Electron — runs fully offline. The release page shows the `.dmg`, version notes and file size before downloading.
 
+## 📱 Mobile App (Android · iPhone · desktop)
+
+The website itself is an installable app (PWA) with an offline mode: on Android or desktop Chrome/Edge press **Install app** in the site's menu bar; on iPhone use Safari → Share → **Add to Home Screen**. An Android APK/Play Store bundle (Trusted Web Activity) is built by the [`build Android app`](.github/workflows/android-app.yml) workflow — see the [Bangla setup guide](android/README_BN.md).
+
 ---
 
 ## 📈 GitHub Stats

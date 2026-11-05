@@ -1,0 +1,30 @@
+{
+  "name": "RB Chowdhury · QA Automation Portfolio",
+  "short_name": "RB Portfolio",
+  "description": "QA automation portfolio of Ranajit Baran (RB) Chowdhury: RbcTcsWorld Shop and E-Commerce Suite, 37 repositories, live test results.",
+  "id": "/rbchy/",
+  "start_url": "/rbchy/?source=app",
+  "scope": "/rbchy/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#0c1719",
+  "theme_color": "#0f3d4a",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "education"],
+  "icons": [
+    { "src": "app/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "app/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "app/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "app/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "RbcTcsWorld Shop", "short_name": "Shop", "url": "/rbchy/#shop", "icons": [{ "src": "app/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Projects", "url": "/rbchy/#projects", "icons": [{ "src": "app/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Contact", "url": "/rbchy/#contact", "icons": [{ "src": "app/icon-192.png", "sizes": "192x192" }] }
+  ],
+  "screenshots": [
+    { "src": "shop-storefront.webp", "sizes": "1440x900", "type": "image/webp", "form_factor": "wide", "label": "RbcTcsWorld Shop" }
+  ]
+}
