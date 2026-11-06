@@ -68,7 +68,7 @@ def main():
         f = ROOT / 'i18n' / f'{code}.json'
         d = json.loads(f.read_text()) if f.exists() else {}
         missing = [k for k in keys if k not in d]
-        unused = [k for k in d if k not in keys and k not in ('now',)]
+        unused = [k for k in d if k not in keys and k not in ('now', 'Jun 2022–now')]
         print(f'{code}: {len(keys) - len(missing)}/{len(keys)} blocks translated, {len(unused)} unused entries')
         for k in missing[:20]:
             print('   missing:', k[:110])

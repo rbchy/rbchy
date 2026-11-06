@@ -265,6 +265,28 @@ td a{font-weight:600;text-decoration:none}
 .timeline h3{font-size:18px;margin-bottom:4px}
 .timeline p{margin:0;color:var(--ink-2);font-size:15px}
 @media (max-width:560px){.timeline li{grid-template-columns:1fr;gap:4px}}
+.timeline .roles{margin-top:12px}
+.timeline .roles summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--accent);width:max-content;max-width:100%}
+.timeline .roles ol{list-style:none;margin:10px 0 0;padding:0 0 0 14px;border-left:2px solid var(--line)}
+.timeline .roles li{display:block;border:0;padding:0 0 12px}
+.timeline .roles time{display:block;font-size:12px}
+.timeline .roles b{display:block;font-size:15px}
+.timeline .roles span{display:block;color:var(--ink-2);font-size:14px}
+.career-more{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:36px;padding-top:28px;border-top:1px solid var(--line)}
+@media (max-width:900px){.career-more{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.career-more{grid-template-columns:1fr}}
+.career-more h3{font-size:16px;margin:0 0 10px}
+.career-more h3:not(:first-child){margin-top:20px}
+.edu{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.edu time{display:block;font:500 12px var(--mono);color:var(--accent)}
+.edu span,.spoken{color:var(--ink-2);font-size:14px;margin:0}
+.built{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.built li{display:flex;flex-direction:column;gap:2px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);font-size:14px;color:var(--ink-2)}
+.built b{font:600 13px var(--mono);color:var(--ink)}
+.earlier{margin:0;display:grid;gap:2px}
+.earlier dt{font:500 12px var(--mono);color:var(--ink-3);margin-top:8px}
+.earlier dt:first-child{margin-top:0}
+.earlier dd{margin:0;font-size:14px;color:var(--ink-2)}
 
 /* contact */
 .contact{display:grid;grid-template-columns:1fr 240px;gap:32px;align-items:start}
@@ -637,10 +659,54 @@ html:lang(bn) .eyebrow,html:lang(zh-Hans) .eyebrow{letter-spacing:.02em}
     <ol class="timeline">
       <li><time>Jun 2022–now</time><div><h3>Sharp Packaging Services LLC</h3><p>Line Lead for pharmaceutical blister-packaging lines (primary and secondary), leading teams of up to 25 operators. Executes batch records and line clearance, runs serialization, and works under GMP, FDA regulations and OEB (occupational exposure band) handling requirements.</p></div></li>
       <li><time>2016–now</time><div><h3>RbcTcsWorld · Self-employed</h3><p>Full Stack Developer and QA Automation Specialist / SDET. Enterprise BDD frameworks, API automation, CI quality gates, and Java/Spring Boot applications for e-commerce, payroll, inventory, healthcare and pharmaceutical packaging.</p></div></li>
-      <li><time>1990–1995</time><div><h3>The Computer Systems, Bangladesh</h3><p>System Consultant, Designer and Programmer. Custom desktop systems for sales, inventory control, billing, personnel and payroll.</p></div></li>
-      <li><time>1984–1985</time><div><h3>University of Chittagong</h3><p>Master's degree in Public Administration.</p></div></li>
-      <li><time>1979–2016</time><div><h3>Chittagong Port Authority</h3><p>Traffic Inspector, then NAVIS SPARCS N4 Super User and System Consultant. Billing for 10,000+ container transactions a day, 95% fewer billing errors, 99.8% uptime, 50+ users trained.</p></div></li>
+      <li><time>1990–1995</time><div><h3>The Computer Systems, Bangladesh</h3><p>System Consultant, Designer and Programmer (part time). Custom desktop systems for sales, inventory control, billing, personnel and payroll.</p></div></li>
+      <li><time>1979–2016</time><div><h3>Chittagong Port Authority</h3><p>Traffic Inspector, then NAVIS SPARCS N4 Super User and System Consultant. Billing for 10,000+ container transactions a day, 95% fewer billing errors, 99.8% uptime, 50+ users trained.</p>
+        <details class="roles">
+          <summary>Seven roles over 37 years</summary>
+          <ol>
+            <li><time>2014–2016</time><b>Traffic Inspector, Documentation</b><span>One Stop Service Center: checked import container delivery documents against the Import General Manifest in the port's CTMS database and the National Board of Revenue's ASYCUDA World; set up commodity, C&amp;F agent, MLO, NVOCC, freight forwarder, berth and depot operator codes in Navis CTMS.</span></li>
+            <li><time>2014</time><b>Traffic Inspector, Billing, MIS and FCL</b><span>Super User of NAVIS SPARCS N4, XPS, Ship Editor and N4 Billing: yard planning for import discharge and export loading from BAPLIE and manifest files, new vessel hatch drawings, shipping agent billing and MIS reports.</span></li>
+            <li><time>2012–2014</time><b>Traffic Inspector, Computer Control and CTMS</b><span>Ran the computer control centre (Oracle 10g database and front end), loaded EDI files from load ports into SPARCS N4, configured billing events and tariff codes, issued off-dock depot permits and trained junior executives.</span></li>
+            <li><time>2011–2012</time><b>Traffic Inspector and System Designer</b><span>Configured CTMS container billing and MIS with the teams of STE Electronics (Singapore) and Datasoft Bangladesh.</span></li>
+            <li><time>2008–2012</time><b>Assistant Traffic Inspector, Computer Control and CTMS</b><span>Communication, billing, documentation, MIS and training sections.</span></li>
+            <li><time>1987–2008</time><b>Computer In-charge, Computer Control and Billing</b><span>Computer centre of the Traffic Department: computer control, staff training, bulk cargo and container billing.</span></li>
+            <li><time>1979–1987</time><b>Executive, Operations</b><span>Cargo sheds and jetty: bulk cargo discharge, storage, documentation and delivery.</span></li>
+          </ol>
+        </details>
+      </div></li>
+      <li><time>1978–1979</time><div><h3>Dr. Mazharul Hoque High School, Chittagong</h3><p>One of the founders of the school, and its science teacher.</p></div></li>
     </ol>
+    <div class="career-more">
+      <div>
+        <h3>Education</h3>
+        <ul class="edu">
+          <li><time>1984–1985</time><span>Master's degree in Public Administration, University of Chittagong</span></li>
+        </ul>
+        <h3>Languages I speak</h3>
+        <p class="spoken">Bangla (native) and English (professional)</p>
+      </div>
+      <div>
+        <h3>Systems I designed and built</h3>
+        <ul class="built">
+          <li><b>SMS</b>Sales management</li>
+          <li><b>BMS</b>Bill management</li>
+          <li><b>PBS</b>Personal banking</li>
+          <li><b>CBS</b>Container billing</li>
+          <li><b>PMS</b>Payroll management</li>
+          <li><b>ICS</b>Inventory control</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Before Java and the cloud</h3>
+        <dl class="earlier">
+          <dt>Databases</dt><dd>Oracle 10g, DataFlex, Visual DataFlex</dd>
+          <dt>Front ends</dt><dd>Visual Basic 6.0, Visual DataFlex, Oracle Developer 10g</dd>
+          <dt>Web</dt><dd>PHP and MySQL on XAMPP and WAMP; WordPress, Joomla, Dreamweaver</dd>
+          <dt>Operating systems</dt><dd>CP/M, CDOS, MS-DOS, Unix, Windows, Linux</dd>
+          <dt>Also</dt><dd>SEO, article and product writing, and video editing for RbcTcsWorld since 2016</dd>
+        </dl>
+      </div>
+    </div>
   </div>
 </section>
 
