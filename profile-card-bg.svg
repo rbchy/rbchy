@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" width="240" height="320" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#127a72"/>
+      <stop offset="55%" stop-color="#0f4f55"/>
+      <stop offset="100%" stop-color="#0b2a33"/>
+    </linearGradient>
+    <g id="gear">
+      <g id="t"><rect x="-4" y="-21" width="8" height="9" rx="1.5"/></g>
+      <use href="#t" transform="rotate(45)"/><use href="#t" transform="rotate(90)"/>
+      <use href="#t" transform="rotate(135)"/><use href="#t" transform="rotate(180)"/>
+      <use href="#t" transform="rotate(225)"/><use href="#t" transform="rotate(270)"/>
+      <use href="#t" transform="rotate(315)"/>
+      <path fill-rule="evenodd" d="M0-15a15 15 0 1 0 0.01 0zM0-6a6 6 0 1 1-0.01 0z"/>
+    </g>
+    <g id="wrench">
+      <rect x="-4" y="-9" width="8" height="40" rx="4"/>
+      <path d="M -4 -24.6 A 11 11 0 1 0 4 -24.6 L 4 -13 L -4 -13 Z"/>
+    </g>
+    <pattern id="tools" width="120" height="120" patternUnits="userSpaceOnUse">
+      <g fill="#ffffff">
+        <use href="#gear" transform="translate(28,30)"/>
+        <use href="#wrench" transform="translate(92,88) rotate(40)"/>
+      </g>
+      <g fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M82 20 l-10 10 10 10 M102 20 l10 10 -10 10 M96 16 l-8 28"/>
+        <circle cx="30" cy="92" r="12"/>
+        <path d="M24 92 l4 4 8-8"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="240" height="320" fill="url(#g)"/>
+  <rect width="240" height="320" fill="url(#tools)" opacity="0.13"/>
+  <circle cx="120" cy="92" r="88" fill="#2cc2b2" opacity="0.18"/>
+</svg>
