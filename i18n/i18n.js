@@ -1,5 +1,5 @@
 /*
- * Language switch of the portfolio page: English (the page itself), Bangla, Spanish, Chinese, Tagalog, Vietnamese.
+ * Language switch of the portfolio page: English (the page itself), Bangla, Spanish, Chinese, Tagalog, Vietnamese, Korean.
  *
  * The page stays written in English. Each other language is one dictionary file, i18n/<code>.json, that maps an
  * English text block (the inner HTML of the smallest element holding text, with spaces collapsed) to its translation.
@@ -13,7 +13,7 @@
 (function () {
   'use strict';
   var LANGS = [
-    ['en', 'English'], ['bn', 'বাংলা'], ['es', 'Español'], ['zh', '中文'], ['tl', 'Tagalog'], ['vi', 'Tiếng Việt']
+    ['en', 'English'], ['bn', 'বাংলা'], ['es', 'Español'], ['zh', '中文'], ['tl', 'Tagalog'], ['vi', 'Tiếng Việt'], ['ko', '한국어']
   ];
   var CODES = LANGS.map(function (l) { return l[0]; });
   var ATTRS = ['aria-label', 'title', 'alt', 'placeholder'];
