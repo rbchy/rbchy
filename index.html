@@ -75,6 +75,31 @@ section{padding-block:clamp(48px,7vw,88px);border-top:1px solid var(--line)}
 .links a{font:500 14px var(--body);color:var(--ink-2);text-decoration:none;padding:6px 10px;border-radius:8px}
 .links a:hover{background:var(--surface-2);color:var(--ink)}
 @media (max-width:720px){.links{display:none}}
+/* grouped menu with submenus */
+.links{align-items:center}
+.dd{position:relative}
+.dd-btn,.dd-solo{display:inline-flex;align-items:center;gap:4px;font:500 14px var(--body);color:var(--ink-2);background:none;border:0;padding:6px 10px;border-radius:8px;cursor:pointer;text-decoration:none}
+.dd-btn svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .15s}
+.dd-btn:hover,.dd-solo:hover,.dd-btn[aria-expanded="true"]{background:var(--surface-2);color:var(--ink)}
+.dd-btn[aria-expanded="true"] svg{transform:rotate(180deg)}
+.dd-menu{position:absolute;top:calc(100% + 8px);left:0;min-width:270px;padding:8px;border-radius:14px;background:var(--surface);border:1px solid var(--line);box-shadow:0 18px 40px rgba(15,42,51,.18);display:none;z-index:20}
+.dd-btn[aria-expanded="true"]+.dd-menu{display:block}
+.dd-menu a{display:block;padding:9px 12px;border-radius:9px;text-decoration:none;color:var(--ink)}
+.dd-menu a:hover,.dd-menu a:focus-visible{background:var(--surface-2)}
+.dd-menu b{display:block;font:600 14px/1.25 var(--body)}
+.dd-menu small{display:block;font:400 12.5px/1.3 var(--body);color:var(--ink-3);margin-top:2px}
+.menu-btn{display:none;align-items:center;gap:6px;font:500 14px var(--body);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:6px 10px;cursor:pointer}
+.menu-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+@media (max-width:480px){.nav .wrap{gap:8px}.brand{white-space:nowrap;font-size:15px}.theme-btn{white-space:nowrap}.menu-btn{padding:6px 8px}.menu-btn span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
+@media (max-width:380px){.nav .wrap{gap:6px}.brand i{display:none}.brand{font-size:14px}}
+@media (max-width:340px){.nav .lang-pick select{width:78px;max-width:78px;padding-right:4px;font-size:13px}.nav .theme-btn{padding-inline:8px;font-size:12px}}
+@media (max-width:720px){
+ .menu-btn{display:inline-flex;order:2}
+ .links.open{display:flex;flex-direction:column;align-items:stretch;gap:2px;position:absolute;top:calc(100% + 6px);left:10px;right:10px;padding:10px;border-radius:14px;background:var(--surface);border:1px solid var(--line);box-shadow:0 18px 40px rgba(15,42,51,.22);max-height:75vh;overflow:auto;z-index:20}
+ .links.open .dd-btn{width:100%;justify-content:space-between;font-weight:700;color:var(--ink);padding:10px 12px}
+ .links.open .dd-menu{position:static;box-shadow:none;border:0;min-width:0;padding:0 0 6px 8px;background:none}
+ .links.open .dd-solo{padding:10px 12px;font-weight:700;color:var(--ink)}
+}
 
 /* banner */
 .banner,section.banner{padding-block:0;color:#e9ecff;border-bottom:1px solid var(--line);position:relative;overflow:hidden;
@@ -184,6 +209,25 @@ section{padding-block:clamp(48px,7vw,88px);border-top:1px solid var(--line)}
 .found{margin:0 0 22px;padding-left:20px;color:var(--ink-2);font-size:15px}
 .found li{margin-bottom:6px}
 
+
+/* profile charts */
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:24px}
+.chart-panel h3{font-size:17px;margin-bottom:4px}
+.chart-panel .note{margin:0 0 16px;font-size:13px;color:var(--ink-3)}
+.pie-wrap{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.pie-wrap svg{flex:none}
+.hbars{display:flex;flex-direction:column;gap:12px}
+.hbar{display:grid;grid-template-columns:96px 1fr 68px;align-items:center;gap:10px;font-size:14px}
+.hbar .track{height:14px;border-radius:7px;background:var(--surface-2);overflow:hidden}
+.hbar .fill{height:100%;border-radius:7px;background:var(--accent)}
+.hbar b{font:600 13px var(--mono);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.gantt{max-width:100%;height:auto;display:block;color:var(--ink)}
+.gantt .lbl{font:600 12.5px var(--body);fill:currentColor}
+.gantt .yr{font:400 11px var(--mono);fill:var(--ink-3)}
+.gantt .grid{stroke:var(--line)}
+.career-chart{margin-bottom:28px}
+#repoPieLegend{display:grid;grid-template-columns:repeat(2,minmax(170px,auto));gap:12px 40px}
+@media (max-width:520px){#repoPieLegend{grid-template-columns:1fr}}
 /* status board */
 .board{display:grid;grid-template-columns:320px 1fr;gap:24px;align-items:start}
 @media (max-width:900px){.board{grid-template-columns:1fr}}
@@ -361,8 +405,9 @@ html:lang(bn) .eyebrow,html:lang(zh-Hans) .eyebrow,html:lang(ko) .eyebrow{letter
 <nav class="nav" aria-label="Main">
   <div class="wrap">
     <a class="brand" href="#top"><i aria-hidden="true"></i>RB Chowdhury</a>
-    <div class="links">
-      <a href="#news">Latest</a><a href="#flagship">Flagship</a><a href="#shop">Shop</a><a href="#status">Status</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#career">Career</a><a href="#contact">Contact</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainLinks"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></button>
+    <div class="links" id="mainLinks">
+      <div class="dd"><button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-about"><span>About me</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="dd-menu" id="dd-about" role="menu"><a href="#news" role="menuitem"><b>Latest</b><small>What changed lately</small></a><a href="#career" role="menuitem"><b>Career</b><small>Four decades of enterprise systems</small></a><a href="#skills" role="menuitem"><b>Skills</b><small>One layered architecture, many drivers</small></a></div></div><div class="dd"><button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-work"><span>My work</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="dd-menu" id="dd-work" role="menu"><a href="#flagship" role="menuitem"><b>Flagship</b><small>RbcTcsWorld E-Commerce Suite</small></a><a href="#status" role="menuitem"><b>Status</b><small>Where each featured project stands</small></a><a href="#shop" role="menuitem"><b>Shop</b><small>RbcTcsWorld Shop</small></a><a href="#projects" role="menuitem"><b>Projects</b><small>All 37 public repositories</small></a></div></div><a class="dd-solo" href="#contact">Contact</a>
     </div>
     <button class="theme-btn install-btn" id="installBtn" type="button" hidden>Install app</button>
     <label class="lang-pick"><span class="sr-only">Language</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><select id="langSel" class="theme-btn"><option value="en">English</option></select></label>
@@ -678,6 +723,7 @@ html:lang(bn) .eyebrow,html:lang(zh-Hans) .eyebrow,html:lang(ko) .eyebrow{letter
       <span>Gherkin feature files</span><em>→</em><span>Step definitions</span><em>→</em><span>Page Object Model</span><em>→</em><span>Playwright · Selenium · Appium · Rest Assured</span><em>→</em><span>Allure / Extent reports</span><em>→</em><span>Quality gates: coverage · mutation · contract · a11y · k6 · ZAP</span><em>→</em><span>Jenkins · GitHub Actions</span>
     </div>
     <div class="skills" id="skills-grid"></div>
+    <div class="charts"><div class="panel chart-panel"><h3>Skill levels at a glance</h3><p class="note">25 skills above, counted by level</p><div class="pie-wrap"><svg width="150" height="150" viewBox="0 0 150 150" role="img" aria-label="8 expert, 13 advanced, 4 intermediate skills"><g id="skillPie" transform="translate(75 75) rotate(-90)"></g><text x="75" y="76" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="30" font-weight="800" fill="currentColor">25</text><text x="75" y="96" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" fill="currentColor" opacity=".7">skills</text></svg><div class="legend" id="skillPieLegend"></div></div></div><div class="panel chart-panel"><h3>Years of hands-on experience by language</h3><p class="note">Minimum years, from the Languages group above</p><div class="hbars" id="langBars"></div></div></div>
   </div>
 <div class="wrap to-main-row"><a class="to-main" href="#main"><span aria-hidden="true">↑</span> Back to main</a></div>
 </section>
@@ -689,6 +735,7 @@ html:lang(bn) .eyebrow,html:lang(zh-Hans) .eyebrow,html:lang(ko) .eyebrow{letter
       <h2>All 37 public repositories</h2>
       <p>Filter by the kind of work. Each card opens the repository on GitHub.</p>
     </div>
+    <div class="charts" style="margin:0 0 24px"><div class="panel chart-panel"><h3>Repositories by type</h3><p class="note">All public repositories on GitHub</p><div class="pie-wrap"><svg width="150" height="150" viewBox="0 0 150 150" role="img" aria-label="37 repositories: 16 web UI automation, 12 applications, 5 mobile automation, 2 API automation, 2 portfolio"><g id="repoPie" transform="translate(75 75) rotate(-90)"></g><text x="75" y="76" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="30" font-weight="800" fill="currentColor">37</text><text x="75" y="96" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" fill="currentColor" opacity=".7">repositories</text></svg><div class="legend" id="repoPieLegend"></div></div></div></div>
     <div class="filters" id="filters" role="group" aria-label="Filter repositories"></div>
     <div class="repos" id="repos"></div>
   </div>
@@ -701,6 +748,7 @@ html:lang(bn) .eyebrow,html:lang(zh-Hans) .eyebrow,html:lang(ko) .eyebrow{letter
       <span class="eyebrow">Career</span>
       <h2>Four decades of enterprise systems</h2>
     </div>
+    <div class="panel chart-panel career-chart"><h3>Career timeline</h3><p class="note">Years with each employer and in study, 1978 to today</p><svg class="gantt" id="careerGantt" role="img" aria-label="Career timeline: Dr. Mazharul Hoque High School 1978 to 1979; Chittagong Port Authority 1979 to 2016; Master's degree in Public Administration 1984 to 1985; The Computer Systems 1990 to 1995; RbcTcsWorld 2016 to now; Sharp Packaging Services 2022 to now"></svg></div>
     <ol class="timeline">
       <li><time>Jun 2022–now</time><div><h3>Sharp Packaging Services LLC</h3><p>Line Lead for pharmaceutical blister-packaging lines (primary and secondary), leading teams of up to 25 operators. Executes batch records and line clearance, runs serialization, and works under GMP, FDA regulations and OEB (occupational exposure band) handling requirements.</p></div></li>
       <li><time>2016–now</time><div><h3>RbcTcsWorld · Self-employed</h3><p>Full Stack Developer and QA Automation Specialist / SDET. Enterprise BDD frameworks, API automation, CI quality gates, and Java/Spring Boot applications for e-commerce, payroll, inventory, healthcare and pharmaceutical packaging.</p></div></li>
@@ -787,6 +835,58 @@ html:lang(bn) .eyebrow,html:lang(zh-Hans) .eyebrow,html:lang(ko) .eyebrow{letter
 
 <script>
 const REPOS = [{"n": "Amazon-Cypress-JavaScript-Automation", "u": "https://github.com/rbchy/Amazon-Cypress-JavaScript-Automation", "c": "web", "d": "E2E framework for Amazon.com — Cypress 14 + Cucumber BDD"}, {"n": "AmazonSeleniumTest", "u": "https://github.com/rbchy/AmazonSeleniumTest", "c": "web", "d": "Selenium test for Amazon"}, {"n": "AndroidUIAppiumTest_MyDemoEcommerce", "u": "https://github.com/rbchy/AndroidUIAppiumTest_MyDemoEcommerce", "c": "mobile", "d": "Appium 3, UiAutomator2, TestNG, Java 17"}, {"n": "AppiumAutomation_ApiDemos", "u": "https://github.com/rbchy/AppiumAutomation_ApiDemos", "c": "mobile", "d": "Appium 3.5.2, TestNG, Maven, ExtentReports (POM)"}, {"n": "AppiumMobileAutomation", "u": "https://github.com/rbchy/AppiumMobileAutomation", "c": "mobile", "d": "Appium, TestNG & Allure — 100% pass rate on Sauce Labs My Demo App"}, {"n": "AppiumTest_Andriod_Automation", "u": "https://github.com/rbchy/AppiumTest_Andriod_Automation", "c": "mobile", "d": "Appium, TestNG, Cucumber BDD, POM"}, {"n": "BhojanAloy-Food-Coffee-Shop-POS-System", "u": "https://github.com/rbchy/BhojanAloy-Food-Coffee-Shop-POS-System", "c": "app", "d": "Java Swing + MySQL point-of-sale with itemized bill preview"}, {"n": "Guru99TelTest", "u": "https://github.com/rbchy/Guru99TelTest", "c": "web", "d": "Selenium/Java against the Guru99 demo site"}, {"n": "InventoryControlManagement_JavaMySql", "u": "https://github.com/rbchy/InventoryControlManagement_JavaMySql", "c": "app", "d": "Real-time inventory — Java 17, MySQL 8.0, JDBC"}, {"n": "Multicart_Demo_Automation", "u": "https://github.com/rbchy/Multicart_Demo_Automation", "c": "web", "d": "Multi-cart e-commerce — Java, Selenium, Cucumber"}, {"n": "NorthFace_AutomationExercise-BDD-Test-Automation", "u": "https://github.com/rbchy/NorthFace_AutomationExercise-BDD-Test-Automation", "c": "web", "d": "UI, E2E, API, Unit, Accessibility, Performance & Security in one project"}, {"n": "OpenEMR_Automation", "u": "https://github.com/rbchy/OpenEMR_Automation", "c": "web", "d": "Health records / medical practice management automation"}, {"n": "OrangeHRM_Automation", "u": "https://github.com/rbchy/OrangeHRM_Automation", "c": "web", "d": "OrangeHRM HR platform automation"}, {"n": "OrangeHRM_TestAutomation_TestNG_Junit5", "u": "https://github.com/rbchy/OrangeHRM_TestAutomation_TestNG_Junit5", "c": "web", "d": "AI-enhanced QA for HRM/Payroll with stubbed payroll/tax/insurance backend"}, {"n": "ParaBank-BankingAutomationJavaSelenium", "u": "https://github.com/rbchy/ParaBank-BankingAutomationJavaSelenium", "c": "web", "d": "Banking automation — Java, Spring Boot, MySQL, Selenium"}, {"n": "PayrollManagementSystem", "u": "https://github.com/rbchy/PayrollManagementSystem", "c": "app", "d": "Payroll management — Java & MySQL"}, {"n": "PayrollManagementSystems_Automation_Java_MySql_Selenium", "u": "https://github.com/rbchy/PayrollManagementSystems_Automation_Java_MySql_Selenium", "c": "app", "d": "Java Swing + MySQL payroll desktop app, Maven-tested"}, {"n": "PPES-Pharmaceutical-Packaging-Management", "u": "https://github.com/rbchy/PPES-Pharmaceutical-Packaging-Management", "c": "app", "d": "Pharmaceutical packaging management — Java, MySQL"}, {"n": "QaBrainsAPIAutomationRestAssured", "u": "https://github.com/rbchy/QaBrainsAPIAutomationRestAssured", "c": "api", "d": "QaBrains API automation — Rest Assured"}, {"n": "QaBrainsAPIAutomation_Postman", "u": "https://github.com/rbchy/QaBrainsAPIAutomation_Postman", "c": "api", "d": "QaBrains API automation — Postman & Newman"}, {"n": "QaBrainsAutomationCypressJavaScript", "u": "https://github.com/rbchy/QaBrainsAutomationCypressJavaScript", "c": "web", "d": "E2E framework for the QaBrains e-commerce app — Cypress"}, {"n": "QaBrainsAutomationJavaPlaywright", "u": "https://github.com/rbchy/QaBrainsAutomationJavaPlaywright", "c": "web", "d": "Java + Playwright"}, {"n": "QaBrainsAutomationJavaSelenium", "u": "https://github.com/rbchy/QaBrainsAutomationJavaSelenium", "c": "web", "d": "Selenium + Java + Cucumber + TestNG + Maven"}, {"n": "QaBrainsAutomationPythonPlawright", "u": "https://github.com/rbchy/QaBrainsAutomationPythonPlawright", "c": "web", "d": "Python + Playwright + Behave"}, {"n": "QaBrainsAutomationTypeScriptPlaywright", "u": "https://github.com/rbchy/QaBrainsAutomationTypeScriptPlaywright", "c": "web", "d": "TypeScript + Playwright"}, {"n": "QaBrainsSauceLabAPI_Automation", "u": "https://github.com/rbchy/QaBrainsSauceLabAPI_Automation", "c": "web", "d": "AI-driven quality platform — Java, Selenium, Cucumber on Sauce Labs"}, {"n": "ranajitchowdhury", "u": "https://github.com/rbchy/ranajitchowdhury", "c": "portfolio", "d": "QA portfolio: status board, breakdown charts and all 37 repositories by area"}, {"n": "RbcTcsWorld", "u": "https://github.com/rbchy/RbcTcsWorld", "c": "app", "d": "RbcTcsWorld Shop: Amazon affiliate site first, own shop built for later; 2033 tests, 19 CI gates"}, {"n": "rbchy", "u": "https://github.com/rbchy/rbchy", "c": "portfolio", "d": "This profile README repository"}, {"n": "RbcTcsWorld-EPMS", "u": "https://github.com/rbchy/RbcTcsWorld-EPMS", "c": "app", "d": "Full-stack payroll — Spring Boot REST API + test suite"}, {"n": "RbcTcsWorld_ECommerceSuite", "u": "https://github.com/rbchy/RbcTcsWorld_ECommerceSuite", "c": "app", "d": "Flagship: Spring Boot 4 e-commerce + 1489 automated tests, 18 CI quality gates"}, {"n": "RbcTcsWorld_PharmaPackQMS", "u": "https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS", "c": "app", "d": "Pharmaceutical packaging quality management (QMS)"}, {"n": "RbcTcsWorld_PharmaPackQMS_Serialization", "u": "https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS_Serialization", "c": "app", "d": "Pharma packaging QMS + serialization, CI and desktop builds for Windows / macOS / Linux"}, {"n": "RbcTcsWorld_Pharmaceuticals_PMC", "u": "https://github.com/rbchy/RbcTcsWorld_Pharmaceuticals_PMC", "c": "app", "d": "Pharma Packaging Execution System — Java Swing desktop app"}, {"n": "RbcTcsWorld_ClinTrial-Connect", "u": "https://github.com/rbchy/RbcTcsWorld_ClinTrial-Connect", "c": "app", "d": "Spring Boot clinical-trial patient matching, 115+ automated tests"}, {"n": "Sauce-Demo.MyShopify.AutomationTest", "u": "https://github.com/rbchy/Sauce-Demo.MyShopify.AutomationTest", "c": "web", "d": "E-commerce automation — Java + Selenium"}, {"n": "WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG", "u": "https://github.com/rbchy/WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG", "c": "mobile", "d": "WDIO Native Demo App — Appium 9.2.2, TestNG, Allure, ExtentReports"}];
+
+// profile charts (skills, repositories, career) drawn from the data on this page
+(function(){
+  const NS='http://www.w3.org/2000/svg';
+  window.drawPie=function(gid,legendId,parts,unitOne,unitMany){
+    const g=document.getElementById(gid),L=document.getElementById(legendId); if(!g||!L)return;
+    const total=parts.reduce((a,p)=>a+p[1],0),r=60,C=2*Math.PI*r;let off=0;
+    parts.forEach(([name,v,c])=>{
+      const len=C*v/total,el=document.createElementNS(NS,'circle');
+      el.setAttribute('r',r);el.setAttribute('fill','none');el.setAttribute('stroke',c);el.setAttribute('stroke-width','20');
+      el.setAttribute('stroke-dasharray',`${Math.max(len-2,0)} ${C}`);el.setAttribute('stroke-dashoffset',-off);
+      const t=document.createElementNS(NS,'title');t.textContent=`${name}: ${v}`;el.appendChild(t);g.appendChild(el);off+=len;
+      L.insertAdjacentHTML('beforeend',`<div><i style="background:${c}"></i><span>${name}</span><b>${v} ${v>1?unitMany:unitOne} · ${Math.round(v*100/total)}%</b></div>`);
+    });
+  };
+  // repositories by type, counted from REPOS
+  const names={web:"Web UI automation",app:"Application",mobile:"Mobile automation",api:"API automation",portfolio:"Portfolio"};
+  const colors={web:"#3987e5",app:"#d95926",mobile:"#199e70",api:"#8b5cf6",portfolio:"#c2417a"};
+  const n={};REPOS.forEach(r=>n[r.c]=(n[r.c]||0)+1);
+  drawPie('repoPie','repoPieLegend',Object.keys(names).filter(k=>n[k]).map(k=>[names[k],n[k],colors[k]]),'repository','repositories');
+  // career timeline
+  const svg=document.getElementById('careerGantt'); if(!svg)return;
+  const now=new Date().getFullYear()+(new Date().getMonth()+1)/12;
+  const rows=[["Dr. Mazharul Hoque High School",1978,1979,"#8b5cf6"],["Chittagong Port Authority",1979,2016,"#3987e5"],["Master's degree (MPA)",1984,1985,"#c2417a"],["The Computer Systems, Bangladesh",1990,1995,"#d95926"],["RbcTcsWorld · Self-employed",2016,now,"#199e70"],["Sharp Packaging Services LLC",2022.42,now,"#0d8479"]];
+  const draw=()=>{
+    const W=Math.max(Math.round(svg.parentElement.clientWidth-44),280),narrow=W<600;
+    const left=narrow?8:250,right=narrow?14:20,top=26,rh=narrow?50:34,H=top+rows.length*rh+8,y0=1975,y1=Math.ceil(now/5)*5;
+    const x=y=>left+(y-y0)/(y1-y0)*(W-left-right),step=narrow&&W<420?10:5;
+    svg.setAttribute('viewBox',`0 0 ${W} ${H}`);svg.setAttribute('width',W);svg.setAttribute('height',H);
+    let h='';
+    for(let y=1980;y<=y1;y+=step){h+=`<line class="grid" x1="${x(y)}" x2="${x(y)}" y1="${top-6}" y2="${H-4}"/><text class="yr" x="${x(y)}" y="${top-12}" text-anchor="middle">${y}</text>`;}
+    rows.forEach(([name,a,b,c],i)=>{const yy=top+i*rh,span=Math.round(b-a)||1;
+      h+=narrow?`<text class="lbl" x="${left}" y="${yy+16}">${name}</text>`:`<text class="lbl" x="${left-12}" y="${yy+rh/2+4}" text-anchor="end">${name}</text>`;
+      const by=narrow?yy+24:yy+7,bh=narrow?16:rh-14;
+      h+=`<rect x="${x(a)}" y="${by}" width="${Math.max(x(b)-x(a),6)}" height="${bh}" rx="6" fill="${c}"><title>${name}: ${Math.floor(a)}–${b>=now?'now':b} (${span} yr${span>1?'s':''})</title></rect>`;});
+    svg.innerHTML=h;
+  };
+  draw();let t;addEventListener('resize',()=>{clearTimeout(t);t=setTimeout(draw,150)});
+})();
+
+// grouped menu: submenus open on click, close on outside click, Escape or after choosing a section
+(function(){
+  const btns=[...document.querySelectorAll('.dd-btn')], menuBtn=document.getElementById('menuBtn'), links=document.getElementById('mainLinks');
+  const closeAll=except=>btns.forEach(b=>{if(b!==except)b.setAttribute('aria-expanded','false')});
+  const mobile=()=>matchMedia('(max-width:720px)').matches;
+  btns.forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();const open=b.getAttribute('aria-expanded')==='true';if(!mobile())closeAll(b);b.setAttribute('aria-expanded',String(!open));}));
+  menuBtn.addEventListener('click',e=>{e.stopPropagation();const open=links.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));if(open)btns.forEach(b=>b.setAttribute('aria-expanded','true'));});
+  const shut=()=>{closeAll();links.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');};
+  document.addEventListener('click',e=>{if(!e.target.closest('.links'))shut();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')shut();});
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',shut));
+})();
 
 // donut
 (function(){
@@ -881,6 +981,10 @@ const REPOS = [{"n": "Amazon-Cypress-JavaScript-Automation", "u": "https://githu
   ];
   const word={5:"Expert",4:"Advanced",3:"Intermediate"};
   document.getElementById('skills-grid').innerHTML=groups.map(([g,items])=>`<div class="panel skill-group"><h3>${g}</h3>${items.map(([n,d,l])=>`<div class="lvl"><span>${n}</span><small>${word[l]} · ${d}</small><div class="meter" aria-hidden="true">${[1,2,3,4,5].map(i=>`<i class="${i<=l?'on':''}"></i>`).join('')}</div></div>`).join('')}</div>`).join('');
+  {const cnt={5:0,4:0,3:0};groups.forEach(([,items])=>items.forEach(([, ,l])=>cnt[l]++));
+   drawPie('skillPie','skillPieLegend',[["Expert",cnt[5],"#0d8479"],["Advanced",cnt[4],"#3987e5"],["Intermediate",cnt[3],"#d95926"]].filter(p=>p[1]),'skill','skills');
+   const langs=groups[0][1],max=Math.max(...langs.map(([,d])=>parseInt(d)));
+   document.getElementById('langBars').innerHTML=langs.map(([nm,d])=>{const y=parseInt(d);return `<div class="hbar"><span>${nm}</span><div class="track"><i class="fill" style="display:block;width:${y/max*100}%"></i></div><b>${y}+ yrs</b></div>`}).join('');}
 })();
 
 // repos + filters
