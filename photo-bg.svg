@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#bff3ec"/>
+      <stop offset="45%" stop-color="#5fd3c4"/>
+      <stop offset="100%" stop-color="#0d8479"/>
+    </radialGradient>
+    <g id="gear">
+      <g id="t"><rect x="-6" y="-34" width="12" height="14" rx="2"/></g>
+      <use href="#t" transform="rotate(45)"/><use href="#t" transform="rotate(90)"/>
+      <use href="#t" transform="rotate(135)"/><use href="#t" transform="rotate(180)"/>
+      <use href="#t" transform="rotate(225)"/><use href="#t" transform="rotate(270)"/>
+      <use href="#t" transform="rotate(315)"/>
+      <path fill-rule="evenodd" d="M0-25a25 25 0 1 0 0.01 0zM0-10a10 10 0 1 1-0.01 0z"/>
+    </g>
+    <g id="wrench">
+      <rect x="-6" y="-14" width="12" height="62" rx="6"/>
+      <path d="M -6 -37.3 A 16 16 0 1 0 6 -37.3 L 6 -20 L -6 -20 Z"/>
+    </g>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#g)"/>
+
+  <g fill="#ffffff" opacity="0.45">
+    <!-- top left -->
+    <use href="#gear" transform="translate(70,80)"/>
+    <use href="#gear" transform="translate(118,40) scale(.55)"/>
+    <!-- top right -->
+    <use href="#wrench" transform="translate(330,85) rotate(40)"/>
+    <use href="#gear" transform="translate(285,40) scale(.5)"/>
+    <!-- left side -->
+    <use href="#wrench" transform="translate(40,215) rotate(-30) scale(.8)"/>
+    <!-- right side -->
+    <use href="#gear" transform="translate(360,215) scale(.75)"/>
+  </g>
+
+  <g fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity="0.5">
+    <!-- code brackets top centre-left -->
+    <path d="M152 112 l-16 16 16 16 M190 112 l16 16 -16 16 M180 106 l-18 44"/>
+    <!-- check circle top right area -->
+    <circle cx="250" cy="120" r="20"/>
+    <path d="M240 121 l7 7 13-14"/>
+  </g>
+</svg>
