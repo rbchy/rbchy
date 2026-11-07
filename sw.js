@@ -5,7 +5,7 @@
  * Only GET requests of this site and of Google Fonts are cached; everything else (GitHub badges, links) goes straight
  * to the network, so nothing private is stored.
  */
-const VERSION = 'rbchy-app-v2';
+const VERSION = 'rbchy-app-v3';
 const CORE = ['./', './index.html', './offline.html', './manifest.webmanifest', './app/icon-192.png', './app/icon-512.png',
   './og-card.png', './rbcimg.png', './shop-storefront.webp', './project-status.svg'];
 
