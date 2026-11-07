@@ -354,7 +354,6 @@
  "OK": "OK",
  "Main": "Chính",
  "Switch color theme": "Đổi giao diện màu",
- "Automation toolkit": "Bộ công cụ tự động hóa",
  "Portrait of Ranajit Baran Chowdhury": "Ảnh chân dung của Ranajit Baran Chowdhury",
  "Automation tools I work with": "Các công cụ tự động hóa tôi sử dụng",
  "QR code that opens RB Chowdhury on LinkedIn": "Mã QR mở trang LinkedIn của RB Chowdhury",
@@ -426,5 +425,17 @@
  "Operating systems": "Hệ điều hành",
  "Also": "Ngoài ra",
  "SEO, article and product writing, and video editing for RbcTcsWorld since 2016": "SEO, viết bài và mô tả sản phẩm, và dựng video cho RbcTcsWorld từ năm 2016",
- "Jun 2022–now": "thg 6 2022–nay"
+ "Jun 2022–now": "thg 6 2022–nay",
+ "<i aria-hidden=\"true\"></i>Open to work · AI-era QA": "<i aria-hidden=\"true\"></i>Sẵn sàng làm việc · QA thời AI",
+ "AI-assisted QA Automation Engineer &amp; Full Stack Developer": "Kỹ sư tự động hóa QA có AI hỗ trợ &amp; lập trình viên full stack",
+ "BDD frameworks for web, mobile &amp; API · 40+ years of enterprise systems": "Framework BDD cho web, di động và API · hơn 40 năm với hệ thống doanh nghiệp",
+ "Contact me <span aria-hidden=\"true\">→</span>": "Liên hệ tôi <span aria-hidden=\"true\">→</span>",
+ "How I ship quality — AI-assisted test automation pipeline": "Cách tôi đảm bảo chất lượng — quy trình kiểm thử tự động có AI hỗ trợ",
+ "AI Agent": "Tác tử AI",
+ "test ideas": "ý tưởng kiểm thử",
+ "BDD Specs": "Đặc tả BDD",
+ "Web UI": "Giao diện web",
+ "Mobile": "Di động",
+ "Reports": "Báo cáo",
+ "About me and my automation toolkit": "Giới thiệu và bộ công cụ tự động hóa của tôi"
 }

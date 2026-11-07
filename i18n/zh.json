@@ -354,7 +354,6 @@
  "OK": "好",
  "Main": "主导航",
  "Switch color theme": "切换颜色主题",
- "Automation toolkit": "自动化工具箱",
  "Portrait of Ranajit Baran Chowdhury": "Ranajit Baran Chowdhury 的照片",
  "Automation tools I work with": "我使用的自动化工具",
  "QR code that opens RB Chowdhury on LinkedIn": "打开 RB Chowdhury 的 LinkedIn 的二维码",
@@ -426,5 +425,17 @@
  "Operating systems": "操作系统",
  "Also": "另外",
  "SEO, article and product writing, and video editing for RbcTcsWorld since 2016": "自 2016 年起为 RbcTcsWorld 做 SEO、撰写文章和商品描述以及视频剪辑",
- "Jun 2022–now": "2022年6月至今"
+ "Jun 2022–now": "2022年6月至今",
+ "<i aria-hidden=\"true\"></i>Open to work · AI-era QA": "<i aria-hidden=\"true\"></i>求职中 · AI 时代的 QA",
+ "AI-assisted QA Automation Engineer &amp; Full Stack Developer": "AI 辅助的 QA 自动化工程师 &amp; 全栈开发者",
+ "BDD frameworks for web, mobile &amp; API · 40+ years of enterprise systems": "面向 Web、移动端和 API 的 BDD 框架 · 40 多年企业系统经验",
+ "Contact me <span aria-hidden=\"true\">→</span>": "联系我 <span aria-hidden=\"true\">→</span>",
+ "How I ship quality — AI-assisted test automation pipeline": "我如何保证质量 — AI 辅助的测试自动化流水线",
+ "AI Agent": "AI 智能体",
+ "test ideas": "测试思路",
+ "BDD Specs": "BDD 规格",
+ "Web UI": "Web 界面",
+ "Mobile": "移动端",
+ "Reports": "报告",
+ "About me and my automation toolkit": "关于我和我的自动化工具"
 }

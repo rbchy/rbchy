@@ -354,7 +354,6 @@
  "OK": "ঠিক আছে",
  "Main": "প্রধান",
  "Switch color theme": "রঙের থিম বদলান",
- "Automation toolkit": "অটোমেশনের সরঞ্জাম",
  "Portrait of Ranajit Baran Chowdhury": "রণজিৎ বরণ চৌধুরীর ছবি",
  "Automation tools I work with": "যেসব অটোমেশন টুল নিয়ে আমি কাজ করি",
  "QR code that opens RB Chowdhury on LinkedIn": "QR কোড, যা LinkedIn-এ RB Chowdhury-কে খোলে",
@@ -426,5 +425,17 @@
  "Operating systems": "অপারেটিং সিস্টেম",
  "Also": "এছাড়া",
  "SEO, article and product writing, and video editing for RbcTcsWorld since 2016": "২০১৬ থেকে RbcTcsWorld-এর জন্য SEO, লেখা, পণ্যের বিবরণ আর ভিডিও সম্পাদনা",
- "Jun 2022–now": "জুন ২০২২–এখন"
+ "Jun 2022–now": "জুন ২০২২–এখন",
+ "<i aria-hidden=\"true\"></i>Open to work · AI-era QA": "<i aria-hidden=\"true\"></i>কাজের জন্য প্রস্তুত · AI-যুগের QA",
+ "AI-assisted QA Automation Engineer &amp; Full Stack Developer": "AI-সহায়িত QA অটোমেশন ইঞ্জিনিয়ার &amp; ফুল স্ট্যাক ডেভেলপার",
+ "BDD frameworks for web, mobile &amp; API · 40+ years of enterprise systems": "ওয়েব, মোবাইল ও API-র জন্য BDD ফ্রেমওয়ার্ক · ৪০+ বছরের এন্টারপ্রাইজ সিস্টেম",
+ "Contact me <span aria-hidden=\"true\">→</span>": "যোগাযোগ করুন <span aria-hidden=\"true\">→</span>",
+ "How I ship quality — AI-assisted test automation pipeline": "যেভাবে মান নিশ্চিত করি — AI-সহায়িত টেস্ট অটোমেশন পাইপলাইন",
+ "AI Agent": "AI এজেন্ট",
+ "test ideas": "টেস্টের আইডিয়া",
+ "BDD Specs": "BDD স্পেক",
+ "Web UI": "ওয়েব UI",
+ "Mobile": "মোবাইল",
+ "Reports": "রিপোর্ট",
+ "About me and my automation toolkit": "আমার পরিচয় ও অটোমেশন টুলকিট"
 }

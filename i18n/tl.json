@@ -354,7 +354,6 @@
  "OK": "OK",
  "Main": "Pangunahin",
  "Switch color theme": "Palitan ang kulay ng tema",
- "Automation toolkit": "Mga gamit sa automation",
  "Portrait of Ranajit Baran Chowdhury": "Larawan ni Ranajit Baran Chowdhury",
  "Automation tools I work with": "Mga automation tool na ginagamit ko",
  "QR code that opens RB Chowdhury on LinkedIn": "QR code na nagbubukas kay RB Chowdhury sa LinkedIn",
@@ -426,5 +425,17 @@
  "Operating systems": "Mga operating system",
  "Also": "Gayundin",
  "SEO, article and product writing, and video editing for RbcTcsWorld since 2016": "SEO, pagsulat ng artikulo at paglalarawan ng produkto, at pag-edit ng video para sa RbcTcsWorld mula 2016",
- "Jun 2022–now": "Hun 2022–ngayon"
+ "Jun 2022–now": "Hun 2022–ngayon",
+ "<i aria-hidden=\"true\"></i>Open to work · AI-era QA": "<i aria-hidden=\"true\"></i>Bukas sa trabaho · QA sa panahon ng AI",
+ "AI-assisted QA Automation Engineer &amp; Full Stack Developer": "QA Automation Engineer na tinutulungan ng AI &amp; Full Stack Developer",
+ "BDD frameworks for web, mobile &amp; API · 40+ years of enterprise systems": "Mga BDD framework para sa web, mobile at API · 40+ taon sa enterprise systems",
+ "Contact me <span aria-hidden=\"true\">→</span>": "Makipag-ugnayan <span aria-hidden=\"true\">→</span>",
+ "How I ship quality — AI-assisted test automation pipeline": "Paano ko tinitiyak ang kalidad — AI-assisted na test automation pipeline",
+ "AI Agent": "AI Agent",
+ "test ideas": "mga ideya sa test",
+ "BDD Specs": "BDD Specs",
+ "Web UI": "Web UI",
+ "Mobile": "Mobile",
+ "Reports": "Mga ulat",
+ "About me and my automation toolkit": "Tungkol sa akin at sa aking mga automation tool"
 }

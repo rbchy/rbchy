@@ -354,7 +354,6 @@
  "OK": "확인",
  "Main": "주 메뉴",
  "Switch color theme": "색상 테마 전환",
- "Automation toolkit": "자동화 도구 모음",
  "Portrait of Ranajit Baran Chowdhury": "Ranajit Baran Chowdhury의 사진",
  "Automation tools I work with": "제가 사용하는 자동화 도구",
  "QR code that opens RB Chowdhury on LinkedIn": "LinkedIn의 RB Chowdhury 프로필을 여는 QR 코드",
@@ -426,5 +425,17 @@
  "Also": "그 밖에",
  "SEO, article and product writing, and video editing for RbcTcsWorld since 2016": "2016년부터 RbcTcsWorld를 위한 SEO, 기사·상품 설명 작성, 영상 편집",
  "now": "현재",
- "Jun 2022–now": "2022년 6월–현재"
+ "Jun 2022–now": "2022년 6월–현재",
+ "<i aria-hidden=\"true\"></i>Open to work · AI-era QA": "<i aria-hidden=\"true\"></i>구직 중 · AI 시대의 QA",
+ "AI-assisted QA Automation Engineer &amp; Full Stack Developer": "AI 기반 QA 자동화 엔지니어 &amp; 풀스택 개발자",
+ "BDD frameworks for web, mobile &amp; API · 40+ years of enterprise systems": "웹·모바일·API용 BDD 프레임워크 · 40년 이상의 엔터프라이즈 시스템 경력",
+ "Contact me <span aria-hidden=\"true\">→</span>": "연락하기 <span aria-hidden=\"true\">→</span>",
+ "How I ship quality — AI-assisted test automation pipeline": "품질을 지키는 방법 — AI 기반 테스트 자동화 파이프라인",
+ "AI Agent": "AI 에이전트",
+ "test ideas": "테스트 아이디어",
+ "BDD Specs": "BDD 명세",
+ "Web UI": "웹 UI",
+ "Mobile": "모바일",
+ "Reports": "리포트",
+ "About me and my automation toolkit": "소개와 자동화 도구"
 }
