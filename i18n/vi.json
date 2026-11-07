@@ -438,5 +438,6 @@
  "Mobile": "Di động",
  "Reports": "Báo cáo",
  "About me and my automation toolkit": "Giới thiệu và bộ công cụ tự động hóa của tôi",
- "Sections": "Các mục"
+ "Sections": "Các mục",
+ "<span aria-hidden=\"true\">↑</span> Back to main": "<span aria-hidden=\"true\">↑</span> Về đầu trang"
 }

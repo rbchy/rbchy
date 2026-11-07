@@ -438,5 +438,6 @@
  "Mobile": "移动端",
  "Reports": "报告",
  "About me and my automation toolkit": "关于我和我的自动化工具",
- "Sections": "栏目"
+ "Sections": "栏目",
+ "<span aria-hidden=\"true\">↑</span> Back to main": "<span aria-hidden=\"true\">↑</span> 返回顶部"
 }

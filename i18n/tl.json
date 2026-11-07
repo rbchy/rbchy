@@ -438,5 +438,6 @@
  "Mobile": "Mobile",
  "Reports": "Mga ulat",
  "About me and my automation toolkit": "Tungkol sa akin at sa aking mga automation tool",
- "Sections": "Mga seksyon"
+ "Sections": "Mga seksyon",
+ "<span aria-hidden=\"true\">↑</span> Back to main": "<span aria-hidden=\"true\">↑</span> Bumalik sa itaas"
 }

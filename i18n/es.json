@@ -438,5 +438,6 @@
  "Mobile": "Móvil",
  "Reports": "Informes",
  "About me and my automation toolkit": "Sobre mí y mis herramientas de automatización",
- "Sections": "Secciones"
+ "Sections": "Secciones",
+ "<span aria-hidden=\"true\">↑</span> Back to main": "<span aria-hidden=\"true\">↑</span> Volver al inicio"
 }
