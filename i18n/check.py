@@ -19,7 +19,7 @@ import threading
 from playwright.sync_api import sync_playwright
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-LANGS = ['bn', 'es', 'zh', 'tl', 'vi']
+LANGS = ['bn', 'es', 'zh', 'tl', 'vi', 'ko']
 # text set by scripts only after a click
 EXTRA = ['Copied', 'Selected', 'Copy']
 
