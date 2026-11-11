@@ -1,0 +1,373 @@
+{
+ "as_of": "10 Nov 2026",
+ "note": "Mirror of rbchy/ranajitchowdhury docs/portfolio.json (single source of truth). Test numbers are the latest green CI run of each repository on its main branch (10 Nov 2026). tools/check_site.py checks README.md, index.html, resume.html and project-status.svg against it.",
+ "areas": [
+  {
+   "key": "web",
+   "label": "Web UI automation",
+   "color": "#4fb3a9"
+  },
+  {
+   "key": "app",
+   "label": "Full-stack applications",
+   "color": "#f4b04a"
+  },
+  {
+   "key": "mobile",
+   "label": "Mobile (Appium)",
+   "color": "#8fb8de"
+  },
+  {
+   "key": "api",
+   "label": "API automation",
+   "color": "#e58a8a"
+  },
+  {
+   "key": "profile",
+   "label": "Portfolio / profile",
+   "color": "#b7a3e0"
+  }
+ ],
+ "repos": [
+  {
+   "name": "RbcTcsWorld",
+   "area": "app",
+   "stack": "Java 21 · Spring Boot · PostgreSQL · React · Stripe · Shippo · SES",
+   "tests": 2039,
+   "result": "2,039 tests · 19 / 19 gates · 0 flaky",
+   "workflow": "ci.yml",
+   "flagship": true
+  },
+  {
+   "name": "RbcTcsWorld_ECommerceSuite",
+   "area": "app",
+   "stack": "Java 21 · Spring Boot 4.1 · PostgreSQL · React",
+   "tests": 1489,
+   "result": "1,489 tests · 18 / 18 gates",
+   "workflow": "ci.yml",
+   "flagship": true
+  },
+  {
+   "name": "PayrollManagementSystems_Automation_Java_MySql_Selenium",
+   "area": "app",
+   "stack": "Java 21 · Swing · MySQL · JUnit 5 · Cucumber · AssertJ-Swing",
+   "tests": 260,
+   "result": "260 / 260 · real MySQL",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "PayrollManagementSystem",
+   "area": "app",
+   "stack": "Java 21 · Swing · MySQL · JUnit 5",
+   "tests": 160,
+   "result": "160 / 160 · real MySQL",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "RbcTcsWorld_ClinTrial-Connect",
+   "area": "app",
+   "stack": "Spring Boot · JMeter",
+   "tests": 115,
+   "result": "115 / 115",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "RbcTcsWorld_Pharmaceuticals_PMC",
+   "area": "app",
+   "stack": "Java · Swing · MySQL",
+   "tests": 81,
+   "result": "81 / 81",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "RbcTcsWorld-EPMS",
+   "area": "app",
+   "stack": "Spring Boot REST API · MySQL",
+   "tests": 79,
+   "result": "79 / 79",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "RbcTcsWorld_PharmaPackQMS_Serialization",
+   "area": "app",
+   "stack": "Java · desktop builds (Windows, macOS, Linux)",
+   "tests": 78,
+   "result": "78 / 78",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "BhojanAloy-Food-Coffee-Shop-POS-System",
+   "area": "app",
+   "stack": "Java Swing · MySQL",
+   "tests": 76,
+   "result": "76 / 76",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "RbcTcsWorld_PharmaPackQMS",
+   "area": "app",
+   "stack": "Java · GMP packaging QMS",
+   "tests": 66,
+   "result": "66 / 66",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "PPES-Pharmaceutical-Packaging-Management",
+   "area": "app",
+   "stack": "Java 17 · MySQL 8 · DAO / MVC",
+   "tests": 49,
+   "result": "49 / 49",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "InventoryControlManagement_JavaMySql",
+   "area": "app",
+   "stack": "Java 17 · MySQL 8 · JDBC",
+   "tests": 33,
+   "result": "33 / 33",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "NorthFace_AutomationExercise-BDD-Test-Automation",
+   "area": "web",
+   "stack": "Java · Selenium · Cucumber · API · a11y · perf",
+   "tests": 85,
+   "result": "83 passed · 2 skipped (bot wall)",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "OrangeHRM_TestAutomation_TestNG_Junit5",
+   "area": "web",
+   "stack": "Java · Selenium · TestNG · JUnit 5",
+   "tests": 66,
+   "result": "66 / 66",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "Amazon-Cypress-JavaScript-Automation",
+   "area": "web",
+   "stack": "JavaScript · Cypress 14 · Cucumber",
+   "tests": 39,
+   "result": "39 / 39 × Chrome · Firefox · Edge",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "Guru99TelTest",
+   "area": "web",
+   "stack": "Java · Selenium · TestNG",
+   "tests": 29,
+   "result": "29 / 29",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "ParaBank-BankingAutomationJavaSelenium",
+   "area": "web",
+   "stack": "Java · Selenium · Cucumber",
+   "tests": 20,
+   "result": "20 / 20",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "AmazonSeleniumTest",
+   "area": "web",
+   "stack": "Java · Selenium · Cucumber",
+   "tests": 19,
+   "result": "19 / 19 unit · live runs skip on bot wall",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "Multicart_Demo_Automation",
+   "area": "web",
+   "stack": "Java · Selenium · Cucumber",
+   "tests": 17,
+   "result": "17 / 17",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "Sauce-Demo.MyShopify.AutomationTest",
+   "area": "web",
+   "stack": "Java · Selenium · Cucumber",
+   "tests": 17,
+   "result": "17 / 17",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "QaBrainsAutomationPythonPlawright",
+   "area": "web",
+   "stack": "Python · Playwright · Behave",
+   "tests": 15,
+   "result": "15 / 15 × Chromium · Firefox",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "QaBrainsAutomationTypeScriptPlaywright",
+   "area": "web",
+   "stack": "TypeScript · Playwright · Cucumber.js",
+   "tests": 15,
+   "result": "15 / 15",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "QaBrainsAutomationJavaPlaywright",
+   "area": "web",
+   "stack": "Java · Playwright · Cucumber · TestNG",
+   "tests": 15,
+   "result": "15 / 15",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "QaBrainsAutomationJavaSelenium",
+   "area": "web",
+   "stack": "Java · Selenium · Cucumber · TestNG",
+   "tests": 15,
+   "result": "15 / 15",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "QaBrainsAutomationCypressJavaScript",
+   "area": "web",
+   "stack": "JavaScript · Cypress · Cucumber",
+   "tests": 15,
+   "result": "15 / 15",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "QaBrainsSauceLabAPI_Automation",
+   "area": "web",
+   "stack": "Java · Selenium · Cucumber · Sauce Labs",
+   "tests": 15,
+   "result": "15 / 15 headless",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "OrangeHRM_Automation",
+   "area": "web",
+   "stack": "Java · Selenium · Cucumber",
+   "tests": 5,
+   "result": "5 / 5",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "OpenEMR_Automation",
+   "area": "web",
+   "stack": "Java · Selenium · Cucumber",
+   "tests": 4,
+   "result": "4 / 4",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "AndroidUIAppiumTest_MyDemoEcommerce",
+   "area": "mobile",
+   "stack": "Java 17 · Appium · UiAutomator2 · TestNG",
+   "tests": 75,
+   "result": "75 / 75 · emulator",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "AppiumTest_Andriod_Automation",
+   "area": "mobile",
+   "stack": "Java · Appium · TestNG",
+   "tests": 58,
+   "result": "55 passed · 3 skipped · emulator",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "AppiumAutomation_ApiDemos",
+   "area": "mobile",
+   "stack": "Java 17 · Appium 3 · TestNG",
+   "tests": 56,
+   "result": "56 / 56 · emulator",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "AppiumMobileAutomation",
+   "area": "mobile",
+   "stack": "Java · Appium 2 · TestNG · Allure",
+   "tests": 30,
+   "result": "22 device + 8 unit · emulator",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG",
+   "area": "mobile",
+   "stack": "Java · Appium 2 · TestNG",
+   "tests": 21,
+   "result": "21 / 21 · emulator",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "QaBrainsAPIAutomation_Postman",
+   "area": "api",
+   "stack": "Postman · Newman",
+   "tests": 40,
+   "result": "40 / 40 assertions",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "QaBrainsAPIAutomationRestAssured",
+   "area": "api",
+   "stack": "Java · REST Assured · Cucumber",
+   "tests": 20,
+   "result": "5 API + 15 UI",
+   "workflow": "tests.yml"
+  },
+  {
+   "name": "rbchy",
+   "area": "profile",
+   "stack": "GitHub profile · website · installable app",
+   "tests": 0,
+   "result": "site, i18n and README checks",
+   "workflow": "ci.yml"
+  },
+  {
+   "name": "ranajitchowdhury",
+   "area": "profile",
+   "stack": "this portfolio",
+   "tests": 0,
+   "result": "README checks",
+   "workflow": "ci.yml"
+  }
+ ],
+ "languages": [
+  [
+   "Java",
+   71.6,
+   "#b07219"
+  ],
+  [
+   "JavaScript",
+   8.9,
+   "#f1e05a"
+  ],
+  [
+   "CSS",
+   8.9,
+   "#663399"
+  ],
+  [
+   "HTML",
+   3.7,
+   "#e34c26"
+  ],
+  [
+   "TypeScript",
+   3.4,
+   "#3178c6"
+  ],
+  [
+   "Gherkin",
+   1.8,
+   "#5b9a3a"
+  ],
+  [
+   "Python",
+   0.9,
+   "#3572A5"
+  ],
+  [
+   "Other",
+   0.8,
+   "#9fbac2"
+  ]
+ ]
+}

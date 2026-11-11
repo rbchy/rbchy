@@ -1,1 +1,4 @@
 i18n/_keys.json
+build/
+out/
+puppeteer.json

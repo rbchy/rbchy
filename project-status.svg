@@ -1,60 +1,78 @@
-<svg width="1000" height="470" viewBox="0 0 1000 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project status board: 12 featured projects; 6 stable, 5 verified with test results, 1 in active development. QA Brains Python: 12 passed, 3 skipped, 0 failed. QA Brains TypeScript: 14 passed, 1 pending, 0 failed.">
-<rect width="1000" height="470" rx="12" fill="#141321"/>
+<svg width="1000" height="560" viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project status board (10 Nov 2026): 37 public repositories, 37 with green CI, 5,216 automated tests; RbcTcsWorld Shop 2,039 tests.">
+<rect width="1000" height="560" rx="12" fill="#141321"/>
 <text x="32" y="48" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#fe428e">Project Status Board</text>
-<text x="32" y="72" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#c3c2b7">12 featured projects · figures from the latest recorded test runs</text>
+<text x="32" y="72" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#c3c2b7">37 public repositories · numbers from the latest green CI run on main (10 Nov 2026)</text>
 <rect x="32" y="92" width="221" height="92" rx="10" fill="#1f1e33"/>
-<text x="48" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">12</text>
-<text x="48" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">featured projects</text>
-<text x="48" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">tracked on this board</text>
+<text x="48" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">37</text>
+<text x="48" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">public repositories</text>
+<text x="48" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">35 with automated tests</text>
 <rect x="269" y="92" width="221" height="92" rx="10" fill="#1f1e33"/>
-<text x="285" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">571</text>
-<text x="285" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">automated tests</text>
-<text x="285" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">E-Commerce Suite, 14 CI gates</text>
+<text x="285" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">37 / 37</text>
+<text x="285" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">green CI on main</text>
+<text x="285" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">GitHub Actions on every push</text>
 <rect x="506" y="92" width="221" height="92" rx="10" fill="#1f1e33"/>
-<text x="522" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">100%</text>
-<text x="522" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">pass rate</text>
-<text x="522" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">Appium Mobile Automation</text>
+<text x="522" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">5,216</text>
+<text x="522" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">automated tests</text>
+<text x="522" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">sum over all repositories</text>
 <rect x="743" y="92" width="221" height="92" rx="10" fill="#1f1e33"/>
-<text x="759" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">20+</text>
-<text x="759" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">parallel browser/OS combos</text>
-<text x="759" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">Sauce Labs cloud runs</text>
-<text x="32" y="222" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Status of featured projects</text>
-<g transform="translate(14,0)"><path d="M120.00,257.00 A78,78 0 0 1 120.00,413.00" fill="none" stroke="#d95926" stroke-width="24"><title>Stable: 6</title></path></g>
-<g transform="translate(14,0)"><path d="M120.00,413.00 A78,78 0 0 1 81.00,267.45" fill="none" stroke="#3987e5" stroke-width="24"><title>Verified with test results: 5</title></path></g>
-<g transform="translate(14,0)"><path d="M81.00,267.45 A78,78 0 0 1 120.00,257.00" fill="none" stroke="#199e70" stroke-width="24"><title>Active development: 1</title></path></g>
-<g transform="translate(14,0)"><line x1="120.00" y1="270.00" x2="120.00" y2="244.00" stroke="#141321" stroke-width="3"/></g>
-<g transform="translate(14,0)"><line x1="120.00" y1="400.00" x2="120.00" y2="426.00" stroke="#141321" stroke-width="3"/></g>
-<g transform="translate(14,0)"><line x1="87.50" y1="278.71" x2="74.50" y2="256.19" stroke="#141321" stroke-width="3"/></g>
-<g transform="translate(14,0)"><text x="120" y="339" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">12</text></g>
-<g transform="translate(14,0)"><text x="120" y="359" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7" text-anchor="middle">projects</text></g>
-<rect x="248" y="281" width="12" height="12" rx="3" fill="#d95926"/>
-<text x="268" y="292" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#c3c2b7">Stable</text>
-<text x="268" y="308" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">6 projects</text>
-<rect x="248" y="315" width="12" height="12" rx="3" fill="#3987e5"/>
-<text x="268" y="326" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#c3c2b7">Verified with test results</text>
-<text x="268" y="342" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">5 projects</text>
-<rect x="248" y="349" width="12" height="12" rx="3" fill="#199e70"/>
-<text x="268" y="360" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#c3c2b7">Active development</text>
-<text x="268" y="376" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">1 project</text>
-<line x1="440" y1="206" x2="440" y2="440" stroke="#2a2940" stroke-width="1"/>
-<text x="470" y="222" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff">QA Brains test outcomes (15 scenarios each)</text>
-<text x="470" y="258" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">Python + Playwright + Behave</text>
-<rect x="470.0" y="268" width="374.0" height="26" rx="4" fill="#0ca30c"><title>Passed: 12</title></rect>
-<text x="478.0" y="286" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141321">12 passed</text>
-<rect x="846.0" y="268" width="92.0" height="26" rx="4" fill="#fab219"><title>Skipped: 3</title></rect>
-<text x="854.0" y="286" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141321">3 skipped</text>
-<text x="940" y="258" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e" text-anchor="end">0 failed</text>
-<text x="470" y="330" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">TypeScript + Playwright + Cucumber</text>
-<rect x="470.0" y="340" width="436.7" height="26" rx="4" fill="#0ca30c"><title>Passed: 14</title></rect>
-<text x="478.0" y="358" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141321">14 passed</text>
-<rect x="908.7" y="340" width="29.3" height="26" rx="4" fill="#fab219"><title>Pending: 1</title></rect>
-<text x="916.7" y="358" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141321">1</text>
-<text x="940" y="330" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e" text-anchor="end">0 failed</text>
-<rect x="470" y="407" width="12" height="12" rx="3" fill="#0ca30c"/>
-<text x="488" y="418" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">✓ Passed</text>
-<rect x="556" y="407" width="12" height="12" rx="3" fill="#fab219"/>
-<text x="574" y="418" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">– Skipped / pending — known bugs on the demo site</text>
-<rect x="880" y="407" width="12" height="12" rx="3" fill="#d03b3b"/>
-<text x="898" y="418" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">✕ Failed</text>
-<text x="470" y="446" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#8b8a9e">Source: latest recorded runs listed in each repository</text>
+<text x="759" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">2,039</text>
+<text x="759" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">RbcTcsWorld Shop</text>
+<text x="759" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">19 / 19 CI quality gates</text>
+<text x="32" y="222" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Automated tests by area</text>
+<path d="M130.00,263.00 A82,82 0 0 1 167.20,271.92" fill="none" stroke="#4fb3a9" stroke-width="26"><title>Web UI automation: 391</title></path>
+<path d="M167.21,271.93 A82,82 0 1 1 101.00,268.30" fill="none" stroke="#f4b04a" stroke-width="26"><title>Full-stack applications: 4,525</title></path>
+<path d="M101.01,268.30 A82,82 0 0 1 124.07,263.21" fill="none" stroke="#8fb8de" stroke-width="26"><title>Mobile (Appium): 240</title></path>
+<path d="M124.08,263.21 A82,82 0 0 1 129.99,263.00" fill="none" stroke="#e58a8a" stroke-width="26"><title>API automation: 60</title></path>
+<text x="130" y="349" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#ffffff">5,216</text>
+<text x="130" y="369" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#c3c2b7">tests</text>
+<rect x="246" y="261" width="12" height="12" rx="3" fill="#4fb3a9"/>
+<text x="266" y="272" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Web UI automation</text>
+<text x="266" y="290" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">391 tests · 16 repositories</text>
+<rect x="246" y="309" width="12" height="12" rx="3" fill="#f4b04a"/>
+<text x="266" y="320" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Full-stack applications</text>
+<text x="266" y="338" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">4,525 tests · 12 repositories</text>
+<rect x="246" y="357" width="12" height="12" rx="3" fill="#8fb8de"/>
+<text x="266" y="368" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Mobile (Appium)</text>
+<text x="266" y="386" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">240 tests · 5 repositories</text>
+<rect x="246" y="405" width="12" height="12" rx="3" fill="#e58a8a"/>
+<text x="266" y="416" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff">API automation</text>
+<text x="266" y="434" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">60 tests · 2 repositories</text>
+<text x="470" y="222" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Tests per repository (top 12)</text>
+<text x="470" y="256" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">RbcTcsWorld</text>
+<rect x="690" y="245" width="250.0" height="14" rx="3" fill="#f4b04a"><title>RbcTcsWorld: 2,039 tests</title></rect>
+<text x="946.0" y="256" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">2,039</text>
+<text x="470" y="280" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">RbcTcsWorld_ECommerceSuite</text>
+<rect x="690" y="269" width="182.6" height="14" rx="3" fill="#f4b04a"><title>RbcTcsWorld_ECommerceSuite: 1,489 tests</title></rect>
+<text x="878.564982834723" y="280" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">1,489</text>
+<text x="470" y="304" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">PayrollManagementSystems_Aut…</text>
+<rect x="690" y="293" width="31.9" height="14" rx="3" fill="#f4b04a"><title>PayrollManagementSystems_Automation_Java_MySql_Selenium: 260 tests</title></rect>
+<text x="727.8783717508583" y="304" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">260</text>
+<text x="470" y="328" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">PayrollManagementSystem</text>
+<rect x="690" y="317" width="19.6" height="14" rx="3" fill="#f4b04a"><title>PayrollManagementSystem: 160 tests</title></rect>
+<text x="715.6174595389897" y="328" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">160</text>
+<text x="470" y="352" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">RbcTcsWorld_ClinTrial-Connect</text>
+<rect x="690" y="341" width="14.1" height="14" rx="3" fill="#f4b04a"><title>RbcTcsWorld_ClinTrial-Connect: 115 tests</title></rect>
+<text x="710.1000490436488" y="352" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">115</text>
+<text x="470" y="376" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">NorthFace_AutomationExercise…</text>
+<rect x="690" y="365" width="10.4" height="14" rx="3" fill="#4fb3a9"><title>NorthFace_AutomationExercise-BDD-Test-Automation: 85 tests</title></rect>
+<text x="706.4217753800883" y="376" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">85</text>
+<text x="470" y="400" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">RbcTcsWorld_Pharmaceuticals_…</text>
+<rect x="690" y="389" width="9.9" height="14" rx="3" fill="#f4b04a"><title>RbcTcsWorld_Pharmaceuticals_PMC: 81 tests</title></rect>
+<text x="705.9313388916136" y="400" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">81</text>
+<text x="470" y="424" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">RbcTcsWorld-EPMS</text>
+<rect x="690" y="413" width="9.7" height="14" rx="3" fill="#f4b04a"><title>RbcTcsWorld-EPMS: 79 tests</title></rect>
+<text x="705.6861206473761" y="424" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">79</text>
+<text x="470" y="448" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">RbcTcsWorld_PharmaPackQMS_Se…</text>
+<rect x="690" y="437" width="9.6" height="14" rx="3" fill="#f4b04a"><title>RbcTcsWorld_PharmaPackQMS_Serialization: 78 tests</title></rect>
+<text x="705.5635115252575" y="448" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">78</text>
+<text x="470" y="472" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">BhojanAloy-Food-Coffee-Shop-…</text>
+<rect x="690" y="461" width="9.3" height="14" rx="3" fill="#f4b04a"><title>BhojanAloy-Food-Coffee-Shop-POS-System: 76 tests</title></rect>
+<text x="705.3182932810201" y="472" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">76</text>
+<text x="470" y="496" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">AndroidUIAppiumTest_MyDemoEc…</text>
+<rect x="690" y="485" width="9.2" height="14" rx="3" fill="#8fb8de"><title>AndroidUIAppiumTest_MyDemoEcommerce: 75 tests</title></rect>
+<text x="705.1956841589014" y="496" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">75</text>
+<text x="470" y="520" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">RbcTcsWorld_PharmaPackQMS</text>
+<rect x="690" y="509" width="8.1" height="14" rx="3" fill="#f4b04a"><title>RbcTcsWorld_PharmaPackQMS: 66 tests</title></rect>
+<text x="704.0922020598332" y="520" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">66</text>
+<text x="32" y="540" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#8b8a9e">Source: data/portfolio.json (mirror of rbchy/ranajitchowdhury docs/portfolio.json)</text>
 </svg>

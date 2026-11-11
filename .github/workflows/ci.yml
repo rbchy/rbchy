@@ -1,0 +1,74 @@
+# Site checks
+#   data    : README, website and resume show the numbers in data/portfolio.json; the status board
+#             (project-status.svg) is exactly what tools/make_status_svg.py draws; the resume PDF stays
+#             at two pages with readable text
+#   i18n    : every English text block of index.html is translated in all 6 languages
+#   mermaid : every Mermaid chart in README.md renders
+name: site checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  data:
+    name: README ↔ website ↔ resume ↔ data
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright and pypdf
+        run: |
+          pip install playwright==1.63.0 pypdf==6.1.0
+          python -m playwright install --with-deps chromium
+      - name: Numbers agree with data/portfolio.json
+        run: python3 tools/check_site.py
+      - name: Status board is up to date
+        run: python3 tools/make_status_svg.py --check
+      - name: Resume PDF is ATS-readable and at most 2 pages
+        run: python3 tools/make_resume_pdf.py --check
+
+  i18n:
+    name: Website translations (6 languages)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright
+        run: |
+          pip install playwright==1.63.0
+          python -m playwright install --with-deps chromium
+      - name: Every text block translated
+        run: python3 i18n/check.py
+
+  mermaid:
+    name: Mermaid charts render
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Render every chart with mermaid-cli
+        run: |
+          mkdir -p out
+          echo '{"args":["--no-sandbox"]}' > puppeteer.json
+          npx -y @mermaid-js/mermaid-cli@11.4.2 -p puppeteer.json -i README.md -o out/README.md
+          n=$(grep -c '^```mermaid' README.md); s=$(ls out/*.svg | wc -l)
+          echo "charts: $n, rendered: $s"
+          test "$n" -eq "$s"

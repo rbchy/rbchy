@@ -8,7 +8,7 @@
 <meta name="description" content="Ranajit Baran Chowdhury — QA Automation Engineer / SDET. Test systems with API, contract, UI, accessibility, performance and security quality gates in CI.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="RB Chowdhury · QA Automation / SDET">
-<meta property="og:description" content="QA automation portfolio of RB Chowdhury: the RbcTcsWorld E-Commerce Suite (1,489 automated tests, 18 CI quality gates, 89.3% mutation score, 129 traced requirements) and RbcTcsWorld Shop, the same code on its way to a live store: Amazon affiliate site first, own shop later (2,033 automated tests, 19 CI gates).">
+<meta property="og:description" content="QA automation portfolio of RB Chowdhury: the RbcTcsWorld E-Commerce Suite (1,489 automated tests, 18 CI quality gates, 89.3% mutation score, 129 traced requirements) and RbcTcsWorld Shop, the same code on its way to a live store: Amazon affiliate site first, own shop later (2,039 automated tests, 19 CI gates).">
 <meta property="og:image" content="https://rbchy.github.io/rbchy/og-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <!-- installable as an app on Android, iPhone and desktop (manifest + service worker) -->
@@ -504,6 +504,7 @@ html:lang(bn) .eyebrow,html:lang(zh-Hans) .eyebrow,html:lang(ko) .eyebrow{letter
       <p>The newest work first. Every item is merged into <code>main</code> with its CI gates green.</p>
     </div>
     <ol class="timeline">
+      <li><time>10 Nov 2026</time><div><h3>CI sweep: all 37 repositories green</h3><p>Every automation repository now runs its own tests in GitHub Actions: Appium on an Android emulator (22 device and 8 unit tests), both Payroll projects against MySQL 8 (160 and 260 tests), Amazon Cypress in Chrome, Firefox and Edge (39 scenarios each) and QA Brains Python in Chromium and Firefox (15 of 15). 5,216 automated tests in all. The Shop moved to Playwright 1.65 and fixed DEF-031: a photo upload now waits and retries when the server is busy.</p></div></li>
       <li><time>4 Nov 2026</time><div><h3>This portfolio is now an app</h3><p>Install it from the <strong>Install app</strong> button (Android, Windows, Mac) or with Safari's <em>Add to Home Screen</em> on iPhone: own icon, full screen, shortcuts to Shop, Projects and Contact, and it opens offline. An Android APK and Play Store bundle are built in GitHub Actions as a Trusted Web Activity.</p></div></li>
       <li><time>4 Nov 2026</time><div><h3>RbcTcsWorld Shop: affiliate first, own shop later</h3><p>One setting, <code>STORE_SALES=off</code>, runs the whole site as an Amazon affiliate site: only partner products with my own short reviews, nothing can be bought on the site itself (cart, checkout and payments answer 409), and the privacy policy carries Amazon's third-party cookie statement. The own shop stays built and tested for later. Now 2,033 automated tests, 163 traced requirements, all 19 CI gates green.</p></div></li>
       <li><time>2 Nov 2026</time><div><h3>Shop: return labels, account deletion, policy versions, HTML e-mail</h3><p>Prepaid Shippo return labels for approved returns, customers can delete their own account (orders kept for the tax records), every order records the version of the policies it was placed under, and every e-mail also goes out as HTML built only from its text.</p></div></li>
@@ -592,10 +593,10 @@ html:lang(bn) .eyebrow,html:lang(zh-Hans) .eyebrow,html:lang(ko) .eyebrow{letter
       <div>
         <div class="flag-meta"><span>Java 21</span><span>Spring Boot 4.1</span><span>React</span><span>Stripe</span><span>Shippo</span><span>Amazon SES</span><span>PostgreSQL</span><span>Playwright</span><span>Appium 3</span></div>
         <ul class="gates" aria-label="Shop status">
-          <li><b>Automated tests</b><span>2,033</span><small>2,030 passed, 3 skipped by design (main, 4 Nov 2026)</small></li>
+          <li><b>Automated tests</b><span>2,039</span><small>2,034 passed, 5 skipped by design (main, 10 Nov 2026)</small></li>
           <li><b>CI quality gates</b><span>19 / 19</span><small>the suite's 18 plus the production stack</small></li>
           <li><b>Coverage / mutation</b><span>97.5 % / 86.9 %</span><small>JaCoCo lines, PIT</small></li>
-          <li><b>Requirements traced</b><span>163 / 163</span><small>26 decision records, 30 documented defects</small></li>
+          <li><b>Requirements traced</b><span>163 / 163</span><small>26 decision records, 31 documented defects</small></li>
         </ul>
         <h3 style="font-size:18px;margin:6px 0 10px">Road to launch</h3>
         <ol class="phases" aria-label="Road to launch">
@@ -691,15 +692,14 @@ html:lang(bn) .eyebrow,html:lang(zh-Hans) .eyebrow,html:lang(ko) .eyebrow{letter
         <div class="bars">
           <div class="bar-row">
             <header><b>Python + Playwright + Behave</b><span>0 failed</span></header>
-            <div class="bar" role="img" aria-label="12 passed, 3 skipped, 0 failed"><div style="flex:12;background:var(--pass)">12 passed</div><div style="flex:3;background:var(--skip)">3 skipped</div></div>
+            <div class="bar" role="img" aria-label="15 passed, 0 failed"><div style="flex:15;background:var(--pass)">15 passed</div></div>
           </div>
           <div class="bar-row">
             <header><b>TypeScript + Playwright + Cucumber</b><span>0 failed</span></header>
-            <div class="bar" role="img" aria-label="14 passed, 1 pending, 0 failed"><div style="flex:14;background:var(--pass)">14 passed</div><div style="flex:1;background:var(--skip);padding-left:0;justify-content:center">1</div></div>
+            <div class="bar" role="img" aria-label="15 passed, 0 failed"><div style="flex:15;background:var(--pass)">15 passed</div></div>
           </div>
           <div class="keys">
             <span><i style="background:var(--pass)"></i>Passed</span>
-            <span><i style="background:var(--skip)"></i>Skipped or pending: known bugs on the demo site</span>
             <span><i style="background:var(--fail)"></i>Failed (none)</span>
           </div>
         </div>
@@ -956,17 +956,17 @@ const REPOS = [{"n": "Amazon-Cypress-JavaScript-Automation", "u": "https://githu
 (function(){
   const rows=[
     ["E-Commerce Suite (flagship)","RbcTcsWorld_ECommerceSuite","Java 21 · Spring Boot 4.1 · REST Assured · Cucumber · Playwright · k6 · JMeter","pass","1486 passed, 3 skipped by design · 18 CI gates · 129/129 requirements"],
-    ["RbcTcsWorld Shop (live-store track)","RbcTcsWorld","Java 21 · Spring Boot 4.1 · React · Stripe · Shippo · SES","active","2030 passed, 3 skipped by design · 19 CI gates · affiliate site first"],
-    ["QA Brains · Python + Playwright","QaBrainsAutomationPythonPlawright","Python · Playwright · Behave · Allure","pass","12 passed · 3 skipped · 0 failed"],
-    ["QA Brains · TypeScript + Playwright","QaBrainsAutomationTypeScriptPlaywright","TS 5 · Playwright · Cucumber.js","pass","14 passed · 1 pending · 0 failed"],
+    ["RbcTcsWorld Shop (live-store track)","RbcTcsWorld","Java 21 · Spring Boot 4.1 · React · Stripe · Shippo · SES","active","2034 passed, 5 skipped by design · 19 CI gates · affiliate site first"],
+    ["QA Brains · Python + Playwright","QaBrainsAutomationPythonPlawright","Python · Playwright · Behave · Allure","pass","15 passed · 0 failed · Chromium + Firefox"],
+    ["QA Brains · TypeScript + Playwright","QaBrainsAutomationTypeScriptPlaywright","TS 5 · Playwright · Cucumber.js","pass","15 passed · 0 failed"],
     ["QA Brains · Java + Playwright","QaBrainsAutomationJavaPlaywright","Java 17 · Playwright · Cucumber JVM · TestNG","stable","TestNG + Allure reports"],
-    ["Appium Mobile Automation","AppiumMobileAutomation","Java · Appium · TestNG · Allure","pass","100% pass rate"],
+    ["Appium Mobile Automation","AppiumMobileAutomation","Java · Appium · TestNG · Allure","pass","22 device + 8 unit tests passed"],
     ["OpenEMR Healthcare","OpenEMR_Automation","Java · Selenium · Cucumber · TestNG","stable","Patient, auth and scheduling flows"],
     ["Sauce Labs Cloud Automation","QaBrainsSauceLabAPI_Automation","Java · Selenium · Cucumber · Sauce Labs","stable","20+ parallel browser/OS combos"],
     ["API · Rest Assured","QaBrainsAPIAutomationRestAssured","Java · Rest Assured · TestNG","stable","Positive, negative and auth cases"],
     ["API · Postman / Newman","QaBrainsAPIAutomation_Postman","Postman · Newman","stable","Dev / Staging / Prod environments"],
     ["ClinTrial-Connect","RbcTcsWorld_ClinTrial-Connect","Spring Boot · Java","pass","115+ automated tests"],
-    ["Payroll Management System","PayrollManagementSystem","Java Swing · MySQL · JDBC","stable","UI → Service → DAO → DB"],
+    ["Payroll Management System","PayrollManagementSystem","Java Swing · MySQL · JDBC","pass","160 tests passed · UI → Service → DAO → DB"],
     ["PPES Pharma Packaging","PPES-Pharmaceutical-Packaging-Management","Java 17 · MySQL 8 · DAO/MVC","active","Inventory, suppliers, audit trail"]
   ];
   const label={pass:"✓ Verified",stable:"● Stable",active:"◐ Active"};

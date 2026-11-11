@@ -2,11 +2,11 @@
 
 <a href="https://rbchy.github.io/rbchy/" title="Visit my website"><img src="banner.svg" alt="Ranajit Baran Chowdhury — AI-assisted QA Automation Engineer. Click to visit my website." width="100%"></a>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1500&color=FFC107&vCenter=true&width=950&repeat=true&lines=Senior+QA+Automation+%2F+SDET+%7C+Java+%C2%B7+Spring+Boot+%C2%B7+REST+Assured+%C2%B7+Selenium+%C2%B7+Playwright;Quality+gates+in+CI%3A+contract%2C+mutation%2C+accessibility%2C+performance%2C+security)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1500&color=FFC107&vCenter=true&width=950&repeat=true&lines=QA+Automation+Engineer+%2F+SDET+%7C+Java+%C2%B7+Python+%C2%B7+TypeScript+%C2%B7+Selenium+%C2%B7+Playwright;37+repositories+%C2%B7+37+green+CI+pipelines+%C2%B7+5%2C216+automated+tests;Quality+gates+in+CI%3A+contract%2C+mutation%2C+accessibility%2C+performance%2C+security)](https://git.io/typing-svg)
 
 <!-- ============ STATUS BAR ============ -->
 ![Status](https://img.shields.io/badge/Status-Open%20to%20Work-22c55e?style=for-the-badge&logo=checkmarx&logoColor=white)
-![Availability](https://img.shields.io/badge/Availability-Full--time%20%C2%B7%20Contract%20%C2%B7%20Freelance-0d9488?style=for-the-badge)
+![Availability](https://img.shields.io/badge/Availability-Full--time%20%C2%B7%20Internship%20%C2%B7%20Contract-0d9488?style=for-the-badge)
 ![Work Mode](https://img.shields.io/badge/Work%20Mode-Remote%20%2F%20Hybrid-155e75?style=for-the-badge)
 ![Location](https://img.shields.io/badge/Location-Pennsylvania%2C%20USA-1e3a8a?style=for-the-badge&logo=googlemaps&logoColor=white)
 
@@ -21,6 +21,10 @@
 ![Profile Views](https://komarev.com/ghpvc/?username=rbchy&color=blueviolet&style=flat-square&label=PROFILE+VIEWS)
 ![Followers](https://img.shields.io/github/followers/rbchy?style=flat-square&color=0d9488&label=Followers)
 ![Repos](https://img.shields.io/badge/Public%20Repos-37-155e75?style=flat-square&logo=github)
+![Green CI](https://img.shields.io/badge/green%20CI-37%20%2F%2037-22c55e?style=flat-square&logo=githubactions&logoColor=white)
+![Tests](https://img.shields.io/badge/automated%20tests-5%2C216-22c55e?style=flat-square)
+[![Site checks](https://github.com/rbchy/rbchy/actions/workflows/ci.yml/badge.svg)](https://github.com/rbchy/rbchy/actions/workflows/ci.yml)
+[![Profile cards](https://github.com/rbchy/rbchy/actions/workflows/profile-cards.yml/badge.svg)](https://github.com/rbchy/rbchy/actions/workflows/profile-cards.yml)
 ![Experience](https://img.shields.io/badge/Tech%20Experience-40%2B%20years-f59e0b?style=flat-square)
 
 </div>
@@ -49,12 +53,79 @@ QA Automation Engineer / SDET. I build the test system around an application: AP
 | 📍 **Location** | West Norriton, PA 19403, USA |
 | 📧 **Email** | chyranajit@gmail.com |
 | 📞 **Phone** | +1 (267) 342-5565 |
-| 💼 **Open to** | Full-time · Contract · Freelance |
+| 💼 **Open to** | Full-time · Internship · Contract · Freelance |
+| 📄 **Resume** | [ATS-friendly resume](https://rbchy.github.io/rbchy/resume.html) · [PDF](https://rbchy.github.io/rbchy/resume.pdf) |
 | 🌐 **Mode** | Remote-first, flexible time zones |
 
 </td>
 </tr>
 </table>
+
+---
+
+## ✅ Latest Results (November 2026 CI sweep)
+
+Every repository now runs its own checks in **GitHub Actions** on every push to `main`. Numbers come from
+[`data/portfolio.json`](data/portfolio.json), the same file that draws the status board, and CI checks that this README,
+the website and the resume agree with it.
+
+| Metric | Value |
+|---|---|
+| 📦 Public repositories | **37** (35 with automated tests, 2 profile / portfolio repositories) |
+| 🟢 Green CI on `main` | **37 / 37** |
+| 🧪 Automated tests | **5,216** |
+| 🛍️ RbcTcsWorld Shop | 2,039 tests (2,034 passed, 5 skipped by design) · 19 / 19 gates · 0 flaky |
+| ⭐ E-Commerce Suite | 1,489 tests · 18 / 18 gates · 89.3 % mutation score |
+| 💼 Payroll (desktop + MySQL) | 260 / 260 and 160 / 160 against a real MySQL 8 in CI |
+| 📱 Appium Mobile Automation | 22 device tests on an Android emulator + 8 unit tests |
+| 🌲 Amazon Cypress | 39 / 39 in Chrome, Firefox and Edge |
+| 🎭 QA Brains Python + Playwright | 15 / 15 in Chromium and Firefox |
+| 🎭 QA Brains TypeScript + Playwright | 15 / 15 |
+
+<div align="center">
+<img src="project-status.svg" alt="Project status board (10 Nov 2026): 37 public repositories, 37 of 37 with green CI, 5,216 automated tests; tests by area: full-stack applications 4,525, web UI 391, mobile 240, API 60; top repositories RbcTcsWorld Shop 2,039, E-Commerce Suite 1,489, Payroll automation 260, Payroll 160" width="100%" />
+</div>
+
+```mermaid
+pie showData
+    title 5,216 automated tests by area
+    "Full-stack applications" : 4525
+    "Web UI automation" : 391
+    "Mobile (Appium)" : 240
+    "API automation" : 60
+```
+
+```mermaid
+xychart-beta
+    title "Automated tests per repository (top 10)"
+    x-axis ["Shop", "Suite", "PayAuto", "Payroll", "ClinTr.", "NFace", "PMC", "EPMS", "QMS-S", "POS"]
+    y-axis "tests" 0 --> 2200
+    bar [2039, 1489, 260, 160, 115, 85, 81, 79, 78, 76]
+```
+
+```mermaid
+xychart-beta
+    title "Smaller suites: tests per repository"
+    x-axis ["MyDemo", "OHRM", "QMS", "Appium", "ApiDemo", "PPES", "Postman", "Cypress", "Invent.", "AppiumM"]
+    y-axis "tests" 0 --> 80
+    bar [75, 66, 66, 58, 56, 49, 40, 39, 33, 30]
+```
+
+### What the November sweep fixed
+
+```mermaid
+flowchart LR
+  S(["Nov 2026 sweep"]) --> A["AppiumMobileAutomation<br/>emulator in CI, failure dumps<br/>22 + 8 tests"]
+  S --> P1["Payroll Automation<br/>UPDATE SQL columns, cheque words<br/>260 tests on MySQL 8"]
+  S --> P2["PayrollManagementSystem<br/>did not compile: duplicate classes<br/>160 tests"]
+  S --> C["Amazon Cypress<br/>real assertions, stateful mocks<br/>39 x 3 browsers"]
+  S --> Y["QA Brains Python<br/>error-boundary handling<br/>15 x 2 browsers"]
+  S --> R["RbcTcsWorld Shop<br/>Playwright 1.65, DEF-031<br/>2,039 tests, 0 flaky"]
+  S --> F["rbchy profile<br/>profile-cards fixed<br/>site + README checks"]
+  A & P1 & P2 & C & Y & R & F --> G{{"37 / 37 green"}}
+```
+
+Each fix was checked the hard way: a planted bug on a throw-away branch had to turn the tests red before the fix was merged.
 
 ---
 
@@ -150,7 +221,7 @@ with `STORE_SALES=on`.
 
 [![Shop CI](https://github.com/rbchy/RbcTcsWorld/actions/workflows/ci.yml/badge.svg)](https://github.com/rbchy/RbcTcsWorld/actions/workflows/ci.yml)
 ![Stage](https://img.shields.io/badge/stage-affiliate%20site%20first-f59e0b?style=flat-square)
-![Tests](https://img.shields.io/badge/automated%20tests-2033-brightgreen?style=flat-square)
+![Tests](https://img.shields.io/badge/automated%20tests-2039-brightgreen?style=flat-square)
 ![Coverage](https://img.shields.io/badge/line%20coverage-97.5%25-brightgreen?style=flat-square)
 ![Mutation](https://img.shields.io/badge/mutation%20score-86.9%25-brightgreen?style=flat-square)
 ![Requirements](https://img.shields.io/badge/requirements%20traced-163%2F163-155e75?style=flat-square)
@@ -168,9 +239,33 @@ with `STORE_SALES=on`.
 | Go live as an Amazon affiliate site (server, domain, products, Associates application) | 🟡 now |
 | Own shop: products, LLC and sales tax license, user acceptance test with real cards | ⏳ later |
 
-**Numbers from the main CI run of 4 Nov 2026:** 2,033 automated tests (1,164 backend, 464 API · DB · BDD · Selenium UI,
-397 Playwright on five browsers and devices, 8 Appium phone tests), all 19 CI gates green, 26 architecture decision
-records, 30 documented defects, 34 merged pull requests. Guides for every step are written in Bangla for the owner.
+**Numbers from the main CI run of 10 Nov 2026:** 2,039 automated tests (1,164 backend, 464 API · DB · BDD · Selenium UI,
+403 Playwright on five browsers and devices, 8 Appium phone tests), all 19 CI gates green (14 / 14 jobs, iOS included),
+0 flaky tests, 26 architecture decision records, 31 documented defects, 36 merged pull requests. Guides for every step
+are written in Bangla for the owner.
+
+```mermaid
+pie showData
+    title Shop: 2,039 automated tests by level
+    "Backend unit + integration" : 1164
+    "API, DB, BDD, Selenium UI" : 464
+    "Playwright (5 browsers/devices)" : 403
+    "Appium (Android + iOS)" : 8
+```
+
+Latest fix, **DEF-031**: a product-photo upload failed when the server answered *429 busy*, which made one Playwright test flaky.
+The upload now honours `Retry-After` and tries again (at most 4 times, waits capped at 5 s); two regression tests fail without the fix.
+
+```mermaid
+sequenceDiagram
+  participant A as Admin page
+  participant S as Shop server
+  A->>S: upload photo
+  S-->>A: 429 busy, Retry-After 1
+  Note over A: wait (max 5 s), try again (max 4 tries)
+  A->>S: upload photo
+  S-->>A: 201 created
+```
 
 ---
 
@@ -386,29 +481,29 @@ flowchart LR
 
 ## 🚦 Project Status Board
 
-<div align="center">
-<img src="project-status.svg" alt="Project status board chart: 12 featured projects — 6 stable, 5 verified with test results, 1 in active development; QA Brains Python 12 passed / 3 skipped / 0 failed, TypeScript 14 passed / 1 pending / 0 failed" width="100%" />
-</div>
+The board image is drawn from `data/portfolio.json` by [`tools/make_status_svg.py`](tools/make_status_svg.py) (shown above in Latest Results); CI fails if it is out of date.
 
-Live **last-commit** badges update automatically from GitHub; test results are from the latest recorded runs.
+Live **last-commit** badges update automatically from GitHub; test results are from the latest green CI run on `main` (10 Nov 2026).
 
 | Project | Stack | Test Results | Last Activity |
 |---------|-------|-------------|---------------|
-| 🛍️ [RbcTcsWorld Shop](https://github.com/rbchy/RbcTcsWorld) | Java 21 · Spring Boot 4.1 · React · Stripe · Shippo · Amazon SES | ![tests](https://img.shields.io/badge/passed-2030-22c55e?style=flat-square) ![skipped](https://img.shields.io/badge/skipped%20by%20design-3-f59e0b?style=flat-square) ![gates](https://img.shields.io/badge/CI%20gates-19-155e75?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/RbcTcsWorld?style=flat-square&label=) |
+| 🛍️ [RbcTcsWorld Shop](https://github.com/rbchy/RbcTcsWorld) | Java 21 · Spring Boot 4.1 · React · Stripe · Shippo · Amazon SES | ![tests](https://img.shields.io/badge/passed-2034-22c55e?style=flat-square) ![skipped](https://img.shields.io/badge/skipped%20by%20design-5-f59e0b?style=flat-square) ![gates](https://img.shields.io/badge/CI%20gates-19-155e75?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/RbcTcsWorld?style=flat-square&label=) |
 | ⭐ [E-Commerce Suite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | Java 21 · Spring Boot 4.1 · REST Assured · Selenium · Playwright · Appium · k6 | ![tests](https://img.shields.io/badge/passed-1486-22c55e?style=flat-square) ![skipped](https://img.shields.io/badge/skipped%20by%20design-3-f59e0b?style=flat-square) ![gates](https://img.shields.io/badge/CI%20gates-18-155e75?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/RbcTcsWorld_ECommerceSuite?style=flat-square&label=) |
-| 🔬 [QA Brains — Python + Playwright](https://github.com/rbchy/QaBrainsAutomationPythonPlawright) | Python · Playwright · Behave · Allure | ![passed](https://img.shields.io/badge/passed-12-22c55e?style=flat-square) ![skipped](https://img.shields.io/badge/skipped-3-f59e0b?style=flat-square) ![failed](https://img.shields.io/badge/failed-0-lightgrey?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationPythonPlawright?style=flat-square&label=) |
-| 🔬 [QA Brains — TypeScript + Playwright](https://github.com/rbchy/QaBrainsAutomationTypeScriptPlaywright) | TS 5 · Playwright · Cucumber.js | ![passed](https://img.shields.io/badge/passed-14-22c55e?style=flat-square) ![pending](https://img.shields.io/badge/pending-1-f59e0b?style=flat-square) ![failed](https://img.shields.io/badge/failed-0-lightgrey?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationTypeScriptPlaywright?style=flat-square&label=) |
-| 🔬 [QA Brains — Java + Playwright](https://github.com/rbchy/QaBrainsAutomationJavaPlaywright) | Java 17 · Playwright · Cucumber JVM · TestNG | ![status](https://img.shields.io/badge/status-stable-0d9488?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationJavaPlaywright?style=flat-square&label=) |
-| 📱 [Appium Mobile Automation](https://github.com/rbchy/AppiumMobileAutomation) | Java · Appium · TestNG · Allure | ![pass rate](https://img.shields.io/badge/pass%20rate-100%25-22c55e?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/AppiumMobileAutomation?style=flat-square&label=) |
-| 🏥 [OpenEMR Healthcare](https://github.com/rbchy/OpenEMR_Automation) | Java · Selenium · Cucumber · TestNG | ![status](https://img.shields.io/badge/status-stable-0d9488?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/OpenEMR_Automation?style=flat-square&label=) |
+| 🔬 [QA Brains — Python + Playwright](https://github.com/rbchy/QaBrainsAutomationPythonPlawright) | Python · Playwright · Behave · Allure | ![passed](https://img.shields.io/badge/passed-15%20%C3%97%202%20browsers-22c55e?style=flat-square) ![failed](https://img.shields.io/badge/failed-0-lightgrey?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationPythonPlawright?style=flat-square&label=) |
+| 🔬 [QA Brains — TypeScript + Playwright](https://github.com/rbchy/QaBrainsAutomationTypeScriptPlaywright) | TS 5 · Playwright · Cucumber.js | ![passed](https://img.shields.io/badge/passed-15-22c55e?style=flat-square) ![failed](https://img.shields.io/badge/failed-0-lightgrey?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationTypeScriptPlaywright?style=flat-square&label=) |
+| 🔬 [QA Brains — Java + Playwright](https://github.com/rbchy/QaBrainsAutomationJavaPlaywright) | Java 17 · Playwright · Cucumber JVM · TestNG | ![passed](https://img.shields.io/badge/passed-15-22c55e?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAutomationJavaPlaywright?style=flat-square&label=) |
+| 📱 [Appium Mobile Automation](https://github.com/rbchy/AppiumMobileAutomation) | Java · Appium 2 · TestNG · Allure · Android emulator in CI | ![device](https://img.shields.io/badge/device%20tests-22-22c55e?style=flat-square) ![unit](https://img.shields.io/badge/unit%20tests-8-22c55e?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/AppiumMobileAutomation?style=flat-square&label=) |
+| 🏥 [OpenEMR Healthcare](https://github.com/rbchy/OpenEMR_Automation) | Java · Selenium · Cucumber · TestNG | ![passed](https://img.shields.io/badge/passed-4-22c55e?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/OpenEMR_Automation?style=flat-square&label=) |
 | ☁️ [Sauce Labs Cloud Automation](https://github.com/rbchy/QaBrainsSauceLabAPI_Automation) | Java · Selenium · Cucumber · Sauce Labs | ![parallel](https://img.shields.io/badge/parallel-20%2B%20combos-155e75?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsSauceLabAPI_Automation?style=flat-square&label=) |
-| 🔌 [API — Rest Assured](https://github.com/rbchy/QaBrainsAPIAutomationRestAssured) | Java · Rest Assured · TestNG | ![status](https://img.shields.io/badge/status-stable-0d9488?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAPIAutomationRestAssured?style=flat-square&label=) |
-| 🔌 [API — Postman / Newman](https://github.com/rbchy/QaBrainsAPIAutomation_Postman) | Postman · Newman | ![status](https://img.shields.io/badge/status-stable-0d9488?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAPIAutomation_Postman?style=flat-square&label=) |
-| 🧪 [ClinTrial-Connect](https://github.com/rbchy/RbcTcsWorld_ClinTrial-Connect) | Spring Boot · Java | ![tests](https://img.shields.io/badge/automated%20tests-115%2B-22c55e?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/RbcTcsWorld_ClinTrial-Connect?style=flat-square&label=) |
-| 💼 [Payroll Management System](https://github.com/rbchy/PayrollManagementSystem) | Java Swing · MySQL · JDBC | ![status](https://img.shields.io/badge/status-stable-0d9488?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/PayrollManagementSystem?style=flat-square&label=) |
-| 🏭 [PPES Pharma Packaging](https://github.com/rbchy/PPES-Pharmaceutical-Packaging-Management) | Java 17 · MySQL 8 · DAO/MVC | ![status](https://img.shields.io/badge/status-active-22c55e?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/PPES-Pharmaceutical-Packaging-Management?style=flat-square&label=) |
+| 🔌 [API — Rest Assured](https://github.com/rbchy/QaBrainsAPIAutomationRestAssured) | Java · Rest Assured · TestNG | ![passed](https://img.shields.io/badge/passed-5%20API%20%2B%2015%20UI-22c55e?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAPIAutomationRestAssured?style=flat-square&label=) |
+| 🔌 [API — Postman / Newman](https://github.com/rbchy/QaBrainsAPIAutomation_Postman) | Postman · Newman | ![assertions](https://img.shields.io/badge/assertions-40%20%2F%2040-22c55e?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/QaBrainsAPIAutomation_Postman?style=flat-square&label=) |
+| 🧪 [ClinTrial-Connect](https://github.com/rbchy/RbcTcsWorld_ClinTrial-Connect) | Spring Boot · Java | ![tests](https://img.shields.io/badge/passed-115-22c55e?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/RbcTcsWorld_ClinTrial-Connect?style=flat-square&label=) |
+| 💼 [Payroll Automation (Java + MySQL + Selenium)](https://github.com/rbchy/PayrollManagementSystems_Automation_Java_MySql_Selenium) | Java 21 · Swing · MySQL 8 · Cucumber · AssertJ-Swing | ![passed](https://img.shields.io/badge/passed-260-22c55e?style=flat-square) ![db](https://img.shields.io/badge/real-MySQL%208-155e75?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/PayrollManagementSystems_Automation_Java_MySql_Selenium?style=flat-square&label=) |
+| 🌲 [Amazon Cypress](https://github.com/rbchy/Amazon-Cypress-JavaScript-Automation) | JavaScript · Cypress 14 · Cucumber | ![passed](https://img.shields.io/badge/passed-39%20%C3%97%203%20browsers-22c55e?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/Amazon-Cypress-JavaScript-Automation?style=flat-square&label=) |
+| 💼 [Payroll Management System](https://github.com/rbchy/PayrollManagementSystem) | Java 21 · Swing · MySQL 8 · JDBC · JUnit 5 | ![passed](https://img.shields.io/badge/passed-160-22c55e?style=flat-square) ![db](https://img.shields.io/badge/real-MySQL%208-155e75?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/PayrollManagementSystem?style=flat-square&label=) |
+| 🏭 [PPES Pharma Packaging](https://github.com/rbchy/PPES-Pharmaceutical-Packaging-Management) | Java 17 · MySQL 8 · DAO/MVC | ![passed](https://img.shields.io/badge/passed-49-22c55e?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/PPES-Pharmaceutical-Packaging-Management?style=flat-square&label=) |
 
-<sub>Legend: ![](https://img.shields.io/badge/-active-22c55e?style=flat-square) under active development · ![](https://img.shields.io/badge/-stable-0d9488?style=flat-square) complete & maintained · ![](https://img.shields.io/badge/-skipped%20%2F%20pending-f59e0b?style=flat-square) documented known bugs on the target site</sub>
+<sub>Legend: ![](https://img.shields.io/badge/-passed-22c55e?style=flat-square) latest green CI run on `main` · ![](https://img.shields.io/badge/-skipped%20by%20design-f59e0b?style=flat-square) tests that need a real outside service, each with its reason</sub>
 
 ---
 
@@ -432,9 +527,22 @@ Live **last-commit** badges update automatically from GitHub; test results are f
 
 | Variant | Stack | Highlights |
 |---------|-------|-----------|
-| [**Python**](https://github.com/rbchy/QaBrainsAutomationPythonPlawright) | Python 3.9+ · Playwright · Behave · Allure · POM | 12 passed · 3 skipped (known site bugs) · 0 failed · screenshot on failure · retry logic |
-| [**TypeScript**](https://github.com/rbchy/QaBrainsAutomationTypeScriptPlaywright) | TS 5.x · Playwright (async/await) · Cucumber.js · Node.js | 14 passed · 1 pending (known site bug) · 0 failed · CI-ready with GitHub Actions |
-| [**Java**](https://github.com/rbchy/QaBrainsAutomationJavaPlaywright) | Java 17+ · Playwright · Cucumber JVM · TestNG · Maven | Gherkin feature files · TestNG multi-threading · data-driven · TestNG + Allure reports |
+| [**Python**](https://github.com/rbchy/QaBrainsAutomationPythonPlawright) | Python 3.9+ · Playwright · Behave · Allure · POM | 15 / 15 in Chromium and Firefox · pytest unit tests · error-boundary handler · screenshot on failure |
+| [**TypeScript**](https://github.com/rbchy/QaBrainsAutomationTypeScriptPlaywright) | TS 5.x · Playwright (async/await) · Cucumber.js · Node.js | 15 / 15 · CI with GitHub Actions |
+| [**Java**](https://github.com/rbchy/QaBrainsAutomationJavaPlaywright) | Java 17+ · Playwright · Cucumber JVM · TestNG · Maven | 15 / 15 · Gherkin feature files · data-driven · TestNG + Allure reports |
+
+</details>
+
+<details>
+<summary><strong>📱 Mobile and Cypress — Appium on an emulator, Cypress in three browsers</strong></summary>
+
+<br>
+
+| Repository | Stack | Latest result |
+|---|---|---|
+| [AppiumMobileAutomation](https://github.com/rbchy/AppiumMobileAutomation) | Java · Appium 2 · UiAutomator2 · TestNG · Allure | 22 device tests on an Android emulator (API 33) + 8 unit tests; screenshot and page source on every failure |
+| [AndroidUIAppiumTest_MyDemoEcommerce](https://github.com/rbchy/AndroidUIAppiumTest_MyDemoEcommerce) | Java 17 · Appium · TestNG | 75 / 75 on an emulator |
+| [Amazon-Cypress-JavaScript-Automation](https://github.com/rbchy/Amazon-Cypress-JavaScript-Automation) | Cypress 14 · Cucumber · ESLint | 39 / 39 in Chrome, Firefox and Edge; planted-bug check caught 4 scenarios |
 
 </details>
 
@@ -472,14 +580,14 @@ Live **last-commit** badges update automatically from GitHub; test results are f
 </details>
 
 <details>
-<summary><strong>💼 Payroll Management System — Java + MySQL + JDBC</strong></summary>
+<summary><strong>💼 Payroll Management System — Java Swing + MySQL (160 + 260 tests)</strong></summary>
 
 <br>
 
-**Stack:** Java (Swing/AWT) · MySQL 8.0+ · JDBC · DAO pattern · Maven
-**Features:** employee CRUD · attendance tracking · automated salary calculation (HRA/DA/PF/Gross/Net) · pay slip generation · secure authentication
-**Architecture:** UI → Service → DAO → Database
-**Repo:** [PayrollManagementSystem](https://github.com/rbchy/PayrollManagementSystem)
+**Stack:** Java 21 · Swing · MySQL 8 · JDBC · JUnit 5 · Maven · GitHub Actions with a real MySQL service
+**Features:** employee records (add, view, update, search, delete) · pay engine: normal pay for the first 40 h, overtime ×1.5, double time ×2, extended / holiday / special-work hours, bonus, 20 % tax, 10 % medical · payslip and cheque with the amount in words · login
+**Tests:** 160 / 160 in this repository and 260 / 260 in the [automation project](https://github.com/rbchy/PayrollManagementSystems_Automation_Java_MySql_Selenium) (SQL-against-schema checks, MySQL integration, Swing UI with AssertJ-Swing on a virtual display)
+**Repos:** [PayrollManagementSystem](https://github.com/rbchy/PayrollManagementSystem) · [PayrollManagementSystems_Automation_Java_MySql_Selenium](https://github.com/rbchy/PayrollManagementSystems_Automation_Java_MySql_Selenium)
 
 </details>
 
@@ -517,7 +625,7 @@ pie showData
 | 2 | [AmazonSeleniumTest](https://github.com/rbchy/AmazonSeleniumTest) | 🌐 Web | Selenium test for Amazon |
 | 3 | [AndroidUIAppiumTest_MyDemoEcommerce](https://github.com/rbchy/AndroidUIAppiumTest_MyDemoEcommerce) | 📱 Mobile | Appium 3, UiAutomator2, TestNG, Java 17 |
 | 4 | [AppiumAutomation_ApiDemos](https://github.com/rbchy/AppiumAutomation_ApiDemos) | 📱 Mobile | Appium 3.5.2, TestNG, Maven, ExtentReports (POM) |
-| 5 | [AppiumMobileAutomation](https://github.com/rbchy/AppiumMobileAutomation) | 📱 Mobile | Appium, TestNG & Allure — 100% pass rate on Sauce Labs My Demo App |
+| 5 | [AppiumMobileAutomation](https://github.com/rbchy/AppiumMobileAutomation) | 📱 Mobile | Appium, TestNG & Allure — 22 device + 8 unit tests on an Android emulator in CI |
 | 6 | [AppiumTest_Andriod_Automation](https://github.com/rbchy/AppiumTest_Andriod_Automation) | 📱 Mobile | Appium, TestNG, Cucumber BDD, POM |
 | 7 | [BhojanAloy-Food-Coffee-Shop-POS-System](https://github.com/rbchy/BhojanAloy-Food-Coffee-Shop-POS-System) | 💻 App | Java Swing + MySQL point-of-sale with itemized bill preview |
 | 8 | [Guru99TelTest](https://github.com/rbchy/Guru99TelTest) | 🌐 Web | Selenium/Java against the Guru99 demo site |
@@ -540,10 +648,10 @@ pie showData
 | 25 | [QaBrainsAutomationTypeScriptPlaywright](https://github.com/rbchy/QaBrainsAutomationTypeScriptPlaywright) | 🌐 Web | TypeScript + Playwright |
 | 26 | [QaBrainsSauceLabAPI_Automation](https://github.com/rbchy/QaBrainsSauceLabAPI_Automation) | 🌐 Web | AI-driven quality platform — Java, Selenium, Cucumber on Sauce Labs |
 | 27 | [ranajitchowdhury](https://github.com/rbchy/ranajitchowdhury) | 🗂️ Portfolio | 20+ projects across Mobile, E-Commerce, Banking, Healthcare, HR, API |
-| 28 | [rbchy](https://github.com/rbchy/rbchy) | 🗂️ Portfolio | This profile README repository |
+| 28 | [rbchy](https://github.com/rbchy/rbchy) | 🗂️ Portfolio | This profile README, website, resume and installable app |
 | 29 | [RbcTcsWorld-EPMS](https://github.com/rbchy/RbcTcsWorld-EPMS) | 💻 App | Full-stack payroll — Spring Boot REST API + test suite |
 | 30 | [RbcTcsWorld_ClinTrial-Connect](https://github.com/rbchy/RbcTcsWorld_ClinTrial-Connect) | 💻 App | Spring Boot clinical-trial patient matching, 115+ automated tests |
-| 31 | [RbcTcsWorld](https://github.com/rbchy/RbcTcsWorld) | 💻 App | 🛍️ RbcTcsWorld Shop: the suite on its way to a live store, Amazon affiliate site first; 2,033 tests, 19 CI gates |
+| 31 | [RbcTcsWorld](https://github.com/rbchy/RbcTcsWorld) | 💻 App | 🛍️ RbcTcsWorld Shop: the suite on its way to a live store, Amazon affiliate site first; 2,039 tests, 19 CI gates |
 | 32 | [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | 💻 App | ⭐ Spring Boot 4 e-commerce + 1489 automated tests, 18 CI quality gates |
 | 33 | [RbcTcsWorld_PharmaPackQMS](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS) | 💻 App | Pharmaceutical packaging quality management (QMS) |
 | 34 | [RbcTcsWorld_PharmaPackQMS_Serialization](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS_Serialization) | 💻 App | Pharma packaging QMS + serialization, CI and desktop builds for Windows / macOS / Linux |
@@ -565,7 +673,9 @@ pie showData
 | RbcTcsWorld Shop: own products, LLC, sales tax license, UAT with real cards | ![](https://img.shields.io/badge/-later-64748b?style=flat-square) |
 | RbcTcsWorld Shop: phone app (installable website first, Android app with the own shop) | ![](https://img.shields.io/badge/-later-64748b?style=flat-square) |
 | This portfolio as an app: installable website (PWA, offline) and Android APK/AAB from GitHub Actions | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
-| Portfolio app: full screen on Android (assetlinks.json) and Google Play listing | ![](https://img.shields.io/badge/-next-0d9488?style=flat-square) |
+| Every repository on green GitHub Actions CI (37 / 37), numbers from one data file | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
+| First QA Automation job or internship: ATS-friendly resume (HTML + PDF) | ![](https://img.shields.io/badge/-in%20progress-f59e0b?style=flat-square) |
+| Portfolio app: full screen on Android (assetlinks.json) and Google Play listing ![](https://img.shields.io/badge/-next-0d9488?style=flat-square) |
 | E-Commerce Suite: store-admin panel, six languages, desktop app, Safari on Jenkins | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
 | E-Commerce Suite: refresh tokens (rotation, reuse detection) and Redis login lockout | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
 | E-Commerce Suite: Stripe payments (3 test layers) and order e-mails (outbox, Mailpit) | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
@@ -686,6 +796,108 @@ The website itself is an installable app (PWA) with an offline mode: on Android 
 
 ---
 
+## 🏗️ How This Repository Works
+
+This repository is the GitHub profile README **and** the website [rbchy.github.io/rbchy](https://rbchy.github.io/rbchy/)
+(six languages, installable as an app, with the resume). Nothing here is a build step: GitHub Pages serves the files as they are.
+
+```mermaid
+flowchart TB
+  subgraph repo["rbchy/rbchy (main)"]
+    RM["README.md<br/>profile page"]
+    IX["index.html<br/>website"]
+    RS["resume.html + resume.pdf"]
+    I18["i18n/*.json<br/>bn es zh tl vi ko"]
+    DATA["data/portfolio.json"]
+    SVG["project-status.svg"]
+    SW["sw.js + manifest<br/>installable app"]
+  end
+  DATA -->|tools/make_status_svg.py| SVG
+  SVG --> RM
+  I18 --> IX
+  SW --> IX
+  repo -->|GitHub Pages| WEB(["rbchy.github.io/rbchy"])
+  repo -->|profile| GH(["github.com/rbchy"])
+  IX -->|android-app.yml| APK["Android APK / AAB<br/>Trusted Web Activity"]
+```
+
+| Workflow | When | What it does |
+|---|---|---|
+| [`ci.yml`](.github/workflows/ci.yml) — site checks | every push and pull request | numbers in README, website and resume match `data/portfolio.json`; status board up to date; every Mermaid chart renders; all 6 languages translate every text block |
+| [`profile-cards.yml`](.github/workflows/profile-cards.yml) | daily 00:30 UTC + manual | draws the profile summary cards into `profile-summary-card-output/` |
+| [`snake.yml`](.github/workflows/snake.yml) | daily + manual | contribution-grid snake on the `output` branch |
+| [`android-app.yml`](.github/workflows/android-app.yml) | app files change + manual | builds the Android APK and Play Store bundle |
+
+```mermaid
+sequenceDiagram
+  participant Cron as Schedule 00:30 UTC
+  participant Job as profile-cards job
+  participant Repo as rbchy/rbchy main
+  Cron->>Job: start
+  Job->>Repo: actions/checkout
+  Job->>Job: draw the cards (vn7n24fzkq action)
+  Job->>Repo: commit profile-summary-card-output/
+```
+
+```mermaid
+stateDiagram-v2
+  [*] --> NoCI: repository without checks
+  NoCI --> RedFirst: add CI, see it fail
+  RedFirst --> Fixed: fix the real bug, add a test that fails without the fix
+  Fixed --> Green: merge to main
+  Green --> Green: daily and per-push runs
+  Green --> RedFirst: a run fails
+```
+
+```mermaid
+erDiagram
+  PORTFOLIO ||--|{ AREA : groups
+  PORTFOLIO ||--|{ REPO : lists
+  AREA ||--o{ REPO : "has"
+  REPO {
+    string name
+    string area
+    string stack
+    int tests
+    string result
+    string workflow
+  }
+  AREA {
+    string key
+    string label
+    string color
+  }
+```
+
+### 🧹 Maintenance Log
+
+| Date | Change |
+|---|---|
+| 10 Nov 2026 | `profile-cards.yml` fixed: it failed every day (46 runs) because the action ran without `actions/checkout`, so its `git add` had no repository |
+| 10 Nov 2026 | New `ci.yml`: data-consistency, status-board, Mermaid and translation checks on every push |
+| 10 Nov 2026 | `data/portfolio.json` + `tools/make_status_svg.py`: the status board is drawn from data instead of by hand (it still showed 571 tests) |
+| 10 Nov 2026 | README, website (6 languages) and resume updated to the November CI sweep; resume rewritten for a first QA Automation job or internship, with a PDF |
+| 4 Nov 2026 | Website installable as an app (PWA + Android TWA build) |
+
+### 📈 Roadmap
+
+- [x] Every repository on green CI, numbers from one data file
+- [x] Profile summary cards workflow working again
+- [x] ATS-friendly resume as HTML and PDF
+- [ ] Use the self-generated profile cards in the GitHub Stats section once a few daily runs have succeeded
+- [ ] Android app full screen (assetlinks.json) and Google Play listing
+- [ ] RbcTcsWorld Shop live as an Amazon affiliate site
+
+### 🔗 Related Projects
+
+| Project | Why it matters |
+|---|---|
+| [ranajitchowdhury](https://github.com/rbchy/ranajitchowdhury) | Portfolio repository; owns the original `docs/portfolio.json` mirrored here |
+| [RbcTcsWorld](https://github.com/rbchy/RbcTcsWorld) | RbcTcsWorld Shop, 2,039 tests |
+| [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | Flagship test system, 1,489 tests |
+
+---
+
 ## 📈 GitHub Stats
 
 <div align="center">
@@ -714,8 +926,8 @@ The website itself is an installable app (PWA) with an offline mode: on Android 
 [![Portfolio](https://img.shields.io/badge/Portfolio-rbc6543.wixsite.com-blueviolet?style=for-the-badge&logo=wix&logoColor=white)](https://rbc6543.wixsite.com/rbc-portfolio)
 [![Website](https://img.shields.io/badge/Website-rbchy.github.io%2Frbchy-0d9488?style=for-the-badge&logo=githubpages&logoColor=white)](https://rbchy.github.io/rbchy/)
 
-![Version](https://img.shields.io/badge/README-v2.7-155e75?style=flat-square)
-![Updated](https://img.shields.io/badge/Last%20Updated-October%202026-1e3a8a?style=flat-square)
+![Version](https://img.shields.io/badge/README-v2.8-155e75?style=flat-square)
+![Updated](https://img.shields.io/badge/Last%20Updated-November%202026-1e3a8a?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Actively%20Open%20to%20New%20Opportunities-22c55e?style=flat-square)
 
 *"Quality is never an accident; it is always the result of intelligent effort."*
