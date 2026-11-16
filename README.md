@@ -2,7 +2,7 @@
 
 <a href="https://rbchy.github.io/rbchy/" title="Visit my website"><img src="banner.svg" alt="Ranajit Baran Chowdhury — AI-assisted QA Automation Engineer. Click to visit my website." width="100%"></a>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1500&color=FFC107&vCenter=true&width=950&repeat=true&lines=QA+Automation+Engineer+%2F+SDET+%7C+Java+%C2%B7+Python+%C2%B7+TypeScript+%C2%B7+Selenium+%C2%B7+Playwright;37+repositories+%C2%B7+37+green+CI+pipelines+%C2%B7+5%2C216+automated+tests;Quality+gates+in+CI%3A+contract%2C+mutation%2C+accessibility%2C+performance%2C+security)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&pause=1500&color=FFC107&vCenter=true&width=950&repeat=true&lines=QA+Automation+Engineer+%2F+SDET+%7C+Java+%C2%B7+Python+%C2%B7+TypeScript+%C2%B7+Selenium+%C2%B7+Playwright;38+repositories+%C2%B7+38+green+CI+pipelines+%C2%B7+5%2C258+automated+tests;Quality+gates+in+CI%3A+contract%2C+mutation%2C+accessibility%2C+performance%2C+security)](https://git.io/typing-svg)
 
 <!-- ============ STATUS BAR ============ -->
 ![Status](https://img.shields.io/badge/Status-Open%20to%20Work-22c55e?style=for-the-badge&logo=checkmarx&logoColor=white)
@@ -20,9 +20,9 @@
 
 ![Profile Views](https://komarev.com/ghpvc/?username=rbchy&color=blueviolet&style=flat-square&label=PROFILE+VIEWS)
 ![Followers](https://img.shields.io/github/followers/rbchy?style=flat-square&color=0d9488&label=Followers)
-![Repos](https://img.shields.io/badge/Public%20Repos-37-155e75?style=flat-square&logo=github)
-![Green CI](https://img.shields.io/badge/green%20CI-37%20%2F%2037-22c55e?style=flat-square&logo=githubactions&logoColor=white)
-![Tests](https://img.shields.io/badge/automated%20tests-5%2C216-22c55e?style=flat-square)
+![Repos](https://img.shields.io/badge/Public%20Repos-38-155e75?style=flat-square&logo=github)
+![Green CI](https://img.shields.io/badge/green%20CI-38%20%2F%2038-22c55e?style=flat-square&logo=githubactions&logoColor=white)
+![Tests](https://img.shields.io/badge/automated%20tests-5%2C258-22c55e?style=flat-square)
 [![Site checks](https://github.com/rbchy/rbchy/actions/workflows/ci.yml/badge.svg)](https://github.com/rbchy/rbchy/actions/workflows/ci.yml)
 [![Profile cards](https://github.com/rbchy/rbchy/actions/workflows/profile-cards.yml/badge.svg)](https://github.com/rbchy/rbchy/actions/workflows/profile-cards.yml)
 ![Experience](https://img.shields.io/badge/Tech%20Experience-40%2B%20years-f59e0b?style=flat-square)
@@ -71,9 +71,9 @@ the website and the resume agree with it.
 
 | Metric | Value |
 |---|---|
-| 📦 Public repositories | **37** (35 with automated tests, 2 profile / portfolio repositories) |
-| 🟢 Green CI on `main` | **37 / 37** |
-| 🧪 Automated tests | **5,216** |
+| 📦 Public repositories | **38** (36 with automated tests, 2 profile / portfolio repositories) |
+| 🟢 Green CI on `main` | **38 / 38** |
+| 🧪 Automated tests | **5,258** |
 | 🛍️ RbcTcsWorld Shop | 2,039 tests (2,034 passed, 5 skipped by design) · 19 / 19 gates · 0 flaky |
 | ⭐ E-Commerce Suite | 1,489 tests · 18 / 18 gates · 89.3 % mutation score |
 | 💼 Payroll (desktop + MySQL) | 260 / 260 and 160 / 160 against a real MySQL 8 in CI |
@@ -81,15 +81,16 @@ the website and the resume agree with it.
 | 🌲 Amazon Cypress | 39 / 39 in Chrome, Firefox and Edge |
 | 🎭 QA Brains Python + Playwright | 15 / 15 in Chromium and Firefox |
 | 🎭 QA Brains TypeScript + Playwright | 15 / 15 |
+| 🙏 [Dhoom Vivekananda Samiti](https://github.com/rbchy/dhoom-vivekananda-samiti) (new) | 42 / 42 database security checks on PostgreSQL 16 + build · [live site](https://rbchy.github.io/dhoom-vivekananda-samiti/) |
 
 <div align="center">
-<img src="project-status.svg" alt="Project status board (10 Nov 2026): 37 public repositories, 37 of 37 with green CI, 5,216 automated tests; tests by area: full-stack applications 4,525, web UI 391, mobile 240, API 60; top repositories RbcTcsWorld Shop 2,039, E-Commerce Suite 1,489, Payroll automation 260, Payroll 160" width="100%" />
+<img src="project-status.svg" alt="Project status board (16 Nov 2026): 38 public repositories, 38 of 38 with green CI, 5,258 automated tests; tests by area: full-stack applications 4,567, web UI 391, mobile 240, API 60; top repositories RbcTcsWorld Shop 2,039, E-Commerce Suite 1,489, Payroll automation 260, Payroll 160" width="100%" />
 </div>
 
 ```mermaid
 pie showData
-    title 5,216 automated tests by area
-    "Full-stack applications" : 4525
+    title 5,258 automated tests by area
+    "Full-stack applications" : 4567
     "Web UI automation" : 391
     "Mobile (Appium)" : 240
     "API automation" : 60
@@ -502,6 +503,7 @@ Live **last-commit** badges update automatically from GitHub; test results are f
 | 🌲 [Amazon Cypress](https://github.com/rbchy/Amazon-Cypress-JavaScript-Automation) | JavaScript · Cypress 14 · Cucumber | ![passed](https://img.shields.io/badge/passed-39%20%C3%97%203%20browsers-22c55e?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/Amazon-Cypress-JavaScript-Automation?style=flat-square&label=) |
 | 💼 [Payroll Management System](https://github.com/rbchy/PayrollManagementSystem) | Java 21 · Swing · MySQL 8 · JDBC · JUnit 5 | ![passed](https://img.shields.io/badge/passed-160-22c55e?style=flat-square) ![db](https://img.shields.io/badge/real-MySQL%208-155e75?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/PayrollManagementSystem?style=flat-square&label=) |
 | 🏭 [PPES Pharma Packaging](https://github.com/rbchy/PPES-Pharmaceutical-Packaging-Management) | Java 17 · MySQL 8 · DAO/MVC | ![passed](https://img.shields.io/badge/passed-49-22c55e?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/PPES-Pharmaceutical-Packaging-Management?style=flat-square&label=) |
+| 🙏 [Dhoom Vivekananda Samiti](https://github.com/rbchy/dhoom-vivekananda-samiti) | React 19 · Vite · Supabase · PostgreSQL RLS · GitHub Pages | ![checks](https://img.shields.io/badge/DB%20security%20checks-42%20%2F%2042-22c55e?style=flat-square) | ![last commit](https://img.shields.io/github/last-commit/rbchy/dhoom-vivekananda-samiti?style=flat-square&label=) |
 
 <sub>Legend: ![](https://img.shields.io/badge/-passed-22c55e?style=flat-square) latest green CI run on `main` · ![](https://img.shields.io/badge/-skipped%20by%20design-f59e0b?style=flat-square) tests that need a real outside service, each with its reason</sub>
 
@@ -592,6 +594,18 @@ Live **last-commit** badges update automatically from GitHub; test results are f
 </details>
 
 <details>
+<summary><strong>🙏 Dhoom Vivekananda Samiti — temple &amp; community website with database-enforced approvals (new)</strong></summary>
+
+<br>
+
+**Stack:** React 19 · Vite 8 · React Router 7 · Supabase (PostgreSQL, Row Level Security, Auth, Storage) · Capacitor · GitHub Actions · GitHub Pages
+**Scope:** public site in 10 languages (incl. Bangla and right-to-left Arabic) for five temples and a community clinic in Mirsharai, Bangladesh: worship schedule, events, gallery, online donations and monthly subscriptions, share to WhatsApp / Facebook · admin dashboard for content, donations, subscriptions and an income / expenditure ledger
+**Quality:** three staff roles (main admin, accounts admin, secretary); every secretary change becomes a request that only the right admin can approve, enforced by `security definer` functions in PostgreSQL · CI runs every SQL file on PostgreSQL 16 and 42 security checks (visitors, roles, approvals, no self-approval) before GitHub Pages deploys
+**Repo:** [dhoom-vivekananda-samiti](https://github.com/rbchy/dhoom-vivekananda-samiti) · **Live:** [rbchy.github.io/dhoom-vivekananda-samiti](https://rbchy.github.io/dhoom-vivekananda-samiti/)
+
+</details>
+
+<details>
 <summary><strong>🏭 Pharmaceutical Packaging Inventory Management — Java + MySQL</strong></summary>
 
 <br>
@@ -608,16 +622,16 @@ Live **last-commit** badges update automatically from GitHub; test results are f
 
 ```mermaid
 pie showData
-    title 37 Public Repositories by Category
+    title 38 Public Repositories by Category
     "Web UI Automation" : 16
-    "Full-Stack Applications" : 12
+    "Full-Stack Applications" : 13
     "Mobile (Appium)" : 5
     "API Automation" : 2
     "Portfolio / Profile" : 2
 ```
 
 <details>
-<summary><strong>📦 Click to expand the full list of 37 repositories</strong></summary>
+<summary><strong>📦 Click to expand the full list of 38 repositories</strong></summary>
 
 | # | Repository | Category | Description |
 |---|-----------|----------|-------------|
@@ -628,36 +642,37 @@ pie showData
 | 5 | [AppiumMobileAutomation](https://github.com/rbchy/AppiumMobileAutomation) | 📱 Mobile | Appium, TestNG & Allure — 22 device + 8 unit tests on an Android emulator in CI |
 | 6 | [AppiumTest_Andriod_Automation](https://github.com/rbchy/AppiumTest_Andriod_Automation) | 📱 Mobile | Appium, TestNG, Cucumber BDD, POM |
 | 7 | [BhojanAloy-Food-Coffee-Shop-POS-System](https://github.com/rbchy/BhojanAloy-Food-Coffee-Shop-POS-System) | 💻 App | Java Swing + MySQL point-of-sale with itemized bill preview |
-| 8 | [Guru99TelTest](https://github.com/rbchy/Guru99TelTest) | 🌐 Web | Selenium/Java against the Guru99 demo site |
-| 9 | [InventoryControlManagement_JavaMySql](https://github.com/rbchy/InventoryControlManagement_JavaMySql) | 💻 App | Real-time inventory — Java 17, MySQL 8.0, JDBC |
-| 10 | [Multicart_Demo_Automation](https://github.com/rbchy/Multicart_Demo_Automation) | 🌐 Web | Multi-cart e-commerce — Java, Selenium, Cucumber |
-| 11 | [NorthFace_AutomationExercise-BDD-Test-Automation](https://github.com/rbchy/NorthFace_AutomationExercise-BDD-Test-Automation) | 🌐 Web | UI, E2E, API, Unit, Accessibility, Performance & Security in one project |
-| 12 | [OpenEMR_Automation](https://github.com/rbchy/OpenEMR_Automation) | 🌐 Web | Health records / medical practice management automation |
-| 13 | [OrangeHRM_Automation](https://github.com/rbchy/OrangeHRM_Automation) | 🌐 Web | OrangeHRM HR platform automation |
-| 14 | [OrangeHRM_TestAutomation_TestNG_Junit5](https://github.com/rbchy/OrangeHRM_TestAutomation_TestNG_Junit5) | 🌐 Web | AI-enhanced QA for HRM/Payroll with stubbed payroll/tax/insurance backend |
-| 15 | [ParaBank-BankingAutomationJavaSelenium](https://github.com/rbchy/ParaBank-BankingAutomationJavaSelenium) | 🌐 Web | Banking automation — Java, Spring Boot, MySQL, Selenium |
-| 16 | [PayrollManagementSystem](https://github.com/rbchy/PayrollManagementSystem) | 💻 App | Payroll management — Java & MySQL |
-| 17 | [PayrollManagementSystems_Automation_Java_MySql_Selenium](https://github.com/rbchy/PayrollManagementSystems_Automation_Java_MySql_Selenium) | 💻 App | Java Swing + MySQL payroll desktop app, Maven-tested |
-| 18 | [PPES-Pharmaceutical-Packaging-Management](https://github.com/rbchy/PPES-Pharmaceutical-Packaging-Management) | 💻 App | Pharmaceutical packaging management — Java, MySQL |
-| 19 | [QaBrainsAPIAutomationRestAssured](https://github.com/rbchy/QaBrainsAPIAutomationRestAssured) | 🔌 API | QaBrains API automation — Rest Assured |
-| 20 | [QaBrainsAPIAutomation_Postman](https://github.com/rbchy/QaBrainsAPIAutomation_Postman) | 🔌 API | QaBrains API automation — Postman & Newman |
-| 21 | [QaBrainsAutomationCypressJavaScript](https://github.com/rbchy/QaBrainsAutomationCypressJavaScript) | 🌐 Web | E2E framework for the QaBrains e-commerce app — Cypress |
-| 22 | [QaBrainsAutomationJavaPlaywright](https://github.com/rbchy/QaBrainsAutomationJavaPlaywright) | 🌐 Web | Java + Playwright |
-| 23 | [QaBrainsAutomationJavaSelenium](https://github.com/rbchy/QaBrainsAutomationJavaSelenium) | 🌐 Web | Selenium + Java + Cucumber + TestNG + Maven |
-| 24 | [QaBrainsAutomationPythonPlawright](https://github.com/rbchy/QaBrainsAutomationPythonPlawright) | 🌐 Web | Python + Playwright + Behave |
-| 25 | [QaBrainsAutomationTypeScriptPlaywright](https://github.com/rbchy/QaBrainsAutomationTypeScriptPlaywright) | 🌐 Web | TypeScript + Playwright |
-| 26 | [QaBrainsSauceLabAPI_Automation](https://github.com/rbchy/QaBrainsSauceLabAPI_Automation) | 🌐 Web | AI-driven quality platform — Java, Selenium, Cucumber on Sauce Labs |
-| 27 | [ranajitchowdhury](https://github.com/rbchy/ranajitchowdhury) | 🗂️ Portfolio | 20+ projects across Mobile, E-Commerce, Banking, Healthcare, HR, API |
-| 28 | [rbchy](https://github.com/rbchy/rbchy) | 🗂️ Portfolio | This profile README, website, resume and installable app |
-| 29 | [RbcTcsWorld-EPMS](https://github.com/rbchy/RbcTcsWorld-EPMS) | 💻 App | Full-stack payroll — Spring Boot REST API + test suite |
-| 30 | [RbcTcsWorld_ClinTrial-Connect](https://github.com/rbchy/RbcTcsWorld_ClinTrial-Connect) | 💻 App | Spring Boot clinical-trial patient matching, 115+ automated tests |
-| 31 | [RbcTcsWorld](https://github.com/rbchy/RbcTcsWorld) | 💻 App | 🛍️ RbcTcsWorld Shop: the suite on its way to a live store, Amazon affiliate site first; 2,039 tests, 19 CI gates |
-| 32 | [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | 💻 App | ⭐ Spring Boot 4 e-commerce + 1489 automated tests, 18 CI quality gates |
-| 33 | [RbcTcsWorld_PharmaPackQMS](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS) | 💻 App | Pharmaceutical packaging quality management (QMS) |
-| 34 | [RbcTcsWorld_PharmaPackQMS_Serialization](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS_Serialization) | 💻 App | Pharma packaging QMS + serialization, CI and desktop builds for Windows / macOS / Linux |
-| 35 | [RbcTcsWorld_Pharmaceuticals_PMC](https://github.com/rbchy/RbcTcsWorld_Pharmaceuticals_PMC) | 💻 App | Pharma Packaging Execution System — Java Swing desktop app |
-| 36 | [Sauce-Demo.MyShopify.AutomationTest](https://github.com/rbchy/Sauce-Demo.MyShopify.AutomationTest) | 🌐 Web | E-commerce automation — Java + Selenium |
-| 37 | [WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG](https://github.com/rbchy/WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG) | 📱 Mobile | WDIO Native Demo App — Appium 9.2.2, TestNG, Allure, ExtentReports |
+| 8 | [dhoom-vivekananda-samiti](https://github.com/rbchy/dhoom-vivekananda-samiti) | 💻 App | Temple & community website — React, Supabase RLS, staff roles with approvals, 42 DB security checks in CI |
+| 9 | [Guru99TelTest](https://github.com/rbchy/Guru99TelTest) | 🌐 Web | Selenium/Java against the Guru99 demo site |
+| 10 | [InventoryControlManagement_JavaMySql](https://github.com/rbchy/InventoryControlManagement_JavaMySql) | 💻 App | Real-time inventory — Java 17, MySQL 8.0, JDBC |
+| 11 | [Multicart_Demo_Automation](https://github.com/rbchy/Multicart_Demo_Automation) | 🌐 Web | Multi-cart e-commerce — Java, Selenium, Cucumber |
+| 12 | [NorthFace_AutomationExercise-BDD-Test-Automation](https://github.com/rbchy/NorthFace_AutomationExercise-BDD-Test-Automation) | 🌐 Web | UI, E2E, API, Unit, Accessibility, Performance & Security in one project |
+| 13 | [OpenEMR_Automation](https://github.com/rbchy/OpenEMR_Automation) | 🌐 Web | Health records / medical practice management automation |
+| 14 | [OrangeHRM_Automation](https://github.com/rbchy/OrangeHRM_Automation) | 🌐 Web | OrangeHRM HR platform automation |
+| 15 | [OrangeHRM_TestAutomation_TestNG_Junit5](https://github.com/rbchy/OrangeHRM_TestAutomation_TestNG_Junit5) | 🌐 Web | AI-enhanced QA for HRM/Payroll with stubbed payroll/tax/insurance backend |
+| 16 | [ParaBank-BankingAutomationJavaSelenium](https://github.com/rbchy/ParaBank-BankingAutomationJavaSelenium) | 🌐 Web | Banking automation — Java, Spring Boot, MySQL, Selenium |
+| 17 | [PayrollManagementSystem](https://github.com/rbchy/PayrollManagementSystem) | 💻 App | Payroll management — Java & MySQL |
+| 18 | [PayrollManagementSystems_Automation_Java_MySql_Selenium](https://github.com/rbchy/PayrollManagementSystems_Automation_Java_MySql_Selenium) | 💻 App | Java Swing + MySQL payroll desktop app, Maven-tested |
+| 19 | [PPES-Pharmaceutical-Packaging-Management](https://github.com/rbchy/PPES-Pharmaceutical-Packaging-Management) | 💻 App | Pharmaceutical packaging management — Java, MySQL |
+| 20 | [QaBrainsAPIAutomationRestAssured](https://github.com/rbchy/QaBrainsAPIAutomationRestAssured) | 🔌 API | QaBrains API automation — Rest Assured |
+| 21 | [QaBrainsAPIAutomation_Postman](https://github.com/rbchy/QaBrainsAPIAutomation_Postman) | 🔌 API | QaBrains API automation — Postman & Newman |
+| 22 | [QaBrainsAutomationCypressJavaScript](https://github.com/rbchy/QaBrainsAutomationCypressJavaScript) | 🌐 Web | E2E framework for the QaBrains e-commerce app — Cypress |
+| 23 | [QaBrainsAutomationJavaPlaywright](https://github.com/rbchy/QaBrainsAutomationJavaPlaywright) | 🌐 Web | Java + Playwright |
+| 24 | [QaBrainsAutomationJavaSelenium](https://github.com/rbchy/QaBrainsAutomationJavaSelenium) | 🌐 Web | Selenium + Java + Cucumber + TestNG + Maven |
+| 25 | [QaBrainsAutomationPythonPlawright](https://github.com/rbchy/QaBrainsAutomationPythonPlawright) | 🌐 Web | Python + Playwright + Behave |
+| 26 | [QaBrainsAutomationTypeScriptPlaywright](https://github.com/rbchy/QaBrainsAutomationTypeScriptPlaywright) | 🌐 Web | TypeScript + Playwright |
+| 27 | [QaBrainsSauceLabAPI_Automation](https://github.com/rbchy/QaBrainsSauceLabAPI_Automation) | 🌐 Web | AI-driven quality platform — Java, Selenium, Cucumber on Sauce Labs |
+| 28 | [ranajitchowdhury](https://github.com/rbchy/ranajitchowdhury) | 🗂️ Portfolio | 20+ projects across Mobile, E-Commerce, Banking, Healthcare, HR, API |
+| 29 | [rbchy](https://github.com/rbchy/rbchy) | 🗂️ Portfolio | This profile README, website, resume and installable app |
+| 30 | [RbcTcsWorld-EPMS](https://github.com/rbchy/RbcTcsWorld-EPMS) | 💻 App | Full-stack payroll — Spring Boot REST API + test suite |
+| 31 | [RbcTcsWorld_ClinTrial-Connect](https://github.com/rbchy/RbcTcsWorld_ClinTrial-Connect) | 💻 App | Spring Boot clinical-trial patient matching, 115+ automated tests |
+| 32 | [RbcTcsWorld](https://github.com/rbchy/RbcTcsWorld) | 💻 App | 🛍️ RbcTcsWorld Shop: the suite on its way to a live store, Amazon affiliate site first; 2,039 tests, 19 CI gates |
+| 33 | [RbcTcsWorld_ECommerceSuite](https://github.com/rbchy/RbcTcsWorld_ECommerceSuite) | 💻 App | ⭐ Spring Boot 4 e-commerce + 1489 automated tests, 18 CI quality gates |
+| 34 | [RbcTcsWorld_PharmaPackQMS](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS) | 💻 App | Pharmaceutical packaging quality management (QMS) |
+| 35 | [RbcTcsWorld_PharmaPackQMS_Serialization](https://github.com/rbchy/RbcTcsWorld_PharmaPackQMS_Serialization) | 💻 App | Pharma packaging QMS + serialization, CI and desktop builds for Windows / macOS / Linux |
+| 36 | [RbcTcsWorld_Pharmaceuticals_PMC](https://github.com/rbchy/RbcTcsWorld_Pharmaceuticals_PMC) | 💻 App | Pharma Packaging Execution System — Java Swing desktop app |
+| 37 | [Sauce-Demo.MyShopify.AutomationTest](https://github.com/rbchy/Sauce-Demo.MyShopify.AutomationTest) | 🌐 Web | E-commerce automation — Java + Selenium |
+| 38 | [WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG](https://github.com/rbchy/WebdriverIO-Native-DemoApp-MobileTestAutomationJavaAppiumTestNG) | 📱 Mobile | WDIO Native Demo App — Appium 9.2.2, TestNG, Allure, ExtentReports |
 
 </details>
 
@@ -673,7 +688,8 @@ pie showData
 | RbcTcsWorld Shop: own products, LLC, sales tax license, UAT with real cards | ![](https://img.shields.io/badge/-later-64748b?style=flat-square) |
 | RbcTcsWorld Shop: phone app (installable website first, Android app with the own shop) | ![](https://img.shields.io/badge/-later-64748b?style=flat-square) |
 | This portfolio as an app: installable website (PWA, offline) and Android APK/AAB from GitHub Actions | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
-| Every repository on green GitHub Actions CI (37 / 37), numbers from one data file | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
+| Every repository on green GitHub Actions CI (38 / 38), numbers from one data file | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
+| Dhoom Vivekananda Samiti: real temple details, custom domain, Playwright end-to-end tests | ![](https://img.shields.io/badge/-in%20progress-f59e0b?style=flat-square) |
 | First QA Automation job or internship: ATS-friendly resume (HTML + PDF) | ![](https://img.shields.io/badge/-in%20progress-f59e0b?style=flat-square) |
 | Portfolio app: full screen on Android (assetlinks.json) and Google Play listing ![](https://img.shields.io/badge/-next-0d9488?style=flat-square) |
 | E-Commerce Suite: store-admin panel, six languages, desktop app, Safari on Jenkins | ![](https://img.shields.io/badge/-done-22c55e?style=flat-square) |
@@ -873,6 +889,7 @@ erDiagram
 
 | Date | Change |
 |---|---|
+| 16 Nov 2026 | New repository `dhoom-vivekananda-samiti` added to `data/portfolio.json`, README, website (6 languages), resume and status board: 38 repositories, 5,258 tests |
 | 10 Nov 2026 | `profile-cards.yml` fixed: it failed every day (46 runs) because the action ran without `actions/checkout`, so its `git add` had no repository |
 | 10 Nov 2026 | New `ci.yml`: data-consistency, status-board, Mermaid and translation checks on every push |
 | 10 Nov 2026 | `data/portfolio.json` + `tools/make_status_svg.py`: the status board is drawn from data instead of by hand (it still showed 571 tests) |
