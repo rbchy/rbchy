@@ -1,17 +1,17 @@
-<svg width="1000" height="560" viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project status board (10 Nov 2026): 37 public repositories, 37 with green CI, 5,216 automated tests; RbcTcsWorld Shop 2,039 tests.">
+<svg width="1000" height="560" viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project status board (16 Nov 2026): 38 public repositories, 38 with green CI, 5,258 automated tests; RbcTcsWorld Shop 2,039 tests.">
 <rect width="1000" height="560" rx="12" fill="#141321"/>
 <text x="32" y="48" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#fe428e">Project Status Board</text>
-<text x="32" y="72" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#c3c2b7">37 public repositories · numbers from the latest green CI run on main (10 Nov 2026)</text>
+<text x="32" y="72" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#c3c2b7">38 public repositories · numbers from the latest green CI run on main (16 Nov 2026)</text>
 <rect x="32" y="92" width="221" height="92" rx="10" fill="#1f1e33"/>
-<text x="48" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">37</text>
+<text x="48" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">38</text>
 <text x="48" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">public repositories</text>
-<text x="48" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">35 with automated tests</text>
+<text x="48" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">36 with automated tests</text>
 <rect x="269" y="92" width="221" height="92" rx="10" fill="#1f1e33"/>
-<text x="285" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">37 / 37</text>
+<text x="285" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">38 / 38</text>
 <text x="285" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">green CI on main</text>
 <text x="285" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">GitHub Actions on every push</text>
 <rect x="506" y="92" width="221" height="92" rx="10" fill="#1f1e33"/>
-<text x="522" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">5,216</text>
+<text x="522" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">5,258</text>
 <text x="522" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">automated tests</text>
 <text x="522" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">sum over all repositories</text>
 <rect x="743" y="92" width="221" height="92" rx="10" fill="#1f1e33"/>
@@ -19,18 +19,18 @@
 <text x="759" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">RbcTcsWorld Shop</text>
 <text x="759" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">19 / 19 CI quality gates</text>
 <text x="32" y="222" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Automated tests by area</text>
-<path d="M130.00,263.00 A82,82 0 0 1 167.20,271.92" fill="none" stroke="#4fb3a9" stroke-width="26"><title>Web UI automation: 391</title></path>
-<path d="M167.21,271.93 A82,82 0 1 1 101.00,268.30" fill="none" stroke="#f4b04a" stroke-width="26"><title>Full-stack applications: 4,525</title></path>
-<path d="M101.01,268.30 A82,82 0 0 1 124.07,263.21" fill="none" stroke="#8fb8de" stroke-width="26"><title>Mobile (Appium): 240</title></path>
-<path d="M124.08,263.21 A82,82 0 0 1 129.99,263.00" fill="none" stroke="#e58a8a" stroke-width="26"><title>API automation: 60</title></path>
-<text x="130" y="349" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#ffffff">5,216</text>
+<path d="M130.00,263.00 A82,82 0 0 1 166.93,271.79" fill="none" stroke="#4fb3a9" stroke-width="26"><title>Web UI automation: 391</title></path>
+<path d="M166.93,271.79 A82,82 0 1 1 101.22,268.22" fill="none" stroke="#f4b04a" stroke-width="26"><title>Full-stack applications: 4,567</title></path>
+<path d="M101.23,268.21 A82,82 0 0 1 124.12,263.21" fill="none" stroke="#8fb8de" stroke-width="26"><title>Mobile (Appium): 240</title></path>
+<path d="M124.13,263.21 A82,82 0 0 1 129.99,263.00" fill="none" stroke="#e58a8a" stroke-width="26"><title>API automation: 60</title></path>
+<text x="130" y="349" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#ffffff">5,258</text>
 <text x="130" y="369" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#c3c2b7">tests</text>
 <rect x="246" y="261" width="12" height="12" rx="3" fill="#4fb3a9"/>
 <text x="266" y="272" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Web UI automation</text>
 <text x="266" y="290" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">391 tests · 16 repositories</text>
 <rect x="246" y="309" width="12" height="12" rx="3" fill="#f4b04a"/>
 <text x="266" y="320" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Full-stack applications</text>
-<text x="266" y="338" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">4,525 tests · 12 repositories</text>
+<text x="266" y="338" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">4,567 tests · 13 repositories</text>
 <rect x="246" y="357" width="12" height="12" rx="3" fill="#8fb8de"/>
 <text x="266" y="368" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Mobile (Appium)</text>
 <text x="266" y="386" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">240 tests · 5 repositories</text>
