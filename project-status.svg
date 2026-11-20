@@ -1,4 +1,4 @@
-<svg width="1000" height="560" viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project status board (20 Nov 2026): 38 public repositories, 38 with green CI, 5,288 automated tests; RbcTcsWorld Shop 2,039 tests.">
+<svg width="1000" height="560" viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project status board (20 Nov 2026): 38 public repositories, 38 with green CI, 5,378 automated tests; RbcTcsWorld Shop 2,039 tests.">
 <rect width="1000" height="560" rx="12" fill="#141321"/>
 <text x="32" y="48" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#fe428e">Project Status Board</text>
 <text x="32" y="72" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#c3c2b7">38 public repositories · numbers from the latest green CI run on main (20 Nov 2026)</text>
@@ -11,7 +11,7 @@
 <text x="285" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">green CI on main</text>
 <text x="285" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">GitHub Actions on every push</text>
 <rect x="506" y="92" width="221" height="92" rx="10" fill="#1f1e33"/>
-<text x="522" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">5,288</text>
+<text x="522" y="134" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">5,378</text>
 <text x="522" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">automated tests</text>
 <text x="522" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">sum over all repositories</text>
 <rect x="743" y="92" width="221" height="92" rx="10" fill="#1f1e33"/>
@@ -19,18 +19,18 @@
 <text x="759" y="156" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c3c2b7">RbcTcsWorld Shop</text>
 <text x="759" y="173" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">19 / 19 CI quality gates</text>
 <text x="32" y="222" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Automated tests by area</text>
-<path d="M130.00,263.00 A82,82 0 0 1 166.73,271.69" fill="none" stroke="#4fb3a9" stroke-width="26"><title>Web UI automation: 391</title></path>
-<path d="M166.74,271.69 A82,82 0 1 1 101.38,268.16" fill="none" stroke="#f4b04a" stroke-width="26"><title>Full-stack applications: 4,597</title></path>
-<path d="M101.39,268.15 A82,82 0 0 1 124.15,263.21" fill="none" stroke="#8fb8de" stroke-width="26"><title>Mobile (Appium): 240</title></path>
-<path d="M124.16,263.21 A82,82 0 0 1 129.99,263.00" fill="none" stroke="#e58a8a" stroke-width="26"><title>API automation: 60</title></path>
-<text x="130" y="349" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#ffffff">5,288</text>
+<path d="M130.00,263.00 A82,82 0 0 1 166.16,271.40" fill="none" stroke="#4fb3a9" stroke-width="26"><title>Web UI automation: 391</title></path>
+<path d="M166.17,271.41 A82,82 0 1 1 101.84,267.99" fill="none" stroke="#f4b04a" stroke-width="26"><title>Full-stack applications: 4,687</title></path>
+<path d="M101.84,267.99 A82,82 0 0 1 124.25,263.20" fill="none" stroke="#8fb8de" stroke-width="26"><title>Mobile (Appium): 240</title></path>
+<path d="M124.26,263.20 A82,82 0 0 1 129.99,263.00" fill="none" stroke="#e58a8a" stroke-width="26"><title>API automation: 60</title></path>
+<text x="130" y="349" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#ffffff">5,378</text>
 <text x="130" y="369" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#c3c2b7">tests</text>
 <rect x="246" y="261" width="12" height="12" rx="3" fill="#4fb3a9"/>
 <text x="266" y="272" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Web UI automation</text>
 <text x="266" y="290" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">391 tests · 16 repositories</text>
 <rect x="246" y="309" width="12" height="12" rx="3" fill="#f4b04a"/>
 <text x="266" y="320" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Full-stack applications</text>
-<text x="266" y="338" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">4,597 tests · 13 repositories</text>
+<text x="266" y="338" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">4,687 tests · 13 repositories</text>
 <rect x="246" y="357" width="12" height="12" rx="3" fill="#8fb8de"/>
 <text x="266" y="368" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Mobile (Appium)</text>
 <text x="266" y="386" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b8a9e">240 tests · 5 repositories</text>
@@ -47,32 +47,32 @@
 <text x="470" y="304" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">PayrollManagementSystems_Aut…</text>
 <rect x="690" y="293" width="31.9" height="14" rx="3" fill="#f4b04a"><title>PayrollManagementSystems_Automation_Java_MySql_Selenium: 260 tests</title></rect>
 <text x="727.8783717508583" y="304" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">260</text>
-<text x="470" y="328" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">PayrollManagementSystem</text>
-<rect x="690" y="317" width="19.6" height="14" rx="3" fill="#f4b04a"><title>PayrollManagementSystem: 160 tests</title></rect>
-<text x="715.6174595389897" y="328" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">160</text>
-<text x="470" y="352" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">RbcTcsWorld_ClinTrial-Connect</text>
-<rect x="690" y="341" width="14.1" height="14" rx="3" fill="#f4b04a"><title>RbcTcsWorld_ClinTrial-Connect: 115 tests</title></rect>
-<text x="710.1000490436488" y="352" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">115</text>
-<text x="470" y="376" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">NorthFace_AutomationExercise…</text>
-<rect x="690" y="365" width="10.4" height="14" rx="3" fill="#4fb3a9"><title>NorthFace_AutomationExercise-BDD-Test-Automation: 85 tests</title></rect>
-<text x="706.4217753800883" y="376" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">85</text>
-<text x="470" y="400" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">RbcTcsWorld_Pharmaceuticals_…</text>
-<rect x="690" y="389" width="9.9" height="14" rx="3" fill="#f4b04a"><title>RbcTcsWorld_Pharmaceuticals_PMC: 81 tests</title></rect>
-<text x="705.9313388916136" y="400" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">81</text>
-<text x="470" y="424" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">RbcTcsWorld-EPMS</text>
-<rect x="690" y="413" width="9.7" height="14" rx="3" fill="#f4b04a"><title>RbcTcsWorld-EPMS: 79 tests</title></rect>
-<text x="705.6861206473761" y="424" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">79</text>
-<text x="470" y="448" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">RbcTcsWorld_PharmaPackQMS_Se…</text>
-<rect x="690" y="437" width="9.6" height="14" rx="3" fill="#f4b04a"><title>RbcTcsWorld_PharmaPackQMS_Serialization: 78 tests</title></rect>
-<text x="705.5635115252575" y="448" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">78</text>
-<text x="470" y="472" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">BhojanAloy-Food-Coffee-Shop-…</text>
-<rect x="690" y="461" width="9.3" height="14" rx="3" fill="#f4b04a"><title>BhojanAloy-Food-Coffee-Shop-POS-System: 76 tests</title></rect>
-<text x="705.3182932810201" y="472" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">76</text>
-<text x="470" y="496" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">AndroidUIAppiumTest_MyDemoEc…</text>
-<rect x="690" y="485" width="9.2" height="14" rx="3" fill="#8fb8de"><title>AndroidUIAppiumTest_MyDemoEcommerce: 75 tests</title></rect>
-<text x="705.1956841589014" y="496" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">75</text>
-<text x="470" y="520" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">dhoom-vivekananda-samiti</text>
-<rect x="690" y="509" width="8.8" height="14" rx="3" fill="#f4b04a"><title>dhoom-vivekananda-samiti: 72 tests</title></rect>
-<text x="704.8278567925454" y="520" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">72</text>
+<text x="470" y="328" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">dhoom-vivekananda-samiti</text>
+<rect x="690" y="317" width="19.9" height="14" rx="3" fill="#f4b04a"><title>dhoom-vivekananda-samiti: 162 tests</title></rect>
+<text x="715.8626777832271" y="328" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">162</text>
+<text x="470" y="352" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">PayrollManagementSystem</text>
+<rect x="690" y="341" width="19.6" height="14" rx="3" fill="#f4b04a"><title>PayrollManagementSystem: 160 tests</title></rect>
+<text x="715.6174595389897" y="352" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">160</text>
+<text x="470" y="376" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">RbcTcsWorld_ClinTrial-Connect</text>
+<rect x="690" y="365" width="14.1" height="14" rx="3" fill="#f4b04a"><title>RbcTcsWorld_ClinTrial-Connect: 115 tests</title></rect>
+<text x="710.1000490436488" y="376" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">115</text>
+<text x="470" y="400" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">NorthFace_AutomationExercise…</text>
+<rect x="690" y="389" width="10.4" height="14" rx="3" fill="#4fb3a9"><title>NorthFace_AutomationExercise-BDD-Test-Automation: 85 tests</title></rect>
+<text x="706.4217753800883" y="400" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">85</text>
+<text x="470" y="424" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">RbcTcsWorld_Pharmaceuticals_…</text>
+<rect x="690" y="413" width="9.9" height="14" rx="3" fill="#f4b04a"><title>RbcTcsWorld_Pharmaceuticals_PMC: 81 tests</title></rect>
+<text x="705.9313388916136" y="424" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">81</text>
+<text x="470" y="448" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">RbcTcsWorld-EPMS</text>
+<rect x="690" y="437" width="9.7" height="14" rx="3" fill="#f4b04a"><title>RbcTcsWorld-EPMS: 79 tests</title></rect>
+<text x="705.6861206473761" y="448" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">79</text>
+<text x="470" y="472" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">RbcTcsWorld_PharmaPackQMS_Se…</text>
+<rect x="690" y="461" width="9.6" height="14" rx="3" fill="#f4b04a"><title>RbcTcsWorld_PharmaPackQMS_Serialization: 78 tests</title></rect>
+<text x="705.5635115252575" y="472" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">78</text>
+<text x="470" y="496" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">BhojanAloy-Food-Coffee-Shop-…</text>
+<rect x="690" y="485" width="9.3" height="14" rx="3" fill="#f4b04a"><title>BhojanAloy-Food-Coffee-Shop-POS-System: 76 tests</title></rect>
+<text x="705.3182932810201" y="496" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">76</text>
+<text x="470" y="520" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7">AndroidUIAppiumTest_MyDemoEc…</text>
+<rect x="690" y="509" width="9.2" height="14" rx="3" fill="#8fb8de"><title>AndroidUIAppiumTest_MyDemoEcommerce: 75 tests</title></rect>
+<text x="705.1956841589014" y="520" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">75</text>
 <text x="32" y="540" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#8b8a9e">Source: data/portfolio.json (mirror of rbchy/ranajitchowdhury docs/portfolio.json)</text>
 </svg>
