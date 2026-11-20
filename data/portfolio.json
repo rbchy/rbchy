@@ -1,6 +1,6 @@
 {
- "as_of": "16 Nov 2026",
- "note": "Mirror of rbchy/ranajitchowdhury docs/portfolio.json (single source of truth). Test numbers are the latest green CI run of each repository on its main branch (10 Nov 2026; dhoom-vivekananda-samiti added 16 Nov 2026). tools/check_site.py checks README.md, index.html, resume.html and project-status.svg against it.",
+ "as_of": "20 Nov 2026",
+ "note": "Mirror of rbchy/ranajitchowdhury docs/portfolio.json (single source of truth). Test numbers are the latest green CI run of each repository on its main branch (10 Nov 2026; dhoom-vivekananda-samiti added 16 Nov 2026; 72 database security checks 20 Nov 2026). tools/check_site.py checks README.md, index.html, resume.html and project-status.svg against it.",
  "areas": [
   {
    "key": "web",
@@ -123,8 +123,8 @@
    "name": "dhoom-vivekananda-samiti",
    "area": "app",
    "stack": "React 19 · Vite · Supabase · PostgreSQL RLS · GitHub Actions · GitHub Pages",
-   "tests": 42,
-   "result": "42 / 42 database security checks + build",
+   "tests": 72,
+   "result": "72 / 72 database security checks + build",
    "workflow": "ci.yml"
   },
   {
